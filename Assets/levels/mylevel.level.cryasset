@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Level" guid="1acdaf21-ae89-7729-548b-5b88bd7a5eab" source="" timestamp="1599498353">
+ <Files>
+  <File path="mylevel/mylevel.level"/>
+ </Files>
+ <Dependencies>
+  <Path usageCount="1">%ENGINE%/EngineAssets/Shading/default.env</Path>
+  <Path>%engine%/config/defaultscripts/compressionpolicy.xml</Path>
+  <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
+  <Path>%engine%/engineassets/icons/highmemoryusage.dds</Path>
+  <Path>%engine%/engineassets/icons/livepreview.dds</Path>
+  <Path>%engine%/engineassets/icons/lowmemoryusage.dds</Path>
+  <Path>%engine%/engineassets/textures/grey.dds</Path>
+ </Dependencies>
+</AssetMetadata>
