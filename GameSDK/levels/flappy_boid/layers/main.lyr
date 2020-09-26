@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601130974">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601132976">
   <LayerObjects>
    <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Name="flappy_boid" Pos="500,500,100.0718" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/wood/wood_beams_a_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
@@ -45,6 +45,27 @@
      </Component>
     </Components>
    </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="19acb9ee-4753-0a39-0324-9c2d43b6d4e6" Name="pipe1_top-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c902fcc9-64e5-2204-3295-723547ab723d" Name="FG_main" Pos="512.34393,496.46811,31.999268" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
     <FlowGraph Description="" Group="main" enabled="1" MultiPlayer="ClientServer">
@@ -63,10 +84,10 @@
       </Node>
       <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
       <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
-      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-108,-551.3808,0">
+      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-108,-539.83295,0">
        <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="846" Height="270"/>
-       <NodeSize Width="853.4292" Height="407.38116"/>
+       <NodeSize Width="846" Height="395.83328"/>
       </Node>
       <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
        <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
@@ -89,10 +110,10 @@
       <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
       </Node>
-      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,-65.380882,0">
+      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,-53.833008,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="598" Height="866"/>
-       <NodeSize Width="598" Height="1003.3812"/>
+       <NodeSize Width="598" Height="991.83331"/>
       </Node>
       <Node Id="25" Class="Movement:MoveEntityTo" pos="1512,-342,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
@@ -103,10 +124,10 @@
       <Node Id="28" Class="Vec3:AddVec3" pos="1224,-324,0">
        <Inputs A="0,0,0" B="8,-10,0"/>
       </Node>
-      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-533.60162,0">
+      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-522.05377,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="990" Height="342"/>
-       <NodeSize Width="1026.5737" Height="479.38116"/>
+       <NodeSize Width="990" Height="467.83328"/>
       </Node>
      </Nodes>
      <Edges>
@@ -150,8 +171,175 @@
      </Component>
     </Components>
    </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Name="pipe1_bottom" Pos="485,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ecb3d852-af27-a5df-a0d3-3986bc61d890" Name="SpawnPoint_player" Pos="500,500,32" Rotate="1,0,0,-6.7599801e-11" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="SpawnPoint" HasEntity="1">
     <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c43e47e1-8161-4268-45a7-8c04f3d3fe4d" Name="score_trigger1" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="40d67ded-c1bc-93a1-0f1c-7488021d5d0b" Name="score_trigger1-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="e4b2a65a-94a9-2f10-263c-bd59dc8c7203" Name="pipe1_top" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ca9dce9b-cdd0-876d-cd19-0b72cb66c0ec" Name="pipe2_bottom" Pos="470,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ef818bcc-e3a7-9c09-9527-ca0e24013051" Name="score_trigger1-2" LinkedTo="ca9dce9b-cdd0-876d-cd19-0b72cb66c0ec" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ddde6079-735b-2883-868d-6e9f8027ff2d" Name="pipe1_top-2" LinkedTo="ca9dce9b-cdd0-876d-cd19-0b72cb66c0ec" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="1380206a-b502-3d51-7ae3-5dce2ff007cc" Name="pipe3_bottom" Pos="455,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="43a40ad7-42b4-a689-2781-0bdd17fa12ae" Name="score_trigger1-3" LinkedTo="1380206a-b502-3d51-7ae3-5dce2ff007cc" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="299cf7a2-3856-2436-ff5c-24ecf3267124" Name="pipe1_top-3" LinkedTo="1380206a-b502-3d51-7ae3-5dce2ff007cc" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Name="pipe4_bottom" Pos="440,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
    </Object>
   </LayerObjects>
  </Layer>
