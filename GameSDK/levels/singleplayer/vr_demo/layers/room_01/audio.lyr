@@ -1,0 +1,158 @@
+<ObjectLayer>
+ <Layer Name="audio" FullName="room_01/audio" GUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="737fdbcb-e167-1a0e-1ac9-a72f98c5ca1e">
+  <LayerObjects>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="23256413-c438-4dfd-b475-78a6bfeadb90" Name="ATS_growing_chamber_01" Pos="39.5,20.75,17.75" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_growing_chamber" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="341f6d56-add9-4244-b2b3-670cc8a43855" Name="AAA_hallway" Pos="39.564964,50.50309,19.612133" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="room_small" fEnvironmentDistance="5" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_vr_demo_amb_hallway" audioRTPCRtpc="area_fade_distance" fRtpcDistance="5" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="3a807f3d-d6ff-4b38-bba8-e0e4aa9aec32" Name="ATS_ventilation_05" Pos="49.75,57.5,16.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_ventilation_fan" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioAreaRandom" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="9cb5aa42-cbeb-4b8d-989c-61eb439b165d" Name="AAR_power_sparks" Pos="31.250206,40.297668,15.914904" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaRandom" HasEntity="1">
+    <Properties bEnabled="1" fMaxDelay="4" fMinDelay="12" bMoveWithEntity="0" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_vr_demo_sfx_power_sparks" fRadiusRandom="5" audioRTPCRtpc="area_fade_distance" fRtpcDistance="5" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="e50f950d-8e1f-40ea-bed6-84e0d9abcba1" Name="ATS_ventilation_01" Pos="49.75,62.75,16.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_ventilation_fan" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="cc357b84-6302-4ef2-a67c-96e3fa54eb08" Name="ATS_growing_chamber_03" Pos="30,20.75,17.75" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_growing_chamber" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AreaBox" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="0e9c6e64-0632-4cd9-8948-f0bd35d9f5e8" Name="AB_hallway" Pos="34.761612,42.89645,-2.1097107" Rotate="1,0,0,0" ColorRGB="16711680" MatLayersMask="0" InnerFadeDistance="0" AreaId="1" FadeInZone="0" Width="55" Length="55" Height="30" GroupId="1" Priority="10" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" HasEntity="1" BoxMin="-27.5,-27.5,0" BoxMax="27.5,27.5,30">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="d3b2d10f-a115-3656-71f9-3b9b1a8c9b3b">
+      <Area Id="1" Group="1" Proximity="0" Priority="10" InnerFadeDistance="0" BoxMin="-27.5,-27.5,0" BoxMax="27.5,27.5,30">
+       <SoundData>
+        <Side1 ObstructSound="1"/>
+        <Side2 ObstructSound="1"/>
+        <Side3 ObstructSound="1"/>
+        <Side4 ObstructSound="1"/>
+        <Side5 ObstructSound="1"/>
+        <Side6 ObstructSound="1"/>
+       </SoundData>
+       <Entities>
+        <Entity Id="34"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Entities>
+     <Entity Id="341f6d56-add9-4244-b2b3-670cc8a43855"/>
+    </Entities>
+    <SoundData Side1="1" Side2="1" Side3="1" Side4="1" Side5="1" Side6="1"/>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="c1fa469a-1ed7-4eb2-bf6f-fdafbf568162" Name="ATS_energy_fx_01" Pos="50.204376,60.044262,18.013975" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_energy_fx_01" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="360bfa9c-57ca-4ec1-9330-0fdbe7dc8649" Name="AAA_room_01" Pos="32,40,18" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="room_small" fEnvironmentDistance="5" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_vr_demo_amb_room_01" audioRTPCRtpc="area_fade_distance" fRtpcDistance="5" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="21f1d91f-3a0f-409d-9fdb-3716504b8c73" Name="ATS_door_01" Pos="32.028305,43.570927,17.449162" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AreaBox" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="45c71700-6862-4e41-a24a-08ed6cc660ed" Name="AB_room_01" Pos="30.945782,30.064037,10.250765" Rotate="1,0,0,0" ColorRGB="16711680" MatLayersMask="0" InnerFadeDistance="0" AreaId="1" FadeInZone="0" Width="35" Length="26" Height="15" GroupId="1" Priority="20" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" HasEntity="1" BoxMin="-17.5,-13,0" BoxMax="17.5,13,15">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="c7b00333-922a-1dbc-81a9-b1a31425f9c4">
+      <Area Id="1" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" BoxMin="-17.5,-13,0" BoxMax="17.5,13,15">
+       <SoundData>
+        <Side1 ObstructSound="1"/>
+        <Side2 ObstructSound="1"/>
+        <Side3 ObstructSound="0"/>
+        <Side4 ObstructSound="1"/>
+        <Side5 ObstructSound="1"/>
+        <Side6 ObstructSound="1"/>
+       </SoundData>
+       <Entities>
+        <Entity Id="41"/>
+        <Entity Id="33"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Entities>
+     <Entity Id="360bfa9c-57ca-4ec1-9330-0fdbe7dc8649"/>
+     <Entity Id="9cb5aa42-cbeb-4b8d-989c-61eb439b165d"/>
+    </Entities>
+    <SoundData Side1="1" Side2="1" Side3="0" Side4="1" Side5="1" Side6="1"/>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="4f94410e-b8a9-48f2-9d61-b7586a69ae02" Name="ATS_energy_fx_02" Pos="47.5,32,18" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_energy_fx_02" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="165c6e3b-fe30-4212-b43e-f7094a4cf265" Name="ATS_growing_chamber_02" Pos="34,20.75,17.75" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_growing_chamber" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="16e6c783-5a08-4cc5-b6ef-6d6782750d78" Name="ATS_growing_chamber_04" Pos="24.5,20.75,17.75" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_growing_chamber" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="b96b158e-dd91-4bdb-a17e-f278d21dc28b" Name="ATS_ventilation_04" Pos="16.25,35,16.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_ventilation_fan" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="5e594690-aad3-48d2-8a5e-bda953496315" Name="ATS_ventilation_03" Pos="16.25,28.75,16.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_ventilation_fan" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="57753bad-253f-49ad-b4ab-a5d7531e437c" Name="ATS_energy_fx_03" Pos="16.5,32,18" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_energy_fx_03" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="2d0aa9de-f08b-46f9-9bf0-14fb0cd34deb" Name="ATS_energy_sphere" LinkedTo="b40791b5-1427-4e9b-87f5-5cdf5c5c1fa2" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_energy_sphere" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="1a8fb2e2-4ff5-4469-a453-e41bc709dcd2" Name="ATS_ventilation_06" Pos="47.75,28.75,16.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_ventilation_fan" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="8a6be0e4-06d1-4687-864d-197a7e8432dc" Name="ATS_ventilation_02" Pos="47.75,35,16.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_vr_demo_sfx_ventilation_fan" bSerializePlayState="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="audio" LayerGUID="8de8dd39-a642-4cf2-bd39-33a98caff9e4" Id="b32c34fe-f79b-48ab-bdfd-c6f0c9343766" Name="FG_Audio" Pos="20.5,32,17" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <Properties />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

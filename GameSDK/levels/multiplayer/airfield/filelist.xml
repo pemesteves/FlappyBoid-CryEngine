@@ -1,0 +1,8 @@
+<download name="airfield" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="Airfield.dds" dest="Airfield.dds" size="524416" md5="8bbb4061df9efe2b18c20cb96889a16e"/>
+  <file src="Airfield.xml" dest="Airfield.xml" size="412" md5="098597f1a33d5f5c16d96b9aef163214"/>
+  <file src="level.pak" dest="level.pak" size="11907879" md5="a5a070abb35440f5df766fcfe380e269"/>
+ </files>
+</download>

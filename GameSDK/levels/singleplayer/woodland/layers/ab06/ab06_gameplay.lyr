@@ -1,0 +1,172 @@
+<ObjectLayer>
+ <Layer Name="AB06_Gameplay" FullName="AB06/AB06_Gameplay" GUID="95366905-0344-4358-a6c7-4419e88779c5" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="7e8ec695-e920-7d30-f9f4-dc3a680c7fe8">
+  <LayerObjects>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="3227d5dc-5805-4f3e-a73b-ec4b72b09426" Name="CoverSurface262" Pos="1610.2395,521.27399,54.102699" Rotate="0.95881981,0,0,-0.28401509" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="fbefdb4b-42b9-426b-af50-a36fb0012d14" Name="CoverSurface254" Pos="1621.6042,503.12949,52.900002" Rotate="0.98901588,0,0,-0.14780928" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="a45d2af5-ee26-42b1-b996-7b79686991e4" Name="CoverSurface287" Pos="1666.2122,579.4491,50.511982" Rotate="-0.017452845,0,0,0.99984771" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="6f2db67a-030e-437d-9b7b-5367f54fe0ec" Name="CoverSurface277" Pos="1641.5365,581.53156,47.927567" Rotate="0.85264039,-0,0,-0.52249813" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="1" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="1d409fb1-f4d9-4072-934d-f9e6cd88d1fe" Name="CoverSurface251" Pos="1677.0302,544.79468,55.85778" Rotate="0.99452192,0,0,-0.10452829" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="ff77b0d9-8e20-42ed-9132-a330f945bc50" Name="CoverSurface292" Pos="1649.8186,558.19061,52.908611" Rotate="0.7132507,0,0,-0.70090902" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="bf666d92-6609-4a95-9136-da9e58a80c5f" Name="CoverSurface261" Pos="1602.8627,532.96332,52.414307" Rotate="0.76604462,0,0,-0.64278746" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="400fe982-5f3e-4d17-9f78-3324fdd7362d" Name="CoverSurface258" Pos="1602.9365,503.55795,54.544205" Rotate="0.30070555,0,0,0.95371705" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="88f64050-5375-4e29-9857-9ee1209f7aa8" Name="CoverSurface264" Pos="1595.0048,532.16846,51.957706" Rotate="0.47715849,0,0,0.87881726" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="7e6181e7-d8cb-4056-8c88-d9b1026613cb" Name="CoverSurface247" Pos="1672.948,518.71277,54.349468" Rotate="0.52991921,0,0,0.84804815" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="1ceacb30-b8fc-4e04-b444-a1494587f0b7" Name="CoverSurface280" Pos="1661.7819,598.1908,50" Rotate="0.1218688,0,0,0.9925462" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="c624b342-44f0-4d93-af18-633c109b5e66" Name="CoverSurface278" Pos="1655.2947,589.92352,50.003822" Rotate="0.85264039,-0,0,-0.52249813" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="aae177a2-7414-4ab3-a7bc-ffabaf788706" Name="CoverSurface249" Pos="1658.4233,510.4364,53.478916" Rotate="0.96126169,0,0,0.27563742" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="cc6103e7-4088-49d4-b8c3-1b9ffbb85f66" Name="CoverSurface276" Pos="1645.5135,575.93536,49.20612" Rotate="-0.017452845,0,0,0.99984771" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="1c34cfb5-05b4-42f9-a2fe-cd3abd65ea4c" Name="CoverSurface246" Pos="1680.1566,529.4303,55.798027" Rotate="0.9636305,0,0,-0.26723832" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="9e0f7782-29a6-4dcc-95c6-c3bf42893eaf" Name="CoverSurface279" Pos="1655.8578,593.35284,50" Rotate="-0.052336495,0,0,0.99862951" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="2ee0eec5-074a-4827-9fc9-6d6f64d78927" Name="CoverSurface347" Pos="1616.2581,579.93878,45.933632" Rotate="0.94832385,0,0,-0.31730419" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="40c9e59d-a8f2-4975-a4ae-f3d9ca3bf3bc" Name="CoverSurface260" Pos="1607.0275,517.14862,53.794506" Rotate="0.0087262178,0,0,0.99996191" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="cf7fb7ee-f530-424b-b3b9-f0b004c6de17" Name="CoverSurface294" Pos="1635.3257,524.39331,54.071346" Rotate="0.99144489,-0,0,-0.13052605" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="2" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="a8663b8c-3158-4324-84e8-cc270558f787" Name="CoverSurface257" Pos="1599.1644,502.74677,54.341766" Rotate="0.60181522,0,0,-0.79863536" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="28b81c21-50bb-4007-ace2-565462fc0385" Name="CoverSurface281" Pos="1665.4503,590.99969,50" Rotate="0.83388555,0,0,0.55193746" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="e2f84977-ddc6-467d-81d4-cec6772644e7" Name="CoverSurface248" Pos="1661.3932,503.92813,54.541321" Rotate="0.75470954,0,0,0.65605909" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="c9b097bf-7254-41a0-91e0-0f1acc5f60ca" Name="CoverSurface285" Pos="1624.9564,573.72546,46.543461" Rotate="-0.3826839,0,0,0.92387933" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="2" LimitRight="2" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="4e5407b7-caed-43c1-85a1-63f458b9c118" Name="CoverSurface293" Pos="1607.0804,528.96619,55.943008" Rotate="0.55919307,0,0,-0.82903743" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="2" LimitRight="2" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="Shape" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="7c39c874-2fbb-4b41-8270-46f5d7e05116" Name="AB06_river_kill_shape" Pos="1478.1471,522.52478,36" Rotate="1,0,0,0" ColorRGB="32896" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="56b111e9-22e8-7c4a-2a74-3b93002cf3c9">
+      <Area Id="0" Group="0" Proximity="0" Priority="0" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="-10.983887,27.350281,-0.055225372" ObstructSound="0"/>
+        <Point Pos="-6.9013672,51.744141,0" ObstructSound="0"/>
+        <Point Pos="-40.935913,73.746826,0" ObstructSound="0"/>
+        <Point Pos="-60.139282,49.016541,0" ObstructSound="0"/>
+        <Point Pos="-17.487915,-2.4072266,0" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="0"/>
+       <Floor ObstructSound="0"/>
+       <Entities>
+        <Entity Id="388"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-10.983887,27.350281,-0.055225372"/>
+     <Point Pos="-6.9013672,51.744141,0"/>
+     <Point Pos="-40.935913,73.746826,0"/>
+     <Point Pos="-60.139282,49.016541,0"/>
+     <Point Pos="-17.487915,-2.4072266,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="4b58365f-2a5c-484b-b1d6-15b1290500f6"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="06e1d73a-640e-459d-a5b9-bc8ed7692161" Name="CoverSurface253" Pos="1636.3254,514.31836,56.279282" Rotate="0.71933967,0,0,0.69465846" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="738eba13-5330-4d96-83d5-55eceb3a8a2c" Name="CoverSurface296" Pos="1624.0692,524.2121,54.568184" Rotate="-0.35020757,0,0,0.93667215" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="548b4256-50ac-4ae3-a4cf-0d5a15fa31f4" Name="CoverSurface267" Pos="1614.4199,543.71869,54.37685" Rotate="0.87881732,0,0,-0.47715846" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="ff9802c1-9103-48a2-aad7-8137cc0217e7" Name="CoverSurface255" Pos="1610.8285,501.85144,53.322582" Rotate="0.898794,0,0,0.4383713" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="b244284b-ee5d-4a50-a2dc-c63a11d7111b" Name="CoverSurface265" Pos="1587.6556,529.68195,53.169846" Rotate="0.60876173,0,0,-0.79335314" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="a336efd9-b897-45a1-9c7c-bf9aad6e1abd" Name="CoverSurface268" Pos="1611.7228,544.39789,53.762657" Rotate="0.87881732,0,0,-0.47715846" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="Entity" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="4b58365f-2a5c-484b-b1d6-15b1290500f6" Name="AB06_river_kill_Atrig" Pos="1456.5227,556.11115,51.147346" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AreaTrigger" HasEntity="1">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="6bf5c517-9cf2-4a0b-869c-b9e33adeca49" Name="CoverSurface270" Pos="1616.5818,545.17511,54.984444" Rotate="0.75470936,0,0,0.65605932" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="30c28091-8e54-4b65-a8a3-ce9338cfea07" Name="CoverSurface250" Pos="1650.9708,540.73486,54.389553" Rotate="0.94264144,0,0,0.33380699" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="4829f1b4-e9fd-4780-b843-01e5da965b94" Name="CoverSurface252" Pos="1633.3867,517.04944,56.118896" Rotate="-0.10452862,0,0,0.99452186" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="2ba9c1b7-bd62-44c4-a635-c5df7878060a" Name="CoverSurface275" Pos="1642.1171,556.37653,51.949371" Rotate="0.99996191,0,0,0.0087269284" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="e4ebf2fd-e719-43e0-b18b-228367a8ad7f" Name="CoverSurface295" Pos="1626.5697,522.90387,54.735935" Rotate="0.76040584,0,0,0.64944822" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="aef969ab-dd47-477b-877e-b76e490b72a4" Name="CoverSurface269" Pos="1620.2775,545.888,55.0056" Rotate="0.87881732,0,0,-0.47715846" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="bb63680f-ba8d-4de4-af08-b561bc6f5620" Name="CoverSurface365" Pos="1624.0381,603.31519,46.581394" Rotate="-0.47715917,0,0,0.8788169" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="2" LimitRight="2" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="c447033d-3dbf-47d4-aa85-6bb262854eeb" Name="CoverSurface291" Pos="1621.0508,576.46954,45.933632" Rotate="0.95630461,0,0,0.2923722" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="9a32e646-b350-4f28-b357-d41a6cc59409" Name="CoverSurface271" Pos="1621.2026,541.85394,55.162964" Rotate="0.75470984,0,0,-0.65605873" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="257c38ee-2a0d-431c-a145-afce23c4e359" Name="CoverSurface263" Pos="1616.5254,515.09546,54.200745" Rotate="-0.30901727,0,0,0.95105642" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="ec2c910d-baed-438c-99a3-2b7d80cb7da8" Name="CoverSurface266" Pos="1591.5865,527.44183,52.319252" Rotate="0.95105642,0,0,0.30901733" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="39d2f51d-1bce-47e2-8432-6224c5c925b0" Name="CoverSurface256" Pos="1601.2935,499.15533,54.542233" Rotate="0.99939084,0,0,-0.034899306" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="caad5c1e-cfbe-470c-9837-ecb197890ed6" Name="CoverSurface297" Pos="1625.7628,509.71259,57.219498" Rotate="0.13052604,0,0,0.99144489" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="4371cb1f-d671-4356-8999-2dd64633cbcc" Name="CoverSurface299" Pos="1690.196,534.60345,53.458717" Rotate="0.81411558,-0,0,-0.5807029" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="3658dd23-3928-43ba-8bc2-bc7b7453dc69" Name="CoverSurface245" Pos="1675.1512,535.73383,54.374802" Rotate="0.18223545,0,0,0.98325491" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="c8c92537-02cd-46d0-8259-c25a359decff" Name="CoverSurface274" Pos="1635.368,553.33105,52.169426" Rotate="0.13052581,0,0,0.99144495" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="7e8f7850-4d1c-45a7-a400-2b066798bbfe" Name="CoverSurface286" Pos="1624.5106,599.50519,46.581394" Rotate="0.85716754,0,0,-0.51503766" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="2" LimitRight="2" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="Entity" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="471c0b71-53bc-4037-b10b-0e62eb8755ca" Name="AB06_FG" Pos="1329.126,948.828,100" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <Properties />
+    <FlowGraph Description="" Group="Gameplay" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="348" Class="entity:AreaTrigger" pos="240,480,0" EntityGUID="1714ba67-6e4e-4c8c-a2af-e636e4a661b9">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="349" Class="Image:EffectWaterDroplets" pos="1960,480,0">
+       <Inputs entityId="0" Enabled="1" Disabled="0" WaterDroplets_Amount="0"/>
+      </Node>
+      <Node Id="350" Class="Entity:CheckDistance" pos="960,480,0" InHideMask="1048575" OutHideMask="31">
+       <Inputs entityId="0" MinDistance="0" MaxDistance="15" Entity1="0" Entity2="0" Entity3="0" Entity4="0" Entity5="0" Entity6="0" Entity7="0" Entity8="0" Entity9="0" Entity10="0" Entity11="0" Entity12="0" Entity13="0" Entity14="0" Entity15="0" Entity16="0"/>
+      </Node>
+      <Node Id="351" Class="Actor:LocalPlayer" pos="720,440,0">
+       <Inputs />
+      </Node>
+      <Node Id="352" Class="Entity:EntityId" pos="720,620,0" EntityGUID="aac53205-ac73-4ef3-a9d7-9426865b2461">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="353" Class="Time:Timer" pos="720,480,0">
+       <Inputs period="0.5" min="0" max="0" paused="0"/>
+      </Node>
+      <Node Id="354" Class="Math:BooleanTo" pos="520,480,0">
+       <Inputs />
+      </Node>
+      <Node Id="355" Class="Math:SetNumber" pos="1480,570,0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="356" Class="Math:Sub" pos="1250,480,0">
+       <Inputs A="15" B="0"/>
+      </Node>
+      <Node Id="357" Class="Math:Div" pos="1480,480,0">
+       <Inputs A="0" B="15"/>
+      </Node>
+      <Node Id="358" Class="Logic:Any" pos="1720,480,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="380" Name="Waterfall" Class="_commentbox" pos="230,392.93643,0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1926" Height="254"/>
+       <NodeSize Width="1926" Height="291.06442"/>
+      </Node>
+      <Node Id="381" Class="Time:Delay" pos="1250,570,0">
+       <Inputs delay="0.1" resetOnInput="0"/>
+      </Node>
+      <Node Id="383" Class="entity:AreaTrigger" pos="240,880,0" EntityGUID="4b58365f-2a5c-484b-b1d6-15b1290500f6">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="387" Class="Actor:KillPlayer" pos="520,880,0">
+       <Inputs />
+      </Node>
+      <Node Id="388" Name="." Class="_commentbox" pos="230,832.93555,0">
+       <Inputs TextSize="1" Color="1,0,0" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="412" Height="180"/>
+       <NodeSize Width="412" Height="217.06441"/>
+      </Node>
+      <Node Id="390" Name="Kill_the_player_if_he_goes_over_the_waterfall" Class="_comment" pos="240,820,0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="354" nodeOut="348" portIn="false" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="354" nodeOut="348" portIn="true" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="348" portIn="in" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="356" nodeOut="350" portIn="B" portOut="NearEntityDist" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="351" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="352" portIn="Entity1" portOut="Id" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="353" portIn="Check" portOut="out" enabled="1"/>
+      <Edge nodeIn="353" nodeOut="354" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="358" nodeOut="355" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="357" nodeOut="356" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="358" nodeOut="357" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="349" nodeOut="358" portIn="WaterDroplets_Amount" portOut="out" enabled="1"/>
+      <Edge nodeIn="355" nodeOut="381" portIn="set" portOut="out" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="383" portIn="Kill" portOut="Enter" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="94120496-e663-4eaa-9bd3-3a76b542bb44" Name="CoverSurface282" Pos="1659.8961,586.60846,50.005196" Rotate="0.99539626,0,0,-0.095845304" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="ab10d1d2-61d6-4e41-be86-f9c05e0cf0ba" Name="CoverSurface259" Pos="1608.0078,512.13525,52.954811" Rotate="0.99984771,0,0,0.017452737" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="12" LimitRight="12" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+   <Object Type="CoverSurface" Layer="AB06_Gameplay" LayerGUID="95366905-0344-4358-a6c7-4419e88779c5" Id="17d65fe1-1144-478d-af8f-0e5f2f5e0694" Name="CoverSurface272" Pos="1628.6843,550.91669,54.25771" Rotate="0.97236985,0,0,0.23344572" ColorRGB="11829830" SurfaceID="0" Sampler="Default" LimitDepth="0.75" LimitHeight="2.75" LimitLeft="2" LimitRight="2" SampleWidth="0.25" SampleHeight="0.25" MaxStartHeight="0.5" SimplifyThreshold="0.075000003"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

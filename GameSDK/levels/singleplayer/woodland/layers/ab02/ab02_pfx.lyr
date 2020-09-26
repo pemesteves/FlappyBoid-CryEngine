@@ -1,0 +1,36 @@
+<ObjectLayer>
+ <Layer Name="AB02_PFX" FullName="AB02/AB02_PFX" GUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="d37a661f-f97c-c662-b710-8112ef16e91d">
+  <LayerObjects>
+   <Object Type="ParticleEntity" Layer="AB02_PFX" LayerGUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Id="dc571b3e-aad6-4134-bcb6-df1df56ede44" Name="ParticleEffect54" Pos="1500.9866,878.5827,44.691875" Rotate="0.70710677,0.70710677,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.leaves.falling_leaves_b" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="AB02_PFX" LayerGUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Id="3888963e-1275-4ff5-82e5-00f96931518d" Name="ParticleEffect55" Pos="1507.6654,864.08667,45.405025" Rotate="0.70710677,0.70710677,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.leaves.falling_leaves_b" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="AB02_PFX" LayerGUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Id="40b0dd8d-6b06-41a1-9bc8-e9df3e7caf7a" Name="ParticleEffect53" Pos="1485.7277,865.05121,45.816475" Rotate="0.70710677,0.70710677,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.leaves.falling_leaves_b" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="AB02_PFX" LayerGUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Id="dc488577-cdd9-4b89-a678-cb599cf3a69f" Name="ParticleEffect56" Pos="1481.0884,872.84821,41.085537" Rotate="0.70710677,0.70710677,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.environment.dandelion" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="AB02_PFX" LayerGUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Id="a81b6f75-f8de-4b8f-afc8-deaa907d5f81" Name="ground_smoke_pfx5" Pos="1487.1581,857.7439,41.828548" Rotate="0.70710677,0.70710677,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.smoke.ground_smoke" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="AB02_PFX" LayerGUID="1e0fb987-9271-488e-8cfc-16ef474a2c86" Id="d6ab61b6-7617-4c85-b321-ded09204dd0d" Name="ParticleEffect57" Pos="1508.099,853.6651,42.295246" Rotate="0.70710677,0.70710677,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.environment.dandelion" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

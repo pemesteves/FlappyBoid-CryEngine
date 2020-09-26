@@ -1,0 +1,39 @@
+<Level WaterColor="16711680" SandboxVersion="1.0.0.0" ParticleVersion="28">
+ <View ViewerPos="52.007267,53.42284,17.650042" ViewerAngles="-0.0020001142,0,-0.03075538"/>
+ <Fog Fog="" Terrain="" EnvState="" VolFogShadows="" CloudShadows="" VolumetricCloud="" SkyBox="" Ocean="" OceanAnimation="" Moon="" DynTexSource="" Total_Illumination_v2=""/>
+ <Missions Current="Mission0">
+  <Mission Name="Mission0" Description="" PlayerEquipPack="" Script="" MissionTime="00:00">
+   <ObjectLayers LayerVersion="2" Current="room_01_assets" CurrentGUID="6af21ce5-0248-48f4-be37-7e6b2c6d6f98"/>
+   <Objects />
+   <Lighting SunRotation="240" SunHeight="80" Algorithm="3" Lighting="1" Shadows="1" ShadowIntensity="100" ILQuality="1" HemiSamplQuality="5" Longitude="90" DawnTime="355" DawnDuration="10" DuskTime="365" DuskDuration="10" SunVector="-0.51961535,-0.29999989,-0.79999995"/>
+   <Weapons>
+    <Used />
+    <Ammo />
+   </Weapons>
+   <MiniMap CenterX="512" CenterY="512" ExtendsX="512" ExtendsY="512" TexWidth="1024" TexHeight="1024"/>
+  </Mission>
+ </Missions>
+ <EntityPrototypesLibs>
+  <LevelLibrary Name="Level"/>
+ </EntityPrototypesLibs>
+ <ParticleLibs>
+  <LevelLibrary Name="Level" SandboxVersion="1.0.0.0">
+   <Particles Name="water.plant_drips">
+    <Params Count="1,Random=0.25" Continuous="true" ParticleLifeTime="2" FocusGravityDir="true" EmitAngle="Random=1" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/water/waterdrop_a.tif" SoftParticle="true" DiffuseLighting="2" DiffuseBacklighting="0.5" Size="0.1,Random=0.742574,ParticleAge=(v=0.953;t=0.176,v=0.66)" TailLength="0.05,ParticleAge=(;t=0.047,v=1),TailSteps=8" Speed="-0.1" AirResistance="1" Acceleration="z=-33"/>
+   </Particles>
+   <Particles Name="text.vr_intro">
+    <Params Count="1" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="5" PositionOffset="y=2" Facing="Free" Texture="textures/decals/text/vr_intro_diff.tif" Alpha="ParticleAge=(;t=0.082,v=1;t=0.918,v=1;t=1)" DiffuseLighting="2" DiffuseBacklighting="0.5" MoveRelativeEmitter="true" BindEmitterToCamera="true"/>
+    <Childs>
+     <Particles Name="background">
+      <Params Enabled="false" Count="1" Continuous="true" EmitterLifeTime="4.5" ParticleLifeTime="4.5" PositionOffset="y=3" Facing="Free" Geometry="objects/default/primitive_box.cgf" DiffuseLighting="2" DiffuseBacklighting="0.5" MoveRelativeEmitter="true" BindEmitterToCamera="true" InitAngles="x=90"/>
+     </Particles>
+    </Childs>
+   </Particles>
+  </LevelLibrary>
+  <Library Name="water"/>
+ </ParticleLibs>
+ <FlareLibs>
+  <LevelLibrary Name="Level"/>
+  <Library Name="sample_flares"/>
+ </FlareLibs>
+</Level>

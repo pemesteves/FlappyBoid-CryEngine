@@ -1,0 +1,20 @@
+<ObjectLayer>
+ <Layer Name="Lighting_Global" FullName="Lighting/Lighting_Global" GUID="b2dcf30e-a97c-4478-a2b8-ce7435a57442" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="9bd66cc1-a255-f9e8-3f2c-685b48ee9f06">
+  <LayerObjects>
+   <Object Type="EnvironmentProbe" Layer="Lighting_Global" LayerGUID="b2dcf30e-a97c-4478-a2b8-ce7435a57442" Id="81cc44cb-77cc-4dae-9f19-dce32cd6424b" Name="l_probe_global" Pos="1382.1097,915.48669,86.058167" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" GIMode="0" ViewDistRatio="100" HiddenInGame="0" EntityClass="EnvironmentLight" HasEntity="1">
+    <Properties bActive="1" BoxSizeX="5000" BoxSizeY="5000" BoxSizeZ="5000" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" bLinkToSkyColor="0" SortPriority="1" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="Textures/cubemaps/woodland/l_probe_global_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Lighting_Global" LayerGUID="b2dcf30e-a97c-4478-a2b8-ce7435a57442" Id="50b53a39-393c-406b-820b-fab1bd0d40a4" Name="l_staticshadowmap_min" Pos="900,300,-50" Rotate="0.50753838,0,0,0.86162919" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1">
+    <Properties />
+   </Object>
+   <Object Type="TagPoint" Layer="Lighting_Global" LayerGUID="b2dcf30e-a97c-4478-a2b8-ce7435a57442" Id="c7deee76-07f4-46b0-b1c0-e3c76e3a9cdc" Name="l_staticshadowmap_max" Pos="2000,1300,500" Rotate="0.50753838,0,0,0.86162919" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1">
+    <Properties />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

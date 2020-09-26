@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Texture" guid="d0d92d6c-12ab-4aea-f99e-25d7d2bc4119" source="LoadingAirfield.dds">
+ <Files>
+  <File path="LoadingAirfield.dds"/>
+ </Files>
+ <Details>
+  <Detail name="width">1024</Detail>
+  <Detail name="height">512</Detail>
+  <Detail name="mipCount">1</Detail>
+  <Detail name="width">1024</Detail>
+  <Detail name="height">512</Detail>
+  <Detail name="mipCount">1</Detail>
+ </Details>
+</AssetMetadata>

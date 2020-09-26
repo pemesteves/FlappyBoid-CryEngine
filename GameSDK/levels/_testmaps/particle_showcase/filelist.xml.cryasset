@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="33367988-1dc7-44cb-19ac-2546dcfd6d5b">
+ <Files>
+  <File path="filelist.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">download</Detail>
+ </Details>
+</AssetMetadata>

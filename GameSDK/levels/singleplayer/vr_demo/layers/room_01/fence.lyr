@@ -1,0 +1,18 @@
+<ObjectLayer>
+ <Layer Name="fence" FullName="room_01/fence" GUID="3fdbc757-fa68-4b19-9cda-9e660b79343f" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="737fdbcb-e167-1a0e-1ac9-a72f98c5ca1e">
+  <LayerObjects>
+   <Object Type="Brush" Layer="fence" LayerGUID="3fdbc757-fa68-4b19-9cda-9e660b79343f" Id="75f3622f-7cd5-4e92-beb5-4bd037abd1c4" Name="lattice_thin_a_16m1" Pos="32,36,15.05" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/architecture/fences/lattice/lattice_thin_a_16m.cgf" IgnoreVisareas="0" CastShadowMaps="0" GIMode="1" RainOccluder="0" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="4" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1024">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="fence" LayerGUID="3fdbc757-fa68-4b19-9cda-9e660b79343f" Id="17b53536-5f73-4c59-af8a-922b68cf2eea" Name="lattice_thin_a_16m2" Pos="32,28,15.05" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/architecture/fences/lattice/lattice_thin_a_16m.cgf" IgnoreVisareas="0" CastShadowMaps="0" GIMode="1" RainOccluder="0" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="5" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1024">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

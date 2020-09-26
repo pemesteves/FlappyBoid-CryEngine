@@ -1,0 +1,689 @@
+<ObjectLayer>
+ <Layer Name="Audio" FullName="Audio" GUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="a3baea91-5beb-422c-8d50-dc95b95ef3ea" Name="AS_hangar_02" Pos="2134.5,1373.625,36.125" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="129e54d3-fa76-240a-3bf5-cb0fe81c8bad">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.3747559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.749756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.624756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.624756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.499756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.999756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.749756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.374756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.999756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.624756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="31.124756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.874756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.624756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.624756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.874756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.374756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.749756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.4997559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="57"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.3747559,17.375,-0.025005341"/>
+     <Point Pos="10.749756,16.125,-0.025005341"/>
+     <Point Pos="13.624756,14.75,-0.025005341"/>
+     <Point Pos="21.624756,10.875,-0.025005341"/>
+     <Point Pos="24.499756,9.5,-0.025005341"/>
+     <Point Pos="26.999756,8.25,-0.025005341"/>
+     <Point Pos="29.749756,7,-0.025005341"/>
+     <Point Pos="32.374756,5.75,-0.025005341"/>
+     <Point Pos="34.999756,4.375,-0.025005341"/>
+     <Point Pos="36.624756,3.625,-0.025005341"/>
+     <Point Pos="31.124756,-8.375,-0.025005341"/>
+     <Point Pos="29.874756,-11.125,-0.025005341"/>
+     <Point Pos="28.624756,-13.75,-0.025005341"/>
+     <Point Pos="21.624756,-10,-0.025005341"/>
+     <Point Pos="18.874756,-8.625,-0.025005341"/>
+     <Point Pos="16.374756,-7.5,-0.025005341"/>
+     <Point Pos="13.749756,-6.25,-0.025005341"/>
+     <Point Pos="5.4997559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="4b0b95c8-0afc-4d22-b5e8-ee11533abddd"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="aa7ad73d-4216-419f-8a6f-94f89fad60be" Name="AAA_outdoor_ambience" Pos="2192.4998,1698,31.999998" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="open_ground" fEnvironmentDistance="5" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_runway" audioRTPCRtpc="area_fade_distance" fRtpcDistance="5" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaEntity" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="6d3791b2-f29e-48a9-a79f-b711300082c3" Name="AAE_rain_drips" Pos="2132.625,1555.375,36.499996" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaEntity" HasEntity="1">
+    <Properties bEnabled="0" audioEnvironmentEnvironment="" fEnvironmentDistance="2" fFadeDistance="15" eiOcclusionType="1" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="4b0b95c8-0afc-4d22-b5e8-ee11533abddd" Name="AAA_hangar_02" Pos="2133.6665,1375.0956,36.1325" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="04893f83-35c3-483e-a89d-749ef6bfb31e" Name="AAA_hangar_01" Pos="2151.1458,1414.3741,36.133644" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="cdc74540-ec61-48c8-bccf-30a6795072dc" Name="AAA_hangar_04" Pos="2064.5649,1226.8444,36.132439" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="4ee856ed-f781-4211-aa11-a596ea452c33" Name="AAA_hangar_08" Pos="2131.4343,1553.0067,36.132809" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="b4bb6351-7abe-4fec-9edd-bec6af2f8eb4" Name="AS_rain_drips" Pos="2131.4998,1556,35.999996" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="9.5" InnerFadeDistance="0" AreaId="0" GroupId="2" Priority="10" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="ce1eef81-7e01-33bd-3bcc-d4dc7625c180">
+      <Area Id="0" Group="2" Proximity="0" Priority="10" InnerFadeDistance="0" Height="9.5">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="0.87524414,0.375,-1.1249962" ObstructSound="0"/>
+        <Point Pos="-7.2497559,-16.5,-1.1249962" ObstructSound="0"/>
+        <Point Pos="-7.5,-15.5,0" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="0"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="56"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.87524414,0.375,-1.1249962"/>
+     <Point Pos="-7.2497559,-16.5,-1.1249962"/>
+     <Point Pos="-7.5,-15.5,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="6d3791b2-f29e-48a9-a79f-b711300082c3"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="1"/>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="09d019a1-34ae-4948-abb4-c6aca7598457" Name="ATS_jet_engine_idle" Pos="2155,1489,39.5" Rotate="0.97629601,0,0,-0.21643963" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioTriggerSpot" HasEntity="1">
+    <Properties bEnabled="1" eiOcclusionType="1" audioTriggerPlayTriggerName="Play_l_airfield_sfx_jet_engine_idle_loop" bSerializePlayState="1" audioTriggerStopTriggerName="Stop_jet_engine_idle" bTriggerAreasOnMove="0">
+     <Debug eiDrawActivityRadius="0" bDrawRandomizationArea="0"/>
+     <PlayMode eiBehaviour="0" fMaxDelay="2" fMinDelay="1" vectorRandomizationArea="0,0,0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="a5d2a4d5-35aa-411e-a8e4-290d2d5aee44" Name="AS_hangar_03" Pos="2083.75,1264.625,36.125" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="f48f480e-8892-d612-a393-25811c71de67">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.1247559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.499756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.374756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.249756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.749756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.499756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.124756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.749756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.374756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.874756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.374756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.624756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.124756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.2497559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="39"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.1247559,17.375,-0.025005341"/>
+     <Point Pos="10.499756,16.125,-0.025005341"/>
+     <Point Pos="13.374756,14.75,-0.025005341"/>
+     <Point Pos="21.374756,10.875,-0.025005341"/>
+     <Point Pos="24.249756,9.5,-0.025005341"/>
+     <Point Pos="26.749756,8.25,-0.025005341"/>
+     <Point Pos="29.499756,7,-0.025005341"/>
+     <Point Pos="32.124756,5.75,-0.025005341"/>
+     <Point Pos="34.749756,4.375,-0.025005341"/>
+     <Point Pos="36.374756,3.625,-0.025005341"/>
+     <Point Pos="30.874756,-8.375,-0.025005341"/>
+     <Point Pos="29.624756,-11.125,-0.025005341"/>
+     <Point Pos="28.374756,-13.75,-0.025005341"/>
+     <Point Pos="21.374756,-10,-0.025005341"/>
+     <Point Pos="18.624756,-8.625,-0.025005341"/>
+     <Point Pos="16.124756,-7.5,-0.025005341"/>
+     <Point Pos="13.499756,-6.25,-0.025005341"/>
+     <Point Pos="5.2497559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="293c9fdb-9b3d-45c9-8a33-b9fd4123ea72"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="Entity" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="c234430d-84b4-4d64-bb62-c6e9fd605e00" Name="Sound" Pos="2143.196,1466.6639,36.25" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <Properties />
+    <FlowGraph Description="" Group="Audio" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="44" Class="entity:AudioAreaEntity" pos="360,400,0" EntityGUID="824e9e6b-7d1f-4945-936e-49651ec533f2">
+       <Inputs entityId="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="46" Class="Audio:Rtpc" pos="620,380,0" EntityGUID="aa7ad73d-4216-419f-8a6f-94f89fad60be">
+       <Inputs entityId="0" audioRTPC_Name="l_airfield_wind_intensity" value="0"/>
+      </Node>
+      <Node Id="48" Name="Controls_wind_strength_on_SS_Air_Object" Class="_commentbox" pos="320,267.46509,0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="730" Height="230"/>
+       <NodeSize Width="859.59814" Height="294.79144"/>
+      </Node>
+      <Node Id="75" Class="Audio:Switch" pos="-130,570,0">
+       <Inputs entityId="0" audioSwitch_SwitchName="weather" audioSwitchState_SwitchStateName1="rain" audioSwitchState_SwitchStateName2="clear" audioSwitchState_SwitchStateName3="" audioSwitchState_SwitchStateName4=""/>
+      </Node>
+      <Node Id="91" Class="Mission:GameToken" pos="-550,660,0">
+       <Inputs gametoken_Token="Level.TimeOfDay.CurrentTimeIs15" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="96" Name="Time_Of_Day" Class="_commentbox" pos="-570,491.40125,0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="610" Height="220"/>
+       <NodeSize Width="610" Height="284.79144"/>
+      </Node>
+      <Node Id="97" Name="receive_game_token_from_FG_logic_in_Environment" Class="_comment" pos="-550,630,0"/>
+      <Node Id="99" Class="entity:AudioAreaEntity" pos="710,720,0" EntityGUID="6d3791b2-f29e-48a9-a79f-b711300082c3">
+       <Inputs entityId="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="101" Class="Audio:Rtpc" pos="990,700,0" EntityGUID="6d3791b2-f29e-48a9-a79f-b711300082c3">
+       <Inputs entityId="0" audioRTPC_Name="area_fade_distance" value="0"/>
+      </Node>
+      <Node Id="103" Class="Audio:Trigger" pos="990,800,0" EntityGUID="6d3791b2-f29e-48a9-a79f-b711300082c3">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="Play_l_airfield_amb_rain_corridor" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="104" Class="Mission:GameToken" pos="320,720,0">
+       <Inputs gametoken_Token="Level.TimeOfDay.CurrentTimeIs15" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="105" Name="Enable_AAE_via_Flowgraph_when_the_rain_is_starting" Class="_commentbox" pos="310,617.46484,0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1110" Height="260"/>
+       <NodeSize Width="1110" Height="324.79144"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="46" nodeOut="44" portIn="value" portOut="FadeValue" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="91" portIn="audioSwitchState_SetState2" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="91" portIn="audioSwitchState_SetState1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="101" nodeOut="99" portIn="value" portOut="FadeValue" enabled="1"/>
+      <Edge nodeIn="103" nodeOut="99" portIn="Play" portOut="OnFarToNear" enabled="1"/>
+      <Edge nodeIn="103" nodeOut="99" portIn="Stop" portOut="OnNearToFar" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="104" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="104" portIn="Enable" portOut="Equal True" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="293c9fdb-9b3d-45c9-8a33-b9fd4123ea72" Name="AAA_hangar_03" Pos="2082.0002,1266.2329,36.133656" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="f056fdb0-214d-4f41-ab32-1362996947cb" Name="AAA_hangar_07" Pos="2191.571,1460.6311,36.136383" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="a1ff2031-4423-46e4-b880-c60a0a64658d" Name="AS_hangar_04" Pos="2065.75,1225.5,36.125" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="dbe9eef8-99bb-4fe7-1137-45cc89a89d69">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.1247559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.499756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.374756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.249756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.749756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.499756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.124756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.749756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.374756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.874756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.374756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.624756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.124756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.2497559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="50"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.1247559,17.375,-0.025005341"/>
+     <Point Pos="10.499756,16.125,-0.025005341"/>
+     <Point Pos="13.374756,14.75,-0.025005341"/>
+     <Point Pos="21.374756,10.875,-0.025005341"/>
+     <Point Pos="24.249756,9.5,-0.025005341"/>
+     <Point Pos="26.749756,8.25,-0.025005341"/>
+     <Point Pos="29.499756,7,-0.025005341"/>
+     <Point Pos="32.124756,5.75,-0.025005341"/>
+     <Point Pos="34.749756,4.375,-0.025005341"/>
+     <Point Pos="36.374756,3.625,-0.025005341"/>
+     <Point Pos="30.874756,-8.375,-0.025005341"/>
+     <Point Pos="29.624756,-11.125,-0.025005341"/>
+     <Point Pos="28.374756,-13.75,-0.025005341"/>
+     <Point Pos="21.374756,-10,-0.025005341"/>
+     <Point Pos="18.624756,-8.625,-0.025005341"/>
+     <Point Pos="16.124756,-7.5,-0.025005341"/>
+     <Point Pos="13.499756,-6.25,-0.025005341"/>
+     <Point Pos="5.2497559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="cdc74540-ec61-48c8-bccf-30a6795072dc"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="AudioAreaEntity" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="824e9e6b-7d1f-4945-936e-49651ec533f2" Name="AAE_wind_intensity" Pos="2224.9998,1175.25,126.24999" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaEntity" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="" fEnvironmentDistance="5" fFadeDistance="100" eiOcclusionType="1" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="c859cb7f-835e-4ee3-a563-d08841bec0a3" Name="AS_wind_intensity" Pos="2241.3748,1073.875,125.72499" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="90" InnerFadeDistance="0" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="0" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="a9e8e0f6-bcb1-9af7-7717-3a704adb8874">
+      <Area Id="0" Group="0" Proximity="0" Priority="0" InnerFadeDistance="0" Height="90">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="-21.125,92.875,-1.5" ObstructSound="0"/>
+        <Point Pos="100.125,235.5,-0.375" ObstructSound="0"/>
+        <Point Pos="184.75,263.5,-4.125" ObstructSound="0"/>
+        <Point Pos="217.875,167.25,-1" ObstructSound="0"/>
+        <Point Pos="162.25,45.75,-3" ObstructSound="0"/>
+        <Point Pos="72.75,-11.125,-6.375" ObstructSound="0"/>
+        <Point Pos="0.625,0.125,0.375" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="0"/>
+       <Floor ObstructSound="0"/>
+       <Entities>
+        <Entity Id="43"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-21.125,92.875,-1.5"/>
+     <Point Pos="100.125,235.5,-0.375"/>
+     <Point Pos="184.75,263.5,-4.125"/>
+     <Point Pos="217.875,167.25,-1"/>
+     <Point Pos="162.25,45.75,-3"/>
+     <Point Pos="72.75,-11.125,-6.375"/>
+     <Point Pos="0.625,0.125,0.375"/>
+    </Points>
+    <Entities>
+     <Entity Id="824e9e6b-7d1f-4945-936e-49651ec533f2"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Side7="0" Side8="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="3f4de71a-e0ab-443a-858f-5b90f81eb664" Name="AAA_hangar_06" Pos="2074.8101,1431.3511,36.132809" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="940a254e-4ff6-48e8-b3ac-1af9272bf367" Name="AS_hangar_06" Pos="2074.5,1433.75,36.125" Rotate="4.3711388e-08,0,0,1" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="522b7195-8b44-64b1-96ad-8ba11091893b">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.1247559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.499756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.374756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.249756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.749756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.499756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.124756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.749756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.374756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.874756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.374756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.624756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.124756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.2497559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="49"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.1247559,17.375,-0.025005341"/>
+     <Point Pos="10.499756,16.125,-0.025005341"/>
+     <Point Pos="13.374756,14.75,-0.025005341"/>
+     <Point Pos="21.374756,10.875,-0.025005341"/>
+     <Point Pos="24.249756,9.5,-0.025005341"/>
+     <Point Pos="26.749756,8.25,-0.025005341"/>
+     <Point Pos="29.499756,7,-0.025005341"/>
+     <Point Pos="32.124756,5.75,-0.025005341"/>
+     <Point Pos="34.749756,4.375,-0.025005341"/>
+     <Point Pos="36.374756,3.625,-0.025005341"/>
+     <Point Pos="30.874756,-8.375,-0.025005341"/>
+     <Point Pos="29.624756,-11.125,-0.025005341"/>
+     <Point Pos="28.374756,-13.75,-0.025005341"/>
+     <Point Pos="21.374756,-10,-0.025005341"/>
+     <Point Pos="18.624756,-8.625,-0.025005341"/>
+     <Point Pos="16.124756,-7.5,-0.025005341"/>
+     <Point Pos="13.499756,-6.25,-0.025005341"/>
+     <Point Pos="5.2497559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="3f4de71a-e0ab-443a-858f-5b90f81eb664"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="4d280165-c99f-4c46-a37c-bf31eb23a9e2" Name="AS_hangar_07" Pos="2194.5,1463.5,36.087502" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="1152a0c5-cf53-d5b3-54c2-13fe06fed2ae">
+      <Area Id="0" Group="0" Proximity="0" Priority="0" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.1247559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.499756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.374756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.249756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.749756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.499756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.124756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.749756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.374756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.874756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.374756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.624756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.124756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.2497559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="40"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.1247559,17.375,-0.025005341"/>
+     <Point Pos="10.499756,16.125,-0.025005341"/>
+     <Point Pos="13.374756,14.75,-0.025005341"/>
+     <Point Pos="21.374756,10.875,-0.025005341"/>
+     <Point Pos="24.249756,9.5,-0.025005341"/>
+     <Point Pos="26.749756,8.25,-0.025005341"/>
+     <Point Pos="29.499756,7,-0.025005341"/>
+     <Point Pos="32.124756,5.75,-0.025005341"/>
+     <Point Pos="34.749756,4.375,-0.025005341"/>
+     <Point Pos="36.374756,3.625,-0.025005341"/>
+     <Point Pos="30.874756,-8.375,-0.025005341"/>
+     <Point Pos="29.624756,-11.125,-0.025005341"/>
+     <Point Pos="28.374756,-13.75,-0.025005341"/>
+     <Point Pos="21.374756,-10,-0.025005341"/>
+     <Point Pos="18.624756,-8.625,-0.025005341"/>
+     <Point Pos="16.124756,-7.5,-0.025005341"/>
+     <Point Pos="13.499756,-6.25,-0.025005341"/>
+     <Point Pos="5.2497559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="f056fdb0-214d-4f41-ab32-1362996947cb"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="9dc1e767-3ded-4ff6-867c-efc050c88e3c" Name="AAA_hangar_05" Pos="2045.8096,1387.267,36.133575" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="hangar" fEnvironmentDistance="6" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="Play_l_airfield_amb_hangar" audioRTPCRtpc="area_fade_distance" fRtpcDistance="6" audioTriggerStopTrigger="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="e3025ab9-113c-4d51-974c-25f9ab07cfc1" Name="AS_hangar_08" Pos="2132.5,1556.75,36.125" Rotate="4.3711388e-08,0,0,1" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="cfc144cb-8459-869e-8439-03fcd2f0dd5a">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.1247559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.499756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.374756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.249756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.749756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.499756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.124756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.749756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.374756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.874756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.374756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.624756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.124756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.2497559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="41"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.1247559,17.375,-0.025005341"/>
+     <Point Pos="10.499756,16.125,-0.025005341"/>
+     <Point Pos="13.374756,14.75,-0.025005341"/>
+     <Point Pos="21.374756,10.875,-0.025005341"/>
+     <Point Pos="24.249756,9.5,-0.025005341"/>
+     <Point Pos="26.749756,8.25,-0.025005341"/>
+     <Point Pos="29.499756,7,-0.025005341"/>
+     <Point Pos="32.124756,5.75,-0.025005341"/>
+     <Point Pos="34.749756,4.375,-0.025005341"/>
+     <Point Pos="36.374756,3.625,-0.025005341"/>
+     <Point Pos="30.874756,-8.375,-0.025005341"/>
+     <Point Pos="29.624756,-11.125,-0.025005341"/>
+     <Point Pos="28.374756,-13.75,-0.025005341"/>
+     <Point Pos="21.374756,-10,-0.025005341"/>
+     <Point Pos="18.624756,-8.625,-0.025005341"/>
+     <Point Pos="16.124756,-7.5,-0.025005341"/>
+     <Point Pos="13.499756,-6.25,-0.025005341"/>
+     <Point Pos="5.2497559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="4ee856ed-f781-4211-aa11-a596ea452c33"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="4d3220c0-2f0c-457e-9625-fbf932b6baae" Name="AS_hangar_05" Pos="2044.125,1387.125,36.075001" Rotate="0.70710683,0,0,-0.70710677" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="81a89aef-b576-395f-dce6-b9edb59c57f9">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.1247559,17.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.499756,16.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.374756,14.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,10.875,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.249756,9.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.749756,8.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.499756,7,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.124756,5.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.749756,4.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.374756,3.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.874756,-8.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,-11.125,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.374756,-13.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.374756,-10,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.624756,-8.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.124756,-7.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,-6.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.2497559,-2.375,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="53"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.1247559,17.375,-0.025005341"/>
+     <Point Pos="10.499756,16.125,-0.025005341"/>
+     <Point Pos="13.374756,14.75,-0.025005341"/>
+     <Point Pos="21.374756,10.875,-0.025005341"/>
+     <Point Pos="24.249756,9.5,-0.025005341"/>
+     <Point Pos="26.749756,8.25,-0.025005341"/>
+     <Point Pos="29.499756,7,-0.025005341"/>
+     <Point Pos="32.124756,5.75,-0.025005341"/>
+     <Point Pos="34.749756,4.375,-0.025005341"/>
+     <Point Pos="36.374756,3.625,-0.025005341"/>
+     <Point Pos="30.874756,-8.375,-0.025005341"/>
+     <Point Pos="29.624756,-11.125,-0.025005341"/>
+     <Point Pos="28.374756,-13.75,-0.025005341"/>
+     <Point Pos="21.374756,-10,-0.025005341"/>
+     <Point Pos="18.624756,-8.625,-0.025005341"/>
+     <Point Pos="16.124756,-7.5,-0.025005341"/>
+     <Point Pos="13.499756,-6.25,-0.025005341"/>
+     <Point Pos="5.2497559,-2.375,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="9dc1e767-3ded-4ff6-867c-efc050c88e3c"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="61de6dc3-ad81-463a-a09b-04f53123019b" Name="AS_hangar_01" Pos="2152.75,1412.375,36.125" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="8" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="20" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="4f552c46-6849-6d53-1592-c7caf7cae029">
+      <Area Id="0" Group="1" Proximity="0" Priority="20" InnerFadeDistance="0" Height="8">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="8.2497559,17.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="10.624756,16.375,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.499756,15,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.499756,11.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="24.374756,9.75,-0.025005341" ObstructSound="1"/>
+        <Point Pos="26.874756,8.5,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.624756,7.25,-0.025005341" ObstructSound="1"/>
+        <Point Pos="32.249756,6,-0.025005341" ObstructSound="0"/>
+        <Point Pos="34.874756,4.625,-0.025005341" ObstructSound="1"/>
+        <Point Pos="36.499756,3.875,-0.025005341" ObstructSound="1"/>
+        <Point Pos="30.999756,-8.125,-0.025005341" ObstructSound="0"/>
+        <Point Pos="29.749756,-10.875,-0.025005341" ObstructSound="1"/>
+        <Point Pos="28.499756,-13.5,-0.025005341" ObstructSound="1"/>
+        <Point Pos="21.499756,-9.75,-0.025005341" ObstructSound="0"/>
+        <Point Pos="18.749756,-8.375,-0.025005341" ObstructSound="1"/>
+        <Point Pos="16.249756,-7.25,-0.025005341" ObstructSound="0"/>
+        <Point Pos="13.624756,-6,-0.025005341" ObstructSound="1"/>
+        <Point Pos="5.3747559,-2.125,-0.025005341" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="1"/>
+       <Floor ObstructSound="1"/>
+       <Entities>
+        <Entity Id="44"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="8.2497559,17.625,-0.025005341"/>
+     <Point Pos="10.624756,16.375,-0.025005341"/>
+     <Point Pos="13.499756,15,-0.025005341"/>
+     <Point Pos="21.499756,11.125,-0.025005341"/>
+     <Point Pos="24.374756,9.75,-0.025005341"/>
+     <Point Pos="26.874756,8.5,-0.025005341"/>
+     <Point Pos="29.624756,7.25,-0.025005341"/>
+     <Point Pos="32.249756,6,-0.025005341"/>
+     <Point Pos="34.874756,4.625,-0.025005341"/>
+     <Point Pos="36.499756,3.875,-0.025005341"/>
+     <Point Pos="30.999756,-8.125,-0.025005341"/>
+     <Point Pos="29.749756,-10.875,-0.025005341"/>
+     <Point Pos="28.499756,-13.5,-0.025005341"/>
+     <Point Pos="21.499756,-9.75,-0.025005341"/>
+     <Point Pos="18.749756,-8.375,-0.025005341"/>
+     <Point Pos="16.249756,-7.25,-0.025005341"/>
+     <Point Pos="13.624756,-6,-0.025005341"/>
+     <Point Pos="5.3747559,-2.125,-0.025005341"/>
+    </Points>
+    <Entities>
+     <Entity Id="04893f83-35c3-483e-a89d-749ef6bfb31e"/>
+    </Entities>
+    <SoundData Side1="0" Side2="1" Side3="0" Side4="1" Side5="0" Side6="1" Side7="0" Side8="1" Side9="0" Side10="1" Side11="1" Side12="0" Side13="1" Side14="1" Side15="0" Side16="1" Side17="0" Side18="1" Side19="0" Roof="1" Floor="1"/>
+   </Object>
+   <Object Type="Shape" Layer="Audio" LayerGUID="c2b53f7b-b0df-4860-8718-e7a5d54d5e68" Id="75d987f0-8fe1-4c67-9c7c-de0cde51ad37" Name="AS_outdoor_ambience" Pos="2393.7498,1870.125,15.875" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="200" InnerFadeDistance="0" AreaId="0" GroupId="1" Priority="10" Closed="1" DisplayFilled="0" DisplaySoundInfo="1" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="3f5929c9-acbe-cdb5-89e2-2402930c6800">
+      <Area Id="0" Group="1" Proximity="0" Priority="10" InnerFadeDistance="0" Height="200">
+       <Points>
+        <Point Pos="0,0,0" ObstructSound="0"/>
+        <Point Pos="232.875,-236.5,0" ObstructSound="0"/>
+        <Point Pos="340.5,-792.125,0" ObstructSound="0"/>
+        <Point Pos="-120.5,-1157.875,0" ObstructSound="0"/>
+        <Point Pos="-697.87488,-951.875,0" ObstructSound="0"/>
+        <Point Pos="-951.87488,-733.375,0" ObstructSound="0"/>
+        <Point Pos="-976.37488,-38.75,0" ObstructSound="0"/>
+        <Point Pos="-519.49988,-144,0" ObstructSound="0"/>
+       </Points>
+       <Roof ObstructSound="0"/>
+       <Floor ObstructSound="0"/>
+       <Entities>
+        <Entity Id="46"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="232.875,-236.5,0"/>
+     <Point Pos="340.5,-792.125,0"/>
+     <Point Pos="-120.5,-1157.875,0"/>
+     <Point Pos="-697.87488,-951.875,0"/>
+     <Point Pos="-951.87488,-733.375,0"/>
+     <Point Pos="-976.37488,-38.75,0"/>
+     <Point Pos="-519.49988,-144,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="aa7ad73d-4216-419f-8a6f-94f89fad60be"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Side7="0" Side8="0" Roof="0" Floor="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

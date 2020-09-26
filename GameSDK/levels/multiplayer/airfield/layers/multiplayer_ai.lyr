@@ -1,0 +1,125 @@
+<ObjectLayer>
+ <Layer Name="Multiplayer_AI" FullName="Multiplayer_AI" GUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Name="Enemy.Easy_Rifle4" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="356e6ab4-84d5-4a1f-bfca-cb301c1e3ddc" Pos="1974.8126,1091.4047,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle11" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="749cdb58-7af9-476f-a5af-12520f6f23c0" Pos="1963.9369,1096.4762,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Type="NavigationArea" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="3cd44315-5469-46fa-8247-719420829315" Name="NavigationArea1" Pos="1946.5436,1086.3932,33.371891" Rotate="0.97629601,0,0,-0.21643965" ColorRGB="16743936" Height="8" Exclusion="0" DisplayFilled="0" HasEntity="0">
+    <AffectedAgentTypes MediumSizedCharacters="1" VehicleMedium="0"/>
+    <Properties />
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="37.491577,-0.053588867,0"/>
+     <Point Pos="37.778564,51.387329,0"/>
+     <Point Pos="-0.25085449,51.307983,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle5" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="171a182a-bec8-4e08-ba39-f22f0c16407b" Pos="1967.5621,1094.7856,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle10" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="ce16542d-fed0-4ca1-ac56-9f691cab8a68" Pos="1962.1243,1097.3214,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle12" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="eb51865c-4c91-477a-abd2-91a90dbfd705" Pos="1965.7495,1095.631,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle8" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="a5dc4e2a-bb77-46f2-b5af-294e6e43b670" Pos="1973,1092.25,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle2" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="b426ed4f-441b-4154-b336-06675521ca22" Pos="1978.4379,1089.7142,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle7" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="26f416ae-1f99-4335-9198-751c11cd1062" Pos="1971.1874,1093.0952,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle3" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="c68a04e0-739a-4730-bd2e-ac0e0839a66c" Pos="1976.6252,1090.5594,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle6" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="1a274c74-b163-49b3-93f4-88d08b4b0d61" Pos="1969.3748,1093.9404,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle9" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="f327e8bc-d11c-4065-8de3-4a813c5c0d1d" Pos="1960.3116,1098.1666,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Name="Enemy.Easy_Rifle1" Prototype="e2a39ed7-6c21-4819-a245-ca9241530d32" PrototypeLibrary="Characters" Type="EntityArchetype" Layer="Multiplayer_AI" LayerGUID="2fc61b1e-b29f-492f-97e8-40f7f040b11a" Id="17e29bc9-37b1-402e-9590-9271a4989bff" Pos="1980.2505,1088.869,36.125" Rotate="0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" HasEntity="1">
+    <Properties />
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

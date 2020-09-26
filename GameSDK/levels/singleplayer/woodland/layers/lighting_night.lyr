@@ -1,0 +1,14 @@
+<ObjectLayer>
+ <Layer Name="Lighting_Night" FullName="Lighting_Night" GUID="85f1b94b-8a0d-4dd1-9656-c8ca89412961" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="8141841">
+  <LayerObjects>
+   <Object Type="EnvironmentProbe" Layer="Lighting_Night" LayerGUID="85f1b94b-8a0d-4dd1-9656-c8ca89412961" Id="2f71a7ae-e085-41d3-850f-1e335f667fac" Name="l_probe_global_night" Pos="1433.1525,912.8783,40.236031" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" GIMode="0" ViewDistRatio="100" HiddenInGame="0" EntityClass="EnvironmentLight" HasEntity="1">
+    <Properties bActive="0" BoxSizeX="1000" BoxSizeY="1000" BoxSizeZ="1000" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="6" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" bLinkToSkyColor="0" SortPriority="100" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="Textures/cubemaps/woodland/l_probe_global_night_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
