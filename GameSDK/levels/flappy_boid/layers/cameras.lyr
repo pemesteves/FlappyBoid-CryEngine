@@ -1,0 +1,75 @@
+<ObjectLayer>
+ <Layer Name="cameras" FullName="cameras" GUID="74c41923-9170-7207-6c57-a6df5142b8e5" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601146284">
+  <LayerObjects>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="89194c9d-30f3-7b63-3c45-e0140f9f9c0e" Name="flappy_cam" Pos="508,490,100" Rotate="1,0,6.5192585e-09,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="35505aea-59dd-0eda-f2e8-9740eefda429" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="06e235a7-afd1-b2a6-3164-dcb48dcd152a" Name="cam_debug" Pos="500.13611,504.70367,33.847328" Rotate="0.022934556,-0.0031579875,-0.13637196,0.99038714" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="c698fb18-4028-d0a5-a7f1-dc9d4d0cb525" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="aa622058-5326-e53c-f920-9056e0c33194" Name="cam_game_over" Pos="462.8999,562.82428,33.968815" Rotate="0.70241749,-0.00070321525,-0.00071257283,0.71176451" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="93f1ea59-95ad-2e9f-728c-2d6f568123ef" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
