@@ -1,21 +1,12 @@
-<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1601116980">
+<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1601130803">
  <Files>
   <File path="flappy_boid/flappy_boid.level"/>
  </Files>
  <Dependencies>
   <Path usageCount="1">%ENGINE%/EngineAssets/Shading/default.env</Path>
-  <Path>%editor%/crydesigner_timeofday.xml</Path>
-  <Path>%editor%/leveltemplates.xml</Path>
-  <Path>%editor%/mapscreenshotsettings.xml</Path>
-  <Path>%editor%/mbttemplates.xml</Path>
-  <Path>%editor%/modellingpanel.xml</Path>
-  <Path>%editor%/objects/mtlobjects.mtl</Path>
-  <Path>%editor%/objects/mtlsphere.cgf</Path>
-  <Path>%editor%/objecttemplates.xml</Path>
-  <Path>%editor%/propertyenumerations.xml</Path>
-  <Path>%editor%/soundtemplates.xml</Path>
-  <Path>%editor%/toolbox.xml</Path>
-  <Path>%editor%/usertools.xml</Path>
+  <Path>%editor%/objects/gradf.dds</Path>
+  <Path>%editor%/objects/helper_illum.mtl</Path>
+  <Path>%editor%/objects/spawnpointhelper.cgf</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/highmemoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/livepreview.dds</Path>
@@ -541,7 +532,6 @@
   <Path>animations/mannequin/adb/selectiontags.xml</Path>
   <Path>animations/mannequin/adb/switchfiremodetarget.xml</Path>
   <Path>engineassets/textures/grey.dds</Path>
-  <Path>entities.xml</Path>
   <Path>libs/actiongraphs/sdk_explosion.xml</Path>
   <Path>libs/config/controller/buttonlayout_alt.xml</Path>
   <Path>libs/config/controller/buttonlayout_altlefty.xml</Path>
@@ -573,6 +563,7 @@
   <Path>libs/particles/weapon_fx.xml</Path>
   <Path>libs/particles/weather.xml</Path>
   <Path>libs/ui//texturepreload.xml</Path>
+  <Path>libs/ui/objectives_global.xml</Path>
   <Path>materials/decals/blood/human_body.mtl</Path>
   <Path>materials/decals/concrete/concrete_crack1.mtl</Path>
   <Path>materials/decals/concrete/concrete_crack2.mtl</Path>
@@ -590,84 +581,11 @@
   <Path>materials/decals/rock/rock_sandy.mtl</Path>
   <Path>materials/decals/snow/snow_melt.mtl</Path>
   <Path>materials/decals/wood/wood_planks.mtl</Path>
-  <Path>materials/generic/displacement/animalstripes.mtl</Path>
-  <Path>materials/generic/glass/advert_sign_glass.mtl</Path>
-  <Path>materials/generic/metal/barbwire.mtl</Path>
-  <Path>materials/generic/wood/barrel_wood.mtl</Path>
-  <Path>materials/generic/wood/burned_wood_a.mtl</Path>
-  <Path>materials/generic/wood/floor_wood_4.mtl</Path>
-  <Path>materials/generic/wood/pine_timber.mtl</Path>
-  <Path>materials/generic/wood/plywood_dark.mtl</Path>
-  <Path>materials/generic/wood/wall_wood_3.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_a.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_a_blue.mtl</Path>
   <Path>materials/generic/wood/wood_beams_a_red.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_b.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_burnt.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_c.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_thin_a.mtl</Path>
-  <Path>materials/generic/wood/wood_beams_tiled_raft.mtl</Path>
-  <Path>materials/generic/wood/wood_bleached_a.mtl</Path>
-  <Path>materials/generic/wood/wood_dirt_b.mtl</Path>
-  <Path>materials/generic/wood/wood_fine_a.mtl</Path>
-  <Path>materials/generic/wood/wood_fine_a_blend.mtl</Path>
-  <Path>materials/generic/wood/wood_fine_a_blend_planks.mtl</Path>
-  <Path>materials/generic/wood/wood_fine_a_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_fine_b.mtl</Path>
-  <Path>materials/generic/wood/wood_fine_b_rotten.mtl</Path>
-  <Path>materials/generic/wood/wood_flat_a.mtl</Path>
-  <Path>materials/generic/wood/wood_floor_a.mtl</Path>
-  <Path>materials/generic/wood/wood_light_coastal.mtl</Path>
-  <Path>materials/generic/wood/wood_painted_red.mtl</Path>
-  <Path>materials/generic/wood/wood_painted_red_damage.mtl</Path>
-  <Path>materials/generic/wood/wood_painted_red_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_a.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_a_blue.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_a_blue_damage.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_a_blue_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_b.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_b_red.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_b_red_damage.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_b_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_c.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_c_damage.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_c_damage_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_c_light.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_large_c_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_planks_square_e.mtl</Path>
-  <Path>materials/generic/wood/wood_rough_a.mtl</Path>
-  <Path>materials/generic/wood/wood_rough_b.mtl</Path>
-  <Path>materials/generic/wood/wood_rough_b_wet.mtl</Path>
-  <Path>materials/generic/wood/wood_rough_coastal.mtl</Path>
-  <Path>materials/generic/wood/wood_scots_pine_a.mtl</Path>
-  <Path>materials/generic/wood/wood_scots_pine_a_stripped.mtl</Path>
-  <Path>materials/generic/wood/wood_sheets.mtl</Path>
-  <Path>materials/generic/wood/wood_sheets_mossy.mtl</Path>
-  <Path>materials/generic/wood/wood_sheets_ruff.mtl</Path>
-  <Path>materials/generic/wood/wood_trunk_oak_tree_a.mtl</Path>
-  <Path>materials/generic/wood/wood_trunk_oak_tree_b.mtl</Path>
-  <Path>materials/generic/wood/wooden_planks_set_a.mtl</Path>
-  <Path>materials/generic/wood/wooden_planks_set_b.mtl</Path>
-  <Path>materials/generic/wood/wooden_planks_set_c.mtl</Path>
-  <Path>materials/hud/hud3d.mtl</Path>
-  <Path>materials/invisible.mtl</Path>
-  <Path>materials/material_default.mtl</Path>
-  <Path>materials/material_layers_default.mtl</Path>
-  <Path>materials/material_terrain_default.mtl</Path>
   <Path>materials/particle/exposion_normal.mtl</Path>
   <Path>materials/particle/refraction.mtl</Path>
   <Path>materials/particle/spec_water.mtl</Path>
   <Path>materials/particle/water_deformation_a.mtl</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_broken.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_broken_lod1.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_broken_lod2.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_connector.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_connector_lod1.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_front.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_front_lod1.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_main.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_main_lod1.cgf</Path>
-  <Path>objects/architecture/bridges/wooden_bridge/sb_wooden_bridge_main_lod2.cgf</Path>
   <Path>objects/characters/human/generic/skeleton_male_generic.mtl</Path>
   <Path>objects/characters/human/sdk_player/head_a.mtl</Path>
   <Path>objects/characters/human/sdk_player/sdk_player.cdf</Path>
@@ -676,7 +594,6 @@
   <Path>objects/default/explosion_shape/tree_broken_shape2.cgf</Path>
   <Path>objects/default/explosion_shape/tree_broken_shape3.cgf</Path>
   <Path>objects/default/explosion_shape/trunk_splinters_a.cgf</Path>
-  <Path>objects/default/primitive_box.cgf</Path>
   <Path>objects/default/primitive_sphere.cgf</Path>
   <Path>objects/effects/muzzle_flash_standard.cgf</Path>
   <Path>objects/effects/natural/particle_green_leafs_a.cgf</Path>
@@ -688,39 +605,12 @@
   <Path>objects/effects/natural/particle_rock.mtl</Path>
   <Path>objects/effects/natural/particle_rock_a.cgf</Path>
   <Path>objects/effects/tracer_standard_new.cgf</Path>
-  <Path>objects/hud/hud_plane_a.cgf</Path>
-  <Path>objects/hud/hud_plane_c.cgf</Path>
-  <Path>objects/hud/hud_plane_d.cgf</Path>
-  <Path>objects/hud/hud_plane_e.cgf</Path>
-  <Path>objects/hud/hud_plane_f.cgf</Path>
-  <Path>objects/hud/hud_plane_g.cgf</Path>
-  <Path>objects/hud/hud_plane_h.cgf</Path>
-  <Path>objects/hud/hud_plane_i.cgf</Path>
-  <Path>objects/hud/hud_plane_j.cgf</Path>
-  <Path>objects/natural/bushes/bush_round_leaf/bush_round_leaf_a.cgf</Path>
-  <Path>objects/natural/bushes/bush_round_leaf/bush_round_leaf_a_lod1.cgf</Path>
-  <Path>objects/natural/rocks/beach_rocks/beach_rock_big_a_con.cgf</Path>
-  <Path>objects/natural/rocks/beach_rocks/beach_rock_big_a_con_lod1.cgf</Path>
-  <Path>objects/natural/rocks/beach_rocks/beach_rock_big_a_con_lod2.cgf</Path>
   <Path>objects/natural/rocks/erosion/landslide_rock_small_a.cgf</Path>
-  <Path>objects/natural/rocks/granite_rocks/granite_rock_group_small_a.cgf</Path>
-  <Path>objects/natural/rocks/granite_rocks/granite_rock_group_small_a_lod1.cgf</Path>
   <Path>objects/natural/rocks/river_rocks/dry_pattern_a.cgf</Path>
   <Path>objects/natural/rocks/river_rocks/dry_pattern_a_lod1.cgf</Path>
-  <Path>objects/natural/trees/aspen/a_aspen_a_group.cgf</Path>
-  <Path>objects/natural/trees/aspen/a_aspen_a_group_lod1.cgf</Path>
-  <Path>objects/natural/trees/aspen/a_aspen_a_group_lod2.cgf</Path>
   <Path>objects/natural/trees/explosion_shape/tree_broken_shape.mtl</Path>
   <Path>objects/natural/trees/explosion_shape/tree_splinter.cgf</Path>
   <Path>objects/natural/trees/explosion_shape/trunk_splinters.mtl</Path>
-  <Path>objects/natural/trees/pine/pine.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_large.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_large_lod1.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_large_lod2.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_large_lod3.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_lod1.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_lod2.cgf</Path>
-  <Path>objects/natural/trees/pine/pine_lod3.cgf</Path>
   <Path>objects/natural/trees/thin_leave_tree/branches.mtl</Path>
   <Path>objects/natural/trees/thin_leave_tree/forest_ground_branches_1_h.cgf</Path>
   <Path>objects/natural/trees/thin_leave_tree/forest_ground_branches_1_h_lod1.cgf</Path>
@@ -754,13 +644,13 @@
   <Path>objects/weapons/shotgun/shotgun_tp.mtl</Path>
   <Path>objects/weapons/shotgun/shotgun_tp_lod1.cgf</Path>
   <Path>objects/weapons/shotgun/shotgun_tp_lod2.cgf</Path>
-  <Path>prefabs/hud.xml</Path>
   <Path>scripts/ai/factions.xml</Path>
   <Path>scripts/ai/tacticalpositionmanager.lua</Path>
   <Path>scripts/ai/tps/humangruntqueries.lua</Path>
   <Path>scripts/ai/tps/sdkgruntqueries.lua</Path>
   <Path>scripts/ai/tps/sharedqueries.lua</Path>
   <Path>scripts/entities/ai/tagpoint.lua</Path>
+  <Path>scripts/entities/others/spawnpoint.lua</Path>
   <Path>scripts/entities/physics/rigidbodyex.lua</Path>
   <Path>scripts/physics.lua</Path>
   <Path>textures/defaults/default_mat_warning.dds</Path>
@@ -776,8 +666,6 @@
   <Path>textures/sprites/glow/31.dds</Path>
   <Path>textures/sprites/glow/glow.dds</Path>
   <Path>textures/sprites/glow/glow_a.dds</Path>
-  <Path>textures/sprites/hud/dirt1_bullet.dds</Path>
-  <Path>textures/sprites/hud/dirt3_bullet.dds</Path>
   <Path>textures/sprites/leaves/leaf_tiled_a.dds</Path>
   <Path>textures/sprites/leaves/leaf_tiled_b.dds</Path>
   <Path>textures/sprites/muzzleflash/muzzle_front_a.dds</Path>

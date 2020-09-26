@@ -1,7 +1,7 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601116919">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601130974">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Name="flappy_boid" Pos="500,500,100" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/wood/wood_beams_a_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Name="flappy_boid" Pos="500,500,100.0718" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/wood/wood_beams_a_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -22,6 +22,29 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="89194c9d-30f3-7b63-3c45-e0140f9f9c0e" Name="flappy_cam" Pos="508,490,100" Rotate="1,0,6.5192585e-09,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="35505aea-59dd-0eda-f2e8-9740eefda429" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c902fcc9-64e5-2204-3295-723547ab723d" Name="FG_main" Pos="512.34393,496.46811,31.999268" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
     <FlowGraph Description="" Group="main" enabled="1" MultiPlayer="ClientServer">
@@ -38,14 +61,97 @@
       <Node Id="8" Class="Physics:ActionImpulse" pos="522,-360,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
        <Inputs entityId="0" impulse="0,0,200" angImpulse="0,0,0" Point="0,0,0" partIndex="0" CoordSys="1"/>
       </Node>
+      <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
+      <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
+      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-108,-551.3808,0">
+       <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="846" Height="270"/>
+       <NodeSize Width="853.4292" Height="407.38116"/>
+      </Node>
+      <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
+       <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
+      </Node>
+      <Node Id="15" Class="Inventory:ItemRemoveAll" pos="450,108,0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="16" Class="Input:ActionMaps:ActionFilter" pos="414,270,0">
+       <Inputs actionFilter_Filter="no_move"/>
+      </Node>
+      <Node Id="17" Class="Debug:ConsoleVariable" pos="432,450,0">
+       <Inputs CVar="hud_hide" Value="1"/>
+      </Node>
+      <Node Id="19" Name="hide_the_player_HUD" Class="_comment" pos="432,432,0"/>
+      <Node Id="20" Name="stop_the_FPS_player_from_moving" Class="_comment" pos="414,252,0"/>
+      <Node Id="21" Name="disarm_FPS_player" Class="_comment" pos="450,90,0"/>
+      <Node Id="22" Class="Camera:View" pos="126,360,0" EntityGUID="06e235a7-afd1-b2a6-3164-dcb48dcd152a">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,-65.380882,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="598" Height="866"/>
+       <NodeSize Width="598" Height="1003.3812"/>
+      </Node>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="1512,-342,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="26" Class="Entity:EntityPos" pos="918,-342,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="28" Class="Vec3:AddVec3" pos="1224,-324,0">
+       <Inputs A="0,0,0" B="8,-10,0"/>
+      </Node>
+      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-533.60162,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="342"/>
+       <NodeSize Width="1026.5737" Height="479.38116"/>
+      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="7" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="2" portIn="Spawn" portOut="output" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="2" portIn="Enable" portOut="output" enabled="0"/>
+      <Edge nodeIn="23" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
       <Edge nodeIn="7" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
       <Edge nodeIn="8" nodeOut="7" portIn="activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="14" portIn="Activate" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="14" portIn="Enable" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="14" portIn="Set" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="28" nodeOut="26" portIn="A" portOut="pos" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="28" portIn="Destination" portOut="out" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="28" portIn="Start" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="06e235a7-afd1-b2a6-3164-dcb48dcd152a" Name="cam_debug" Pos="500.13611,504.70367,33.847328" Rotate="0.022934556,-0.0031579875,-0.13637196,0.99038714" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="c698fb18-4028-d0a5-a7f1-dc9d4d0cb525" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ecb3d852-af27-a5df-a0d3-3986bc61d890" Name="SpawnPoint_player" Pos="500,500,32" Rotate="1,0,0,-6.7599801e-11" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="SpawnPoint" HasEntity="1">
+    <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
    </Object>
   </LayerObjects>
  </Layer>
