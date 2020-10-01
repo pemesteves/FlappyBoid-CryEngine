@@ -1,14 +1,11 @@
-<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1601146308">
+<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1601551682">
  <Files>
   <File path="flappy_boid/flappy_boid.level"/>
  </Files>
  <Dependencies>
   <Path usageCount="1">%ENGINE%/EngineAssets/Shading/default.env</Path>
   <Path>%editor%/objects/gradf.dds</Path>
-  <Path>%editor%/objects/helper.mtl</Path>
   <Path>%editor%/objects/helper_illum.mtl</Path>
-  <Path>%editor%/objects/mtlobjects.mtl</Path>
-  <Path>%editor%/objects/mtlsphere.cgf</Path>
   <Path>%editor%/objects/spawnpointhelper.cgf</Path>
   <Path>%editor%/objects/t.cgf</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
@@ -24,7 +21,6 @@
   <Path>%engine%/engineassets/materials/material_terrain_default.mtl</Path>
   <Path>%engine%/engineassets/materials/water/ocean_default.mtl</Path>
   <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
-  <Path>%engine%/engineassets/objects/primitive_sphere.cgf</Path>
   <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
   <Path>%engine%/engineassets/textures/grey.dds</Path>
   <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
@@ -535,8 +531,18 @@
   <Path>animations/mannequin/adb/playertags.xml</Path>
   <Path>animations/mannequin/adb/selectiontags.xml</Path>
   <Path>animations/mannequin/adb/switchfiremodetarget.xml</Path>
+  <Path>editor/resourcecache/materials/cloudtiling_diff.dds</Path>
   <Path>engineassets/textures/grey.dds</Path>
-  <Path>entities.xml</Path>
+  <Path>libs/actiongraphs/sdk_explosion.xml</Path>
+  <Path>libs/config/controller/buttonlayout_alt.xml</Path>
+  <Path>libs/config/controller/buttonlayout_altlefty.xml</Path>
+  <Path>libs/config/controller/buttonlayout_default.xml</Path>
+  <Path>libs/config/controller/buttonlayout_lefty.xml</Path>
+  <Path>libs/config/controller/sticklayout_default.xml</Path>
+  <Path>libs/config/controller/sticklayout_lefty.xml</Path>
+  <Path>libs/config/controller/sticklayout_legacy.xml</Path>
+  <Path>libs/config/controller/sticklayout_legacylefty.xml</Path>
+  <Path>libs/config/defaultprofile.xml</Path>
   <Path>libs/entityarchetypes/animals.xml</Path>
   <Path>libs/entityarchetypes/characters.xml</Path>
   <Path>libs/entityarchetypes/lights.xml</Path>
@@ -550,17 +556,41 @@
   <Path>libs/materialeffects/flowgraphs/player_damage.xml</Path>
   <Path>libs/materialeffects/flowgraphs/player_death.xml</Path>
   <Path>libs/materialeffects/flowgraphs/water_bullet_hit.xml</Path>
+  <Path>libs/particles/breakable_objects.xml</Path>
   <Path>libs/particles/bullet.xml</Path>
   <Path>libs/particles/collisions.xml</Path>
+  <Path>libs/particles/melee.xml</Path>
+  <Path>libs/particles/vehicles.xml</Path>
   <Path>libs/particles/weapon_fx.xml</Path>
+  <Path>libs/particles/weather.xml</Path>
   <Path>libs/ui//texturepreload.xml</Path>
   <Path>libs/ui/objectives_global.xml</Path>
+  <Path>materials/cloudtiling_diff.dds</Path>
+  <Path>materials/decals/blood/human_body.mtl</Path>
+  <Path>materials/decals/concrete/concrete_crack1.mtl</Path>
+  <Path>materials/decals/concrete/concrete_crack2.mtl</Path>
+  <Path>materials/decals/concrete/concrete_crack3.mtl</Path>
+  <Path>materials/decals/concrete/concrete_plain.mtl</Path>
+  <Path>materials/decals/default_blast.mtl</Path>
+  <Path>materials/decals/dirt/ground.mtl</Path>
+  <Path>materials/decals/dirt/terrain_soil.mtl</Path>
+  <Path>materials/decals/footsteps/footstep_dirt.mtl</Path>
+  <Path>materials/decals/glass/glass.mtl</Path>
+  <Path>materials/decals/glass/glass_b.mtl</Path>
+  <Path>materials/decals/ice/ice.mtl</Path>
+  <Path>materials/decals/metal/metal_tin.mtl</Path>
+  <Path>materials/decals/rock/rock_hard.mtl</Path>
+  <Path>materials/decals/rock/rock_sandy.mtl</Path>
+  <Path>materials/decals/snow/snow_melt.mtl</Path>
+  <Path>materials/decals/wood/wood_planks.mtl</Path>
   <Path>materials/generic/concrete/roof_tar_paper_01.mtl</Path>
-  <Path>materials/generic/wood/plywood_dark.mtl</Path>
   <Path>materials/generic/wood/wall_wood_3.mtl</Path>
   <Path>materials/generic/wood/wood_beams_a_red.mtl</Path>
+  <Path>materials/moving_sky_bg.mtl</Path>
+  <Path>materials/particle/exposion_normal.mtl</Path>
   <Path>materials/particle/refraction.mtl</Path>
   <Path>materials/particle/spec_water.mtl</Path>
+  <Path>materials/particle/water_deformation_a.mtl</Path>
   <Path>objects/characters/human/generic/skeleton_male_generic.mtl</Path>
   <Path>objects/characters/human/sdk_player/head_a.mtl</Path>
   <Path>objects/characters/human/sdk_player/sdk_player.cdf</Path>
@@ -572,9 +602,25 @@
   <Path>objects/default/primitive_box.cgf</Path>
   <Path>objects/default/primitive_sphere.cgf</Path>
   <Path>objects/effects/muzzle_flash_standard.cgf</Path>
+  <Path>objects/effects/natural/particle_green_leafs_a.cgf</Path>
+  <Path>objects/effects/natural/particle_green_leafs_b.cgf</Path>
+  <Path>objects/effects/natural/particle_green_leafs_d.cgf</Path>
+  <Path>objects/effects/natural/particle_ice_a.cgf</Path>
+  <Path>objects/effects/natural/particle_ice_a_small.cgf</Path>
+  <Path>objects/effects/natural/particle_ice_b.cgf</Path>
+  <Path>objects/effects/natural/particle_rock.mtl</Path>
+  <Path>objects/effects/natural/particle_rock_a.cgf</Path>
   <Path>objects/effects/tracer_standard_new.cgf</Path>
+  <Path>objects/natural/rocks/erosion/landslide_rock_small_a.cgf</Path>
+  <Path>objects/natural/rocks/river_rocks/dry_pattern_a.cgf</Path>
+  <Path>objects/natural/rocks/river_rocks/dry_pattern_a_lod1.cgf</Path>
   <Path>objects/natural/trees/explosion_shape/tree_broken_shape.mtl</Path>
+  <Path>objects/natural/trees/explosion_shape/tree_splinter.cgf</Path>
   <Path>objects/natural/trees/explosion_shape/trunk_splinters.mtl</Path>
+  <Path>objects/natural/trees/thin_leave_tree/branches.mtl</Path>
+  <Path>objects/natural/trees/thin_leave_tree/forest_ground_branches_1_h.cgf</Path>
+  <Path>objects/natural/trees/thin_leave_tree/forest_ground_branches_1_h_lod1.cgf</Path>
+  <Path>objects/props/flappy_boid/background_box.cgf</Path>
   <Path>objects/props/flappy_boid/pipe.cgf</Path>
   <Path>objects/props/misc/3dtext/a.cgf</Path>
   <Path>objects/props/misc/3dtext/e.cgf</Path>
@@ -613,27 +659,68 @@
   <Path>objects/weapons/shotgun/shotgun_tp.mtl</Path>
   <Path>objects/weapons/shotgun/shotgun_tp_lod1.cgf</Path>
   <Path>objects/weapons/shotgun/shotgun_tp_lod2.cgf</Path>
+  <Path>scripts/ai/factions.xml</Path>
+  <Path>scripts/ai/tacticalpositionmanager.lua</Path>
+  <Path>scripts/ai/tps/humangruntqueries.lua</Path>
+  <Path>scripts/ai/tps/sdkgruntqueries.lua</Path>
+  <Path>scripts/ai/tps/sharedqueries.lua</Path>
   <Path>scripts/entities/ai/tagpoint.lua</Path>
   <Path>scripts/entities/others/spawnpoint.lua</Path>
   <Path>scripts/entities/physics/rigidbodyex.lua</Path>
   <Path>scripts/entities/triggers/proximitytrigger.lua</Path>
   <Path>scripts/physics.lua</Path>
+  <Path>textures/defaults/default_mat_warning.dds</Path>
   <Path>textures/defaults/white.dds</Path>
+  <Path>textures/sprites/blood/blood_anim_a.dds</Path>
+  <Path>textures/sprites/blood/blood_tiled_a.dds</Path>
   <Path>textures/sprites/dirt/dirt_a.dds</Path>
+  <Path>textures/sprites/dirt/dirt_b.dds</Path>
+  <Path>textures/sprites/dirt/dirt_c.dds</Path>
+  <Path>textures/sprites/fire/explosion_a.dds</Path>
+  <Path>textures/sprites/fire/explosion_add.dds</Path>
   <Path>textures/sprites/fire/fireball_anim_b.dds</Path>
+  <Path>textures/sprites/glass/glass_tiled.dds</Path>
   <Path>textures/sprites/glow/31.dds</Path>
+  <Path>textures/sprites/glow/glow.dds</Path>
   <Path>textures/sprites/glow/glow_a.dds</Path>
+  <Path>textures/sprites/leaves/leaf_tiled_a.dds</Path>
+  <Path>textures/sprites/leaves/leaf_tiled_b.dds</Path>
   <Path>textures/sprites/muzzleflash/muzzle_front_a.dds</Path>
   <Path>textures/sprites/muzzleflash/muzzle_side_a.dds</Path>
   <Path>textures/sprites/muzzleflash/muzzle_tiled_a.dds</Path>
   <Path>textures/sprites/muzzleflash/muzzle_tiled_b.dds</Path>
+  <Path>textures/sprites/smoke/anm_smoke_desat.dds</Path>
+  <Path>textures/sprites/smoke/around.dds</Path>
+  <Path>textures/sprites/smoke/smoke_a.dds</Path>
+  <Path>textures/sprites/smoke/smoke_b.dds</Path>
+  <Path>textures/sprites/smoke/smoke_roll_animated2.dds</Path>
+  <Path>textures/sprites/smoke/smoke_tiled_b.dds</Path>
+  <Path>textures/sprites/smoke/smoke_tiled_c.dds</Path>
   <Path>textures/sprites/smoke/smoke_trail_a.dds</Path>
+  <Path>textures/sprites/smoke/smoke_white_tiled2_whispy.dds</Path>
+  <Path>textures/sprites/smoke/spore_a.dds</Path>
+  <Path>textures/sprites/smoke/spore_white.dds</Path>
+  <Path>textures/sprites/snow/blast_fall_ice.dds</Path>
+  <Path>textures/sprites/snow/snow_sheet_a.dds</Path>
+  <Path>textures/sprites/sparks/spark_a.dds</Path>
+  <Path>textures/sprites/sparks/spark_mono_a.dds</Path>
+  <Path>textures/sprites/sparks/spark_sheet_a.dds</Path>
   <Path>textures/sprites/sparks/spark_stretched1.dds</Path>
+  <Path>textures/sprites/sparks/spark_tiled_a.dds</Path>
+  <Path>textures/sprites/sparks/spark_tiled_b.dds</Path>
   <Path>textures/sprites/stones/stones_tiled.dds</Path>
+  <Path>textures/sprites/stones/stones_tiled_a.dds</Path>
+  <Path>textures/sprites/water/heli_wake.dds</Path>
   <Path>textures/sprites/water/ripple_a.dds</Path>
+  <Path>textures/sprites/water/shockwave_grey.dds</Path>
+  <Path>textures/sprites/water/underwater_tiled_a.dds</Path>
+  <Path>textures/sprites/water/water_a.dds</Path>
+  <Path>textures/sprites/water/water_anim_a.dds</Path>
   <Path>textures/sprites/water/water_b.dds</Path>
+  <Path>textures/sprites/water/water_splash3.dds</Path>
   <Path>textures/sprites/water/water_tiled_b.dds</Path>
   <Path>textures/sprites/water/waterdrop_a.dds</Path>
+  <Path>textures/sprites/wood/wood_chip_tiled.dds</Path>
   <Path>textures/weapons/assault_blurmask.dds</Path>
   <Path>textures/weapons/damage_blurmask.dds</Path>
   <Path>textures/weapons/ironzoom_blurmask.dds</Path>

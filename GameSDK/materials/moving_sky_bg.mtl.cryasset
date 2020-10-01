@@ -1,0 +1,9 @@
+<AssetMetadata version="0" type="Material" guid="6bf6ffb8-5a17-ffc9-bbd1-460d10a064d5">
+ <Files>
+  <File path="moving_sky_bg.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">0</Detail>
+ </Details>
+</AssetMetadata>

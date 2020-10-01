@@ -1,7 +1,33 @@
 <ObjectLayer>
- <Layer Name="pipes" FullName="pipes" GUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601146190">
+ <Layer Name="pipes" FullName="pipes" GUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601551602">
   <LayerObjects>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="19acb9ee-4753-0a39-0324-9c2d43b6d4e6" Name="pipe1_top-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="40d67ded-c1bc-93a1-0f1c-7488021d5d0b" Name="score_trigger1-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="e4b2a65a-94a9-2f10-263c-bd59dc8c7203" Name="pipe1_top" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -42,32 +68,44 @@
       <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
      </Physics>
     </Properties>
-   </Object>
-   <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="e4b2a65a-94a9-2f10-263c-bd59dc8c7203" Name="pipe1_top" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
-    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <AI bUsedAsDynamicObstacle="1"/>
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="0"/>
-     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
-      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
-      <CGFPropsOverride player_can_break="">
-       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
-       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
-       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
-      </CGFPropsOverride>
-      <CollisionFiltering>
-       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
-       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
-      </CollisionFiltering>
-      <ForeignData bMovingPlatform="0"/>
-      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
-     </Physics>
-    </Properties>
-   </Object>
-   <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="40d67ded-c1bc-93a1-0f1c-7488021d5d0b" Name="score_trigger1-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
-    <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
-     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
-    </Properties>
+    <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-576,-162,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="18,-378,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="4" Class="Entity:GetPos" pos="-324,-378,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:BeamEntity" pos="450,-162,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="7" Class="Entity:GetPos" pos="-126,72,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="9" Class="Logic:Any" pos="-216,-144,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="-630,-636.28583,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
+       <NodeSize Width="1610.4624" Height="930.89807"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
    </Object>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="c43e47e1-8161-4268-45a7-8c04f3d3fe4d" Name="score_trigger1" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
     <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
@@ -94,6 +132,44 @@
       <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
      </Physics>
     </Properties>
+    <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-36,420.28583,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="558,204.28583,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="4" Class="Entity:GetPos" pos="216,204.28583,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:BeamEntity" pos="990,420.28583,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="7" Class="Entity:GetPos" pos="414,654.28583,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="9" Class="Logic:Any" pos="324,438.28583,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="-90,106.04963,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
+       <NodeSize Width="1332" Height="770.84839"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
    </Object>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="ef818bcc-e3a7-9c09-9527-ca0e24013051" Name="score_trigger1-2" LinkedTo="ca9dce9b-cdd0-876d-cd19-0b72cb66c0ec" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
     <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
@@ -141,6 +217,44 @@
       <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
      </Physics>
     </Properties>
+    <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="126,278.23618,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="720,62.236176,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="4" Class="Entity:GetPos" pos="378,62.236176,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:BeamEntity" pos="1152,278.23618,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="7" Class="Entity:GetPos" pos="576,512.23621,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="9" Class="Logic:Any" pos="486,296.23618,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="72,-92.982452,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
+       <NodeSize Width="1332" Height="827.83087"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
    </Object>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="43a40ad7-42b4-a689-2781-0bdd17fa12ae" Name="score_trigger1-3" LinkedTo="1380206a-b502-3d51-7ae3-5dce2ff007cc" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
     <Properties bActivateWithUseButton="0" DimX="1" DimY="5.5" DimZ="8" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
@@ -188,6 +302,44 @@
       <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
      </Physics>
     </Properties>
+    <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="18,425.21863,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="612,209.21863,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="4" Class="Entity:GetPos" pos="270,209.21863,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:BeamEntity" pos="1044,425.21863,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="7" Class="Entity:GetPos" pos="468,659.21863,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="9" Class="Logic:Any" pos="378,443.21863,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="-36,53.929367,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
+       <NodeSize Width="1332" Height="827.90149"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
    </Object>
   </LayerObjects>
  </Layer>

@@ -1,6 +1,91 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601146284">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601550399">
   <LayerObjects>
+   <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c902fcc9-64e5-2204-3295-723547ab723d" Name="FG_main" Pos="512.34393,496.46811,31.999268" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
+    <Properties />
+    <FlowGraph Description="" Group="main" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="Game:Start" pos="-90,-306,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="3" Class="Actor:LocalPlayer" pos="-90,-378,0">
+       <Inputs />
+      </Node>
+      <Node Id="7" Class="Input:ActionMaps:ActionListener" pos="144,-378,0">
+       <Inputs entityId="0" actionMapActions_Action="player:jump"/>
+      </Node>
+      <Node Id="8" Class="Physics:ActionImpulse" pos="522,-360,0" EntityGUID="8a6421cb-697d-2a8d-3733-6c727d4da49b">
+       <Inputs entityId="0" impulse="0,0,80" angImpulse="0,0,0" Point="0,0,0" partIndex="0" CoordSys="1"/>
+      </Node>
+      <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
+      <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
+      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-108,-448.44656,0">
+       <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="846" Height="270"/>
+       <NodeSize Width="846" Height="304.44687"/>
+      </Node>
+      <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
+       <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
+      </Node>
+      <Node Id="15" Class="Inventory:ItemRemoveAll" pos="450,108,0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="16" Class="Input:ActionMaps:ActionFilter" pos="414,270,0">
+       <Inputs actionFilter_Filter="no_move"/>
+      </Node>
+      <Node Id="17" Class="Debug:ConsoleVariable" pos="432,450,0">
+       <Inputs CVar="hud_hide" Value="1"/>
+      </Node>
+      <Node Id="19" Name="hide_the_player_HUD" Class="_comment" pos="432,432,0"/>
+      <Node Id="20" Name="stop_the_FPS_player_from_moving" Class="_comment" pos="414,252,0"/>
+      <Node Id="21" Name="disarm_FPS_player" Class="_comment" pos="450,90,0"/>
+      <Node Id="22" Class="Camera:View" pos="126,360,0" EntityGUID="06e235a7-afd1-b2a6-3164-dcb48dcd152a">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="8a6421cb-697d-2a8d-3733-6c727d4da49b">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,37.553722,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="598" Height="866"/>
+       <NodeSize Width="598" Height="900.44684"/>
+      </Node>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="1512,-342,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="26" Class="Entity:EntityPos" pos="918,-342,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="28" Class="Vec3:AddVec3" pos="1224,-324,0">
+       <Inputs A="0,0,0" B="-15,20,0"/>
+      </Node>
+      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-430.66739,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="342"/>
+       <NodeSize Width="990" Height="376.44687"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="7" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="2" portIn="Spawn" portOut="output" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="2" portIn="Enable" portOut="output" enabled="0"/>
+      <Edge nodeIn="23" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="7" portIn="activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="14" portIn="Activate" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="14" portIn="Enable" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="14" portIn="Set" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="28" nodeOut="26" portIn="A" portOut="pos" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="28" portIn="Destination" portOut="out" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="28" portIn="Start" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="f212038b-8aa6-93ea-4914-58d04b9866ed" Name="AI_end" Pos="515,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
+    <Properties />
+   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Name="flappy_boid" Pos="500,500,100.0718" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/wood/wood_beams_a_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
@@ -22,90 +107,17 @@
      </Physics>
     </Properties>
    </Object>
-   <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c902fcc9-64e5-2204-3295-723547ab723d" Name="FG_main" Pos="512.34393,496.46811,31.999268" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
-    <Properties />
-    <FlowGraph Description="" Group="main" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="2" Class="Game:Start" pos="-90,-306,0">
-       <Inputs InGame="1" InEditor="1"/>
-      </Node>
-      <Node Id="3" Class="Actor:LocalPlayer" pos="-90,-378,0">
-       <Inputs />
-      </Node>
-      <Node Id="7" Class="Input:ActionMaps:ActionListener" pos="144,-378,0">
-       <Inputs entityId="0" actionMapActions_Action="player:jump"/>
-      </Node>
-      <Node Id="8" Class="Physics:ActionImpulse" pos="522,-360,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
-       <Inputs entityId="0" impulse="0,0,200" angImpulse="0,0,0" Point="0,0,0" partIndex="0" CoordSys="1"/>
-      </Node>
-      <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
-      <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
-      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-108,-539.83295,0">
-       <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="846" Height="270"/>
-       <NodeSize Width="846" Height="395.83328"/>
-      </Node>
-      <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
-       <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
-      </Node>
-      <Node Id="15" Class="Inventory:ItemRemoveAll" pos="450,108,0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="16" Class="Input:ActionMaps:ActionFilter" pos="414,270,0">
-       <Inputs actionFilter_Filter="no_move"/>
-      </Node>
-      <Node Id="17" Class="Debug:ConsoleVariable" pos="432,450,0">
-       <Inputs CVar="hud_hide" Value="1"/>
-      </Node>
-      <Node Id="19" Name="hide_the_player_HUD" Class="_comment" pos="432,432,0"/>
-      <Node Id="20" Name="stop_the_FPS_player_from_moving" Class="_comment" pos="414,252,0"/>
-      <Node Id="21" Name="disarm_FPS_player" Class="_comment" pos="450,90,0"/>
-      <Node Id="22" Class="Camera:View" pos="126,360,0" EntityGUID="06e235a7-afd1-b2a6-3164-dcb48dcd152a">
-       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
-      </Node>
-      <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
-       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
-      </Node>
-      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,-53.833008,0">
-       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="598" Height="866"/>
-       <NodeSize Width="598" Height="991.83331"/>
-      </Node>
-      <Node Id="25" Class="Movement:MoveEntityTo" pos="1512,-342,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
-       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
-      </Node>
-      <Node Id="26" Class="Entity:EntityPos" pos="918,-342,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
-      </Node>
-      <Node Id="28" Class="Vec3:AddVec3" pos="1224,-324,0">
-       <Inputs A="0,0,0" B="8,-10,0"/>
-      </Node>
-      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-522.05377,0">
-       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="990" Height="342"/>
-       <NodeSize Width="990" Height="467.83328"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="7" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="14" nodeOut="2" portIn="Spawn" portOut="output" enabled="1"/>
-      <Edge nodeIn="22" nodeOut="2" portIn="Enable" portOut="output" enabled="0"/>
-      <Edge nodeIn="23" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="7" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
-      <Edge nodeIn="15" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
-      <Edge nodeIn="8" nodeOut="7" portIn="activate" portOut="Pressed" enabled="1"/>
-      <Edge nodeIn="15" nodeOut="14" portIn="Activate" portOut="Spawn" enabled="1"/>
-      <Edge nodeIn="16" nodeOut="14" portIn="Enable" portOut="Spawn" enabled="1"/>
-      <Edge nodeIn="17" nodeOut="14" portIn="Set" portOut="Spawn" enabled="1"/>
-      <Edge nodeIn="28" nodeOut="26" portIn="A" portOut="pos" enabled="1"/>
-      <Edge nodeIn="25" nodeOut="28" portIn="Destination" portOut="out" enabled="1"/>
-      <Edge nodeIn="25" nodeOut="28" portIn="Start" portOut="out" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ecb3d852-af27-a5df-a0d3-3986bc61d890" Name="SpawnPoint_player" Pos="500,500,32" Rotate="1,0,0,-6.7599801e-11" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="SpawnPoint" HasEntity="1">
     <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="3c850182-dc40-eb8c-3cd7-171259cda9a5" Name="background_box" Pos="525,496.09976,40" Rotate="1,0,0,0" Scale="1,1,0.85000002" ColorRGB="16777215" UseCustomLevelLayerColor="0" Flags="4" MinSpec="0" MatLayersMask="0" Prefab="objects/props/flappy_boid/background_box.cgf" IgnoreVisareas="0" CastShadowMaps="1" GIMode="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" ExcludeFromNavigation="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" IgnoreTerrainLayerBlend="0" IgnoreDecalBlend="0" RndFlags="180060000408">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="fb7acea6-b78a-24fb-d939-802a852ddd48" Name="AI_start" Pos="455,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
+    <Properties />
    </Object>
   </LayerObjects>
  </Layer>
