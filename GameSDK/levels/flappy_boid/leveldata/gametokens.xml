@@ -1,5 +1,7 @@
 <GameTokens>
  <GameTokensLibrary>
-  <LevelLibrary Name="Level"/>
+  <LevelLibrary Name="Level">
+   <GameToken Name="intScore" Type="Int" Value="0" LocalOnly="1"/>
+  </LevelLibrary>
  </GameTokensLibrary>
 </GameTokens>
