@@ -1,11 +1,11 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601721439">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601737271">
   <LayerObjects>
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c902fcc9-64e5-2204-3295-723547ab723d" Name="FG_main" Pos="512.34393,496.46811,31.999268" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
     <FlowGraph Description="" Group="main" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="2" Class="Game:Start" pos="-90,-306,0">
+      <Node Id="2" Class="Game:Start" pos="-450,540,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
       <Node Id="3" Class="Actor:LocalPlayer" pos="-90,-378,0">
@@ -19,10 +19,10 @@
       </Node>
       <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
       <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
-      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-306,-520.18109,0">
+      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-306,-451.5249,0">
        <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1044" Height="360"/>
-       <NodeSize Width="1044" Height="463.05652"/>
+       <NodeSize Width="1044" Height="394.40057"/>
       </Node>
       <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
        <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
@@ -45,10 +45,10 @@
       <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
       </Node>
-      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,-31.054497,0">
+      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="-216,44.027515,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="594" Height="882"/>
-       <NodeSize Width="594" Height="985.05652"/>
+       <ResizeBorder X="0" Y="0" Width="1674" Height="1242"/>
+       <NodeSize Width="1674" Height="1276.4006"/>
       </Node>
       <Node Id="25" Class="Movement:MoveEntityTo" pos="1638,-396,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
@@ -59,59 +59,59 @@
       <Node Id="28" Class="Vec3:AddVec3" pos="1188,-414,0">
        <Inputs A="0,0,0" B="-15,20,0"/>
       </Node>
-      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-625.16223,0">
+      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-556.50598,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1062" Height="468"/>
-       <NodeSize Width="1062" Height="571.05652"/>
+       <NodeSize Width="1062" Height="502.40057"/>
       </Node>
-      <Node Id="30" Class="Game:Start" pos="918,72,0">
+      <Node Id="30" Class="Game:Start" pos="2034,234,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="31" Class="Mission:GameTokenSet" pos="1206,72,0">
+      <Node Id="31" Class="Mission:GameTokenSet" pos="2322,234,0">
        <Inputs gametoken_Token="Level.intScore" Value="0"/>
       </Node>
-      <Node Id="32" Class="Debug:DisplayMessage" pos="2484,36,0">
+      <Node Id="32" Class="Debug:DisplayMessage" pos="3600,198,0">
        <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="10" clr_Color="0.768151,0.223228,0.00913406" centered="0"/>
       </Node>
-      <Node Id="34" Class="entity:ProximityTrigger" pos="936,252,0" EntityGUID="c43e47e1-8161-4268-45a7-8c04f3d3fe4d">
+      <Node Id="34" Class="entity:ProximityTrigger" pos="2052,414,0" EntityGUID="c43e47e1-8161-4268-45a7-8c04f3d3fe4d">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="36" Class="Mission:GameTokenModify" pos="1602,288,0">
+      <Node Id="36" Class="Mission:GameTokenModify" pos="2718,450,0">
        <Inputs gametoken_Token="Level.intScore" Op="1" Type="1" Value="1"/>
       </Node>
-      <Node Id="37" Class="Logic:Any" pos="1944,72,0" InHideMask="1023" OutHideMask="1">
+      <Node Id="37" Class="Logic:Any" pos="3060,234,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="38" Class="Logic:Any" pos="1344.1322,342,0" InHideMask="1023" OutHideMask="1">
+      <Node Id="38" Class="Logic:Any" pos="2466,504,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="40" Class="entity:ProximityTrigger" pos="936,450,0" EntityGUID="ef818bcc-e3a7-9c09-9527-ca0e24013051">
+      <Node Id="40" Class="entity:ProximityTrigger" pos="2052,612,0" EntityGUID="ef818bcc-e3a7-9c09-9527-ca0e24013051">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="42" Class="entity:ProximityTrigger" pos="936,648,0" EntityGUID="43a40ad7-42b4-a689-2781-0bdd17fa12ae">
+      <Node Id="42" Class="entity:ProximityTrigger" pos="2052,810,0" EntityGUID="43a40ad7-42b4-a689-2781-0bdd17fa12ae">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="44" Class="entity:ProximityTrigger" pos="936,846,0" EntityGUID="40d67ded-c1bc-93a1-0f1c-7488021d5d0b">
+      <Node Id="44" Class="entity:ProximityTrigger" pos="2052,1008,0" EntityGUID="40d67ded-c1bc-93a1-0f1c-7488021d5d0b">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="45" Name="scoring" Class="_commentbox" pos="900,-85.160683,0">
+      <Node Id="45" Name="scoring" Class="_commentbox" pos="1980,124.06722,0">
        <Inputs TextSize="1" Color="0.278894,0.904661,0.234551" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1890" Height="1116"/>
-       <NodeSize Width="1890" Height="1219.0565"/>
+       <NodeSize Width="1890" Height="1150.4006"/>
       </Node>
-      <Node Id="46" Class="String:Concat" pos="2178,180,0">
+      <Node Id="46" Class="String:Concat" pos="3294,342,0">
        <Inputs String1="Score: " String2=""/>
       </Node>
-      <Node Id="47" Class="Physics:CollisionListener" pos="396,1314,0">
+      <Node Id="47" Class="Physics:CollisionListener" pos="504,1530,0">
        <Inputs AddListener="0" CollisionsPerFrame="0" IgnoreSameNode="0" OnlySameNode="0" RemoveListener="0"/>
       </Node>
-      <Node Id="48" Class="Entity:EntityInfo" pos="126,1296,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
+      <Node Id="48" Class="Entity:EntityInfo" pos="234,1512,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="49" Class="Game:Start" pos="-126,1314,0">
+      <Node Id="49" Class="Game:Start" pos="-18,1530,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="50" Class="Mission:GameTokenSet" pos="846,1314,0">
+      <Node Id="50" Class="Mission:GameTokenSet" pos="954,1530,0">
        <Inputs gametoken_Token="Level.boolIsDead" Value="true"/>
       </Node>
       <Node Id="51" Class="Mission:GameToken" pos="-288,-216,0">
@@ -126,10 +126,10 @@
       <Node Id="54" Name="has_the_player_collided_with_a_pipe?" Class="_comment" pos="972,-216,0"/>
       <Node Id="55" Name="keep_moving_camera_as" Class="_comment" pos="1386,-324,0"/>
       <Node Id="56" Name="_long_as_the_player_is_alive" Class="_comment" pos="1386,-306,0"/>
-      <Node Id="57" Name="detect_collision" Class="_commentbox" pos="-162,1181.3726,0">
+      <Node Id="57" Name="detect_collision" Class="_commentbox" pos="-90,1380.9989,0">
        <Inputs TextSize="1" Color="0.520996,0.274677,0.0144438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="1350" Height="306"/>
-       <NodeSize Width="1350" Height="409.05652"/>
+       <ResizeBorder X="0" Y="0" Width="1422" Height="396"/>
+       <NodeSize Width="1422" Height="430.40057"/>
       </Node>
       <Node Id="58" Class="Mission:GameToken" pos="2124,-666,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -140,10 +140,46 @@
       <Node Id="60" Class="Time:Delay" pos="2556,-666,0">
        <Inputs delay="1" resetOnInput="0"/>
       </Node>
-      <Node Id="61" Name="Game_Over_Camera" Class="_commentbox" pos="2088,-810,0">
+      <Node Id="61" Name="Game_Over_Camera" Class="_commentbox" pos="2088,-741.34332,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1062" Height="360"/>
-       <NodeSize Width="1062" Height="463.05652"/>
+       <NodeSize Width="1062" Height="394.40057"/>
+      </Node>
+      <Node Id="62" Class="Debug:ConsoleVariable" pos="432,594,0">
+       <Inputs CVar="e_terrain" Value="0"/>
+      </Node>
+      <Node Id="63" Class="Mission:GameTokenSet" pos="-180,1026,0">
+       <Inputs gametoken_Token="Level.intDifficulty" Value="3"/>
+      </Node>
+      <Node Id="64" Class="Mission:GameTokenSet" pos="450,936,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" Value="3"/>
+      </Node>
+      <Node Id="65" Class="Mission:GameTokenSet" pos="450,1026,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" Value="4"/>
+      </Node>
+      <Node Id="66" Class="Mission:GameTokenSet" pos="450,1116,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" Value="5"/>
+      </Node>
+      <Node Id="67" Class="Mission:GameTokenSet" pos="450,1206,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" Value="7"/>
+      </Node>
+      <Node Id="68" Class="Logic:DeMultiplexer" pos="180,1026,0">
+       <Inputs Index="0" Mode="0"/>
+      </Node>
+      <Node Id="71" Class="Mission:GameTokenSet" pos="972,936,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement" Value="3"/>
+      </Node>
+      <Node Id="75" Class="Mission:GameTokenSet" pos="972,1026,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement" Value="5"/>
+      </Node>
+      <Node Id="76" Class="Mission:GameTokenSet" pos="972,1116,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement" Value="7"/>
+      </Node>
+      <Node Id="77" Class="Mission:GameTokenSet" pos="972,1206,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement" Value="10"/>
+      </Node>
+      <Node Id="78" Class="Mission:GameTokenModify" pos="2718,630,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" Op="1" Type="2" Value=".3"/>
       </Node>
      </Nodes>
      <Edges>
@@ -151,12 +187,14 @@
       <Edge nodeIn="14" nodeOut="2" portIn="Spawn" portOut="output" enabled="1"/>
       <Edge nodeIn="22" nodeOut="2" portIn="Enable" portOut="output" enabled="0"/>
       <Edge nodeIn="23" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="2" portIn="Trigger" portOut="output" enabled="1"/>
       <Edge nodeIn="7" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
       <Edge nodeIn="15" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
       <Edge nodeIn="8" nodeOut="7" portIn="activate" portOut="Pressed" enabled="1"/>
       <Edge nodeIn="15" nodeOut="14" portIn="Activate" portOut="Spawn" enabled="1"/>
       <Edge nodeIn="16" nodeOut="14" portIn="Enable" portOut="Spawn" enabled="1"/>
       <Edge nodeIn="17" nodeOut="14" portIn="Set" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="62" nodeOut="14" portIn="Set" portOut="Spawn" enabled="1"/>
       <Edge nodeIn="28" nodeOut="26" portIn="A" portOut="pos" enabled="1"/>
       <Edge nodeIn="25" nodeOut="28" portIn="Destination" portOut="out" enabled="1"/>
       <Edge nodeIn="53" nodeOut="28" portIn="In" portOut="out" enabled="1"/>
@@ -168,6 +206,7 @@
       <Edge nodeIn="46" nodeOut="37" portIn="Set" portOut="out" enabled="1"/>
       <Edge nodeIn="46" nodeOut="37" portIn="String2" portOut="out" enabled="1"/>
       <Edge nodeIn="36" nodeOut="38" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="38" portIn="Trigger" portOut="out" enabled="1"/>
       <Edge nodeIn="38" nodeOut="40" portIn="in2" portOut="Enter" enabled="1"/>
       <Edge nodeIn="38" nodeOut="42" portIn="in3" portOut="Enter" enabled="1"/>
       <Edge nodeIn="38" nodeOut="44" portIn="in4" portOut="Enter" enabled="1"/>
@@ -181,6 +220,15 @@
       <Edge nodeIn="25" nodeOut="53" portIn="Start" portOut="Out" enabled="1"/>
       <Edge nodeIn="60" nodeOut="58" portIn="in" portOut="Out" enabled="1"/>
       <Edge nodeIn="59" nodeOut="60" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="63" portIn="Index" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="64" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="65" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="66" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="67" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="68" portIn="Trigger" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="68" portIn="Trigger" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="66" nodeOut="68" portIn="Trigger" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="68" portIn="Trigger" portOut="Port4" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>

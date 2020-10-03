@@ -1,7 +1,28 @@
 <ObjectLayer>
- <Layer Name="pipes" FullName="pipes" GUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601721165">
+ <Layer Name="pipes" FullName="pipes" GUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601738424">
   <LayerObjects>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="19acb9ee-4753-0a39-0324-9c2d43b6d4e6" Name="pipe1_top-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="e4b2a65a-94a9-2f10-263c-bd59dc8c7203" Name="pipe1_top" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -27,27 +48,6 @@
      <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="e4b2a65a-94a9-2f10-263c-bd59dc8c7203" Name="pipe1_top" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
-    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <AI bUsedAsDynamicObstacle="1"/>
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="0"/>
-     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
-      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
-      <CGFPropsOverride player_can_break="">
-       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
-       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
-       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
-      </CGFPropsOverride>
-      <CollisionFiltering>
-       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
-       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
-      </CollisionFiltering>
-      <ForeignData bMovingPlatform="0"/>
-      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
-     </Physics>
-    </Properties>
-   </Object>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Name="pipe1_bottom" Pos="485,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
@@ -70,43 +70,152 @@
     </Properties>
     <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="1" Class="Game:Start" pos="-576,-162,0">
+      <Node Id="1" Class="Game:Start" pos="11880,3255.4998,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="2" Class="Movement:MoveEntityTo" pos="18,-378,0" GraphEntity="0">
-       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="15948,3381.4998,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
       </Node>
-      <Node Id="4" Class="Entity:GetPos" pos="-324,-378,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+      <Node Id="4" Class="Entity:GetPos" pos="13104,3453.4998,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="6" Class="Entity:BeamEntity" pos="450,-162,0" GraphEntity="0">
+      <Node Id="6" Class="Entity:BeamEntity" pos="18864,3255.4998,0" GraphEntity="0">
        <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
       </Node>
-      <Node Id="7" Class="Entity:GetPos" pos="-126,72,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+      <Node Id="7" Class="Entity:GetPos" pos="17334,3615.4998,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="9" Class="Logic:Any" pos="-216,-144,0" InHideMask="1023" OutHideMask="1">
+      <Node Id="9" Class="Logic:Any" pos="12348,3183.4998,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="-630,-453.34341,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="11304,2394,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
-       <NodeSize Width="1332" Height="747.95581"/>
+       <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
+       <NodeSize Width="8262" Height="2558.1975"/>
       </Node>
-      <Node Id="51" Class="Mission:GameToken" pos="-612,36,0">
+      <Node Id="51" Class="Mission:GameToken" pos="15462,4191.5,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="52" Class="Mission:GameToken" pos="15228,3903.4998,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="53" Class="Vec3:FromVec3" pos="13428,3471.4998,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="54" Class="Vec3:ToVec3" pos="13878,3471.4998,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="55" Class="Mission:GameTokenGet" pos="12150,3759.4998,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="56" Class="Math:Random" pos="12798,3741.4998,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="57" Class="Math:Mul" pos="12600,3903.4998,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="58" Class="Math:Add" pos="13680,3687.4998,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="12240,2951.9995,0">
+       <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
+       <NodeSize Width="6663.7603" Height="1046.1975"/>
+      </Node>
+      <Node Id="62" Class="Vec3:FromVec3" pos="17784,3651.4998,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="63" Class="Vec3:ToVec3" pos="18144,3633.4998,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="64" Class="Mission:GameTokenGet" pos="16416,3885.4998,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="65" Class="Math:Random" pos="17064,3867.4998,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="66" Class="Math:Mul" pos="16902,3813.4998,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="67" Class="Math:Add" pos="18000,3759.4998,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="69" Class="Vec3:MagnitudeVec3" pos="14886,3687.4998,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="72" Class="Entity:GetPos" pos="14292,3849.4998,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="73" Class="Vec3:SubVec3" pos="14688,3687.4998,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="74" Name="calculate_ACTUAL_distance_to_end_point" Class="_comment" pos="14706,3669.4998,0"/>
+      <Node Id="76" Class="Vec3:FromVec3" pos="14652,3831.4998,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="77" Name="get_position_of_destination" Class="_comment" pos="14652,3813.4998,0"/>
+      <Node Id="79" Class="Vec3:FromVec3" pos="14652,3975.4998,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="80" Name="get_X_of_start_position" Class="_comment" pos="14652,3957.4998,0"/>
+      <Node Id="82" Class="Math:Sub" pos="14922,3903.4998,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="84" Class="Math:Div" pos="15300,3759.4998,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="85" Name="calculate_STRAIGHT_line_distance" Class="_comment" pos="14922,3885.4998,0"/>
+      <Node Id="86" Name="calculate_DIFFERENCE_between" Class="_comment" pos="15300,3723.4998,0"/>
+      <Node Id="87" Name="straight_line_and_actual_distance" Class="_comment" pos="15300,3741.4998,0"/>
+      <Node Id="91" Class="Math:Mul" pos="15696,3651.4998,0">
+       <Inputs A="0" B="0"/>
       </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
-      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
       <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="55" nodeOut="1" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="2" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="52" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="53" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Start" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="72" nodeOut="54" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="54" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="54" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="55" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="55" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="56" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="57" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="58" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="62" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="64" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="66" nodeOut="64" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="65" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="65" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="67" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="69" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="72" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="72" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="73" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="76" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="79" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="82" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -138,43 +247,152 @@
     </Properties>
     <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="1" Class="Game:Start" pos="-36,420.28583,0">
+      <Node Id="1" Class="Game:Start" pos="9486,3753.4678,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="2" Class="Movement:MoveEntityTo" pos="558,204.28583,0" GraphEntity="0">
-       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="13554,3879.4678,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
       </Node>
-      <Node Id="4" Class="Entity:GetPos" pos="216,204.28583,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+      <Node Id="4" Class="Entity:GetPos" pos="10710,3951.4678,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="6" Class="Entity:BeamEntity" pos="990,420.28583,0" GraphEntity="0">
+      <Node Id="6" Class="Entity:BeamEntity" pos="16470,3753.4678,0" GraphEntity="0">
        <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
       </Node>
-      <Node Id="7" Class="Entity:GetPos" pos="414,654.28583,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+      <Node Id="7" Class="Entity:GetPos" pos="14940,4113.4678,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="9" Class="Logic:Any" pos="324,438.28583,0" InHideMask="1023" OutHideMask="1">
+      <Node Id="9" Class="Logic:Any" pos="9954,3681.4678,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="-90,94.838226,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="8910,2916,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
-       <NodeSize Width="1332" Height="782.05981"/>
+       <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
+       <NodeSize Width="8262" Height="2534.1655"/>
       </Node>
-      <Node Id="51" Class="Mission:GameToken" pos="-54,666,0">
+      <Node Id="51" Class="Mission:GameToken" pos="13068,4689.4678,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="52" Class="Mission:GameToken" pos="12834,4401.4678,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="53" Class="Vec3:FromVec3" pos="11034,3969.4678,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="54" Class="Vec3:ToVec3" pos="11484,3969.4678,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="55" Class="Mission:GameTokenGet" pos="9756,4257.4678,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="56" Class="Math:Random" pos="10404,4239.4678,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="57" Class="Math:Mul" pos="10206,4401.4678,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="58" Class="Math:Add" pos="11286,4185.4678,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="9846,3473.9998,0">
+       <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
+       <NodeSize Width="6639.728" Height="1022.1654"/>
+      </Node>
+      <Node Id="62" Class="Vec3:FromVec3" pos="15390,4149.4678,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="63" Class="Vec3:ToVec3" pos="15750,4131.4678,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="64" Class="Mission:GameTokenGet" pos="14022,4383.4678,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="65" Class="Math:Random" pos="14670,4365.4678,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="66" Class="Math:Mul" pos="14508,4311.4678,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="67" Class="Math:Add" pos="15606,4257.4678,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="69" Class="Vec3:MagnitudeVec3" pos="12492,4185.4678,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="72" Class="Entity:GetPos" pos="11898,4347.4678,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="73" Class="Vec3:SubVec3" pos="12294,4185.4678,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="74" Name="calculate_ACTUAL_distance_to_end_point" Class="_comment" pos="12312,4167.4678,0"/>
+      <Node Id="76" Class="Vec3:FromVec3" pos="12258,4329.4678,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="77" Name="get_position_of_destination" Class="_comment" pos="12258,4311.4678,0"/>
+      <Node Id="79" Class="Vec3:FromVec3" pos="12258,4473.4678,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="80" Name="get_X_of_start_position" Class="_comment" pos="12258,4455.4678,0"/>
+      <Node Id="82" Class="Math:Sub" pos="12528,4401.4678,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="84" Class="Math:Div" pos="12906,4257.4678,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="85" Name="calculate_STRAIGHT_line_distance" Class="_comment" pos="12528,4383.4678,0"/>
+      <Node Id="86" Name="calculate_DIFFERENCE_between" Class="_comment" pos="12906,4221.4678,0"/>
+      <Node Id="87" Name="straight_line_and_actual_distance" Class="_comment" pos="12906,4239.4678,0"/>
+      <Node Id="91" Class="Math:Mul" pos="13302,4149.4678,0">
+       <Inputs A="0" B="0"/>
       </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
-      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
       <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="55" nodeOut="1" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="2" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="52" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="53" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Start" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="72" nodeOut="54" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="54" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="54" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="55" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="55" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="56" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="57" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="58" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="62" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="64" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="66" nodeOut="64" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="65" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="65" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="67" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="69" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="72" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="72" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="73" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="76" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="79" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="82" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -227,43 +445,152 @@
     </Properties>
     <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="1" Class="Game:Start" pos="126,278.23618,0">
+      <Node Id="1" Class="Game:Start" pos="2772,1121.97,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="2" Class="Movement:MoveEntityTo" pos="720,62.236176,0" GraphEntity="0">
-       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="6840,1247.97,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
       </Node>
-      <Node Id="4" Class="Entity:GetPos" pos="378,62.236176,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+      <Node Id="4" Class="Entity:GetPos" pos="3996,1319.97,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="6" Class="Entity:BeamEntity" pos="1152,278.23618,0" GraphEntity="0">
+      <Node Id="6" Class="Entity:BeamEntity" pos="9756,1121.97,0" GraphEntity="0">
        <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
       </Node>
-      <Node Id="7" Class="Entity:GetPos" pos="576,512.23621,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+      <Node Id="7" Class="Entity:GetPos" pos="8226,1481.97,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="9" Class="Logic:Any" pos="486,296.23618,0" InHideMask="1023" OutHideMask="1">
+      <Node Id="9" Class="Logic:Any" pos="3240,1049.97,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="72,-47.21138,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="2196,288,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
-       <NodeSize Width="1332" Height="782.05981"/>
+       <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
+       <NodeSize Width="8262" Height="2530.6677"/>
       </Node>
-      <Node Id="51" Class="Mission:GameToken" pos="108,540,0">
+      <Node Id="51" Class="Mission:GameToken" pos="6354,2057.97,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="52" Class="Mission:GameToken" pos="6120,1769.97,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="53" Class="Vec3:FromVec3" pos="4320,1337.97,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="54" Class="Vec3:ToVec3" pos="4770,1337.97,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="55" Class="Mission:GameTokenGet" pos="3042,1625.97,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="56" Class="Math:Random" pos="3690,1607.97,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="57" Class="Math:Mul" pos="3492,1769.97,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="58" Class="Math:Add" pos="4572,1553.97,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="3132,845.99957,0">
+       <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
+       <NodeSize Width="6636.2305" Height="1018.6678"/>
+      </Node>
+      <Node Id="62" Class="Vec3:FromVec3" pos="8676,1517.97,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="63" Class="Vec3:ToVec3" pos="9036,1499.97,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="64" Class="Mission:GameTokenGet" pos="7308,1751.97,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="65" Class="Math:Random" pos="7956,1733.97,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="66" Class="Math:Mul" pos="7794,1679.97,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="67" Class="Math:Add" pos="8892,1625.97,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="69" Class="Vec3:MagnitudeVec3" pos="5778,1553.97,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="72" Class="Entity:GetPos" pos="5184,1715.97,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="73" Class="Vec3:SubVec3" pos="5580,1553.97,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="74" Name="calculate_ACTUAL_distance_to_end_point" Class="_comment" pos="5598,1535.97,0"/>
+      <Node Id="76" Class="Vec3:FromVec3" pos="5544,1697.97,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="77" Name="get_position_of_destination" Class="_comment" pos="5544,1679.97,0"/>
+      <Node Id="79" Class="Vec3:FromVec3" pos="5544,1841.97,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="80" Name="get_X_of_start_position" Class="_comment" pos="5544,1823.97,0"/>
+      <Node Id="82" Class="Math:Sub" pos="5814,1769.97,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="84" Class="Math:Div" pos="6192,1625.97,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="85" Name="calculate_STRAIGHT_line_distance" Class="_comment" pos="5814,1751.97,0"/>
+      <Node Id="86" Name="calculate_DIFFERENCE_between" Class="_comment" pos="6192,1589.97,0"/>
+      <Node Id="87" Name="straight_line_and_actual_distance" Class="_comment" pos="6192,1607.97,0"/>
+      <Node Id="91" Class="Math:Mul" pos="6588,1517.97,0">
+       <Inputs A="0" B="0"/>
       </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
-      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
       <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="55" nodeOut="1" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="2" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="52" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="53" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Start" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="72" nodeOut="54" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="54" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="54" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="55" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="55" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="56" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="57" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="58" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="62" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="64" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="66" nodeOut="64" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="65" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="65" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="67" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="69" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="72" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="72" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="73" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="76" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="79" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="82" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -316,43 +643,152 @@
     </Properties>
     <FlowGraph Description="" Group="pipe_movement" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="1" Class="Game:Start" pos="18,425.21863,0">
+      <Node Id="1" Class="Game:Start" pos="7272,2669.3455,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="2" Class="Movement:MoveEntityTo" pos="612,209.21863,0" GraphEntity="0">
-       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="5" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="11340,2795.3455,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
       </Node>
-      <Node Id="4" Class="Entity:GetPos" pos="270,209.21863,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
+      <Node Id="4" Class="Entity:GetPos" pos="8496,2867.3455,0" EntityGUID="f212038b-8aa6-93ea-4914-58d04b9866ed">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="6" Class="Entity:BeamEntity" pos="1044,425.21863,0" GraphEntity="0">
+      <Node Id="6" Class="Entity:BeamEntity" pos="14256,2669.3455,0" GraphEntity="0">
        <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
       </Node>
-      <Node Id="7" Class="Entity:GetPos" pos="468,659.21863,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
+      <Node Id="7" Class="Entity:GetPos" pos="12726,3029.3455,0" EntityGUID="fb7acea6-b78a-24fb-d939-802a852ddd48">
        <Inputs entityId="0" CoordSys="1"/>
       </Node>
-      <Node Id="9" Class="Logic:Any" pos="378,443.21863,0" InHideMask="1023" OutHideMask="1">
+      <Node Id="9" Class="Logic:Any" pos="7740,2597.3455,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="-36,99.771057,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="6696,1816.855,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="1332" Height="702"/>
-       <NodeSize Width="1332" Height="782.05981"/>
+       <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
+       <NodeSize Width="8262" Height="2549.188"/>
       </Node>
-      <Node Id="51" Class="Mission:GameToken" pos="0,684,0">
+      <Node Id="51" Class="Mission:GameToken" pos="10854,3605.3455,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="52" Class="Mission:GameToken" pos="10620,3317.3455,0">
+       <Inputs gametoken_Token="Level.floatHorizontalPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="53" Class="Vec3:FromVec3" pos="8820,2885.3455,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="54" Class="Vec3:ToVec3" pos="9270,2885.3455,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="55" Class="Mission:GameTokenGet" pos="7542,3173.3455,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="56" Class="Math:Random" pos="8190,3155.3455,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="57" Class="Math:Mul" pos="7992,3317.3455,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="58" Class="Math:Add" pos="9072,3101.3455,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="7632,2374.855,0">
+       <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
+       <NodeSize Width="6654.751" Height="1037.188"/>
+      </Node>
+      <Node Id="62" Class="Vec3:FromVec3" pos="13176,3065.3455,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="63" Class="Vec3:ToVec3" pos="13536,3047.3455,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="64" Class="Mission:GameTokenGet" pos="11808,3299.3455,0">
+       <Inputs gametoken_Token="Level.intVerticalPipeMovement"/>
+      </Node>
+      <Node Id="65" Class="Math:Random" pos="12456,3281.3455,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="66" Class="Math:Mul" pos="12294,3227.3455,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="67" Class="Math:Add" pos="13392,3173.3455,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="69" Class="Vec3:MagnitudeVec3" pos="10278,3101.3455,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="72" Class="Entity:GetPos" pos="9684,3263.3455,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="73" Class="Vec3:SubVec3" pos="10080,3101.3455,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="74" Name="calculate_ACTUAL_distance_to_end_point" Class="_comment" pos="10098,3083.3455,0"/>
+      <Node Id="76" Class="Vec3:FromVec3" pos="10044,3245.3455,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="77" Name="get_position_of_destination" Class="_comment" pos="10044,3227.3455,0"/>
+      <Node Id="79" Class="Vec3:FromVec3" pos="10044,3389.3455,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="80" Name="get_X_of_start_position" Class="_comment" pos="10044,3371.3455,0"/>
+      <Node Id="82" Class="Math:Sub" pos="10314,3317.3455,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="84" Class="Math:Div" pos="10692,3173.3455,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="85" Name="calculate_STRAIGHT_line_distance" Class="_comment" pos="10314,3299.3455,0"/>
+      <Node Id="86" Name="calculate_DIFFERENCE_between" Class="_comment" pos="10692,3137.3455,0"/>
+      <Node Id="87" Name="straight_line_and_actual_distance" Class="_comment" pos="10692,3155.3455,0"/>
+      <Node Id="91" Class="Math:Mul" pos="11088,3065.3455,0">
+       <Inputs A="0" B="0"/>
       </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="4" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
-      <Edge nodeIn="7" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
       <Edge nodeIn="9" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="2" portIn="Beam" portOut="Finish" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="4" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="55" nodeOut="1" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="2" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="7" portIn="Position" portOut="Pos" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="9" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="52" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="53" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="53" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="54" portIn="Start" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="72" nodeOut="54" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="54" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="54" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="55" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="55" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="56" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="57" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="58" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="62" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="63" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="64" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="66" nodeOut="64" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="65" portIn="Get" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="65" portIn="B" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="66" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="67" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="69" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="72" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="72" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="73" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="76" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="82" nodeOut="79" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="82" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>

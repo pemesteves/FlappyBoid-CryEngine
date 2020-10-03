@@ -3,6 +3,9 @@
   <LevelLibrary Name="Level">
    <GameToken Name="intScore" Type="Int" Value="0" LocalOnly="1"/>
    <GameToken Name="boolIsDead" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="intDifficulty" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="floatHorizontalPipeSpeed" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="intVerticalPipeMovement" Type="Int" Value="0" LocalOnly="1"/>
   </LevelLibrary>
  </GameTokensLibrary>
 </GameTokens>
