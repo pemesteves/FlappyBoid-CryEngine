@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601721358">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1601721439">
   <LayerObjects>
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="c902fcc9-64e5-2204-3295-723547ab723d" Name="FG_main" Pos="512.34393,496.46811,31.999268" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
@@ -19,10 +19,10 @@
       </Node>
       <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
       <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
-      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-306,-451.55969,0">
+      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-306,-520.18109,0">
        <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1044" Height="360"/>
-       <NodeSize Width="1044" Height="394.43512"/>
+       <NodeSize Width="1044" Height="463.05652"/>
       </Node>
       <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
        <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
@@ -45,10 +45,10 @@
       <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
       </Node>
-      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,37.566948,0">
+      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="108,-31.054497,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="594" Height="882"/>
-       <NodeSize Width="594" Height="916.43512"/>
+       <NodeSize Width="594" Height="985.05652"/>
       </Node>
       <Node Id="25" Class="Movement:MoveEntityTo" pos="1638,-396,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
@@ -59,10 +59,10 @@
       <Node Id="28" Class="Vec3:AddVec3" pos="1188,-414,0">
        <Inputs A="0,0,0" B="-15,20,0"/>
       </Node>
-      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-556.54077,0">
+      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-625.16223,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1062" Height="468"/>
-       <NodeSize Width="1062" Height="502.43512"/>
+       <NodeSize Width="1062" Height="571.05652"/>
       </Node>
       <Node Id="30" Class="Game:Start" pos="918,72,0">
        <Inputs InGame="1" InEditor="1"/>
@@ -94,10 +94,10 @@
       <Node Id="44" Class="entity:ProximityTrigger" pos="936,846,0" EntityGUID="40d67ded-c1bc-93a1-0f1c-7488021d5d0b">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="45" Name="scoring" Class="_commentbox" pos="900,-16.53936,0">
+      <Node Id="45" Name="scoring" Class="_commentbox" pos="900,-85.160683,0">
        <Inputs TextSize="1" Color="0.278894,0.904661,0.234551" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1890" Height="1116"/>
-       <NodeSize Width="1890" Height="1150.4352"/>
+       <NodeSize Width="1890" Height="1219.0565"/>
       </Node>
       <Node Id="46" Class="String:Concat" pos="2178,180,0">
        <Inputs String1="Score: " String2=""/>
@@ -126,10 +126,10 @@
       <Node Id="54" Name="has_the_player_collided_with_a_pipe?" Class="_comment" pos="972,-216,0"/>
       <Node Id="55" Name="keep_moving_camera_as" Class="_comment" pos="1386,-324,0"/>
       <Node Id="56" Name="_long_as_the_player_is_alive" Class="_comment" pos="1386,-306,0"/>
-      <Node Id="57" Name="detect_collision" Class="_commentbox" pos="-162,1249.9939,0">
+      <Node Id="57" Name="detect_collision" Class="_commentbox" pos="-162,1181.3726,0">
        <Inputs TextSize="1" Color="0.520996,0.274677,0.0144438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1350" Height="306"/>
-       <NodeSize Width="1350" Height="340.43512"/>
+       <NodeSize Width="1350" Height="409.05652"/>
       </Node>
       <Node Id="58" Class="Mission:GameToken" pos="2124,-666,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -139,6 +139,11 @@
       </Node>
       <Node Id="60" Class="Time:Delay" pos="2556,-666,0">
        <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="61" Name="Game_Over_Camera" Class="_commentbox" pos="2088,-810,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1062" Height="360"/>
+       <NodeSize Width="1062" Height="463.05652"/>
       </Node>
      </Nodes>
      <Edges>
