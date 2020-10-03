@@ -2,6 +2,7 @@
  <GameTokensLibrary>
   <LevelLibrary Name="Level">
    <GameToken Name="intScore" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="boolIsDead" Type="Bool" Value="false" LocalOnly="1"/>
   </LevelLibrary>
  </GameTokensLibrary>
 </GameTokens>
