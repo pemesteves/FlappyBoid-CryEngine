@@ -1,11 +1,15 @@
-<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1602113062">
+<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1602163454">
  <Files>
   <File path="flappy_boid/flappy_boid.level"/>
  </Files>
  <Dependencies>
   <Path usageCount="1">%ENGINE%/EngineAssets/Shading/default.env</Path>
+  <Path>%editor%/materials/crydesigner_selection.mtl</Path>
   <Path>%editor%/objects/gradf.dds</Path>
+  <Path>%editor%/objects/helper.mtl</Path>
   <Path>%editor%/objects/helper_illum.mtl</Path>
+  <Path>%editor%/objects/mtlplane.cgf</Path>
+  <Path>%editor%/objects/mtlsphere.cgf</Path>
   <Path>%editor%/objects/spawnpointhelper.cgf</Path>
   <Path>%editor%/objects/t.cgf</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
@@ -22,6 +26,8 @@
   <Path>%engine%/engineassets/materials/water/ocean_default.mtl</Path>
   <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
   <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
+  <Path>%engine%/engineassets/texturemsg/defaultsolids.mtl</Path>
+  <Path>%engine%/engineassets/texturemsg/orange_for_designer.dds</Path>
   <Path>%engine%/engineassets/textures/grey.dds</Path>
   <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
   <Path>animations/human/male/additive/additive_breathing_heavy_01.caf</Path>
@@ -533,6 +539,7 @@
   <Path>animations/mannequin/adb/switchfiremodetarget.xml</Path>
   <Path>editor/resourcecache/materials/cloudtiling_diff.dds</Path>
   <Path>engineassets/textures/grey.dds</Path>
+  <Path>entities.xml</Path>
   <Path>libs/actiongraphs/sdk_explosion.xml</Path>
   <Path>libs/config/controller/buttonlayout_alt.xml</Path>
   <Path>libs/config/controller/buttonlayout_altlefty.xml</Path>
@@ -583,30 +590,46 @@
   <Path>materials/decals/rock/rock_sandy.mtl</Path>
   <Path>materials/decals/snow/snow_melt.mtl</Path>
   <Path>materials/decals/wood/wood_planks.mtl</Path>
-  <Path>materials/generic/concrete/concrete_broken.mtl</Path>
-  <Path>materials/generic/concrete/concrete_ceiling.mtl</Path>
-  <Path>materials/generic/concrete/concrete_ceiling_dirty.mtl</Path>
+  <Path>materials/flappycloudbg.mtl</Path>
   <Path>materials/generic/concrete/concrete_wall_05.mtl</Path>
-  <Path>materials/generic/concrete/concrete_wall_b_dirty.mtl</Path>
-  <Path>materials/generic/concrete/concrete_wall_c.mtl</Path>
   <Path>materials/generic/concrete/courtyard_floor.mtl</Path>
-  <Path>materials/generic/concrete/courtyard_floor_broken.mtl</Path>
-  <Path>materials/generic/concrete/cracked_wall_01.mtl</Path>
   <Path>materials/generic/concrete/eroded_concrete.mtl</Path>
   <Path>materials/generic/concrete/floor_stone_tiles_a.mtl</Path>
-  <Path>materials/generic/concrete/floor_tiles_02.mtl</Path>
-  <Path>materials/generic/concrete/floor_tiles_cracked.mtl</Path>
   <Path>materials/generic/concrete/plaster_rough_stones.mtl</Path>
-  <Path>materials/generic/concrete/plaster_rough_stones_moss.mtl</Path>
   <Path>materials/generic/concrete/plaster_sandstone_a.mtl</Path>
-  <Path>materials/generic/concrete/plaster_wall_03.mtl</Path>
   <Path>materials/generic/concrete/roof_tar_paper_01.mtl</Path>
-  <Path>materials/generic/concrete/rough_concrete_a.mtl</Path>
-  <Path>materials/generic/concrete/rough_concrete_b.mtl</Path>
-  <Path>materials/generic/concrete/rough_concrete_c.mtl</Path>
   <Path>materials/generic/concrete/used_concrete.mtl</Path>
+  <Path>materials/generic/glass/advert_sign_glass.mtl</Path>
+  <Path>materials/generic/glass/broken_glass.mtl</Path>
+  <Path>materials/generic/glass/glass_damaged.mtl</Path>
+  <Path>materials/generic/glass/glass_diffuse.mtl</Path>
+  <Path>materials/generic/glass/glass_dirty.mtl</Path>
+  <Path>materials/generic/glass/glass_fog.mtl</Path>
+  <Path>materials/generic/glass/glass_frosted.mtl</Path>
+  <Path>materials/generic/glass/glass_frosted1.mtl</Path>
+  <Path>materials/generic/glass/glass_frosted1.mtl</Path>
+  <Path>materials/generic/glass/glass_frosted_red.mtl</Path>
+  <Path>materials/generic/glass/glass_frosted_red_and_blue.mtl</Path>
+  <Path>materials/generic/glass/glass_hex.mtl</Path>
+  <Path>materials/generic/glass/glass_shattered.mtl</Path>
+  <Path>materials/generic/glass/glass_squares.mtl</Path>
+  <Path>materials/generic/glass/glass_squares_rough.mtl</Path>
+  <Path>materials/generic/glass/glass_tintcolormap.mtl</Path>
+  <Path>materials/generic/glass/glass_tintmap.mtl</Path>
+  <Path>materials/generic/glass/glass_wet.mtl</Path>
+  <Path>materials/generic/glass/glassblocks.mtl</Path>
+  <Path>materials/generic/glass/rough_glass.mtl</Path>
+  <Path>materials/generic/glass/scratched_glass.mtl</Path>
+  <Path>materials/generic/glass/security_hut_glass.mtl</Path>
+  <Path>materials/generic/glass/window_glass.mtl</Path>
+  <Path>materials/generic/glass/window_streaks_glass.mtl</Path>
   <Path>materials/generic/wood/wall_wood_3.mtl</Path>
   <Path>materials/generic/wood/wood_beams_a_red.mtl</Path>
+  <Path>materials/invisible.mtl</Path>
+  <Path>materials/material_default.mtl</Path>
+  <Path>materials/material_layers_default.mtl</Path>
+  <Path>materials/material_terrain_default.mtl</Path>
+  <Path>materials/moving_sky_bg.mtl</Path>
   <Path>materials/moving_sky_bg.mtl</Path>
   <Path>materials/particle/exposion_normal.mtl</Path>
   <Path>materials/particle/refraction.mtl</Path>
@@ -643,6 +666,8 @@
   <Path>objects/natural/trees/thin_leave_tree/forest_ground_branches_1_h_lod1.cgf</Path>
   <Path>objects/props/flappy_boid/background_box.cgf</Path>
   <Path>objects/props/flappy_boid/pipe.cgf</Path>
+  <Path>objects/props/flappy_boid/star.cgf</Path>
+  <Path>objects/props/flappy_boid/star.cgf</Path>
   <Path>objects/props/misc/3dtext/a.cgf</Path>
   <Path>objects/props/misc/3dtext/e.cgf</Path>
   <Path>objects/props/misc/3dtext/g.cgf</Path>
@@ -687,6 +712,7 @@
   <Path>scripts/ai/tps/sharedqueries.lua</Path>
   <Path>scripts/entities/ai/tagpoint.lua</Path>
   <Path>scripts/entities/others/spawnpoint.lua</Path>
+  <Path>scripts/entities/physics/basicentity.lua</Path>
   <Path>scripts/entities/physics/rigidbodyex.lua</Path>
   <Path>scripts/entities/triggers/proximitytrigger.lua</Path>
   <Path>scripts/physics.lua</Path>
