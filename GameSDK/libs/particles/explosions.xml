@@ -1,4 +1,4 @@
-<ParticleLibrary Name="explosions" SandboxVersion="5.5.0.67" ParticleVersion="28">
+<ParticleLibrary Name="explosions" SandboxVersion="5.6.7.94" ParticleVersion="28">
  <Particles Name="flare.a">
   <Params Count="1" ParticleLifeTime="9" FocusAngle="10.5" FocusAzimuth="200" BlendType="Additive" Texture="textures/sprites/glow/glow_b.tif" SoftParticle="true" Alpha="ParticleAge=(t=0.5,v=1;t=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="20" Size="1.17,ParticleAge=(t=0.718,v=1;t=1)" TailLength="0.05,TailSteps=8" Speed="48" AirResistance="3,ParticleAge=(t=0.37;t=0.47,v=1)" GravityScale="1.5"/>
   <Childs>
@@ -526,6 +526,9 @@
    </Particles>
    <Particles Name="light_dummy12">
     <Params Count="1" ParticleLifeTime="0.3" BlendType="Additive" Texture="textures/sprites/glow/glow.tif" Alpha="0.515,ParticleAge=(t=0.5,v=1;t=1)" DiffuseLighting="0" EmissiveLighting="10" LightSource="Radius=(30,ParticleAge=(;t=0.3,v=1;t=1,v=0.59)),Intensity=(4,ParticleAge=(t=0.616,v=1;t=1))" Size="0.12"/>
+   </Particles>
+   <Particles Name="audio">
+    <Params StartTrigger="pfxExplosion"/>
    </Particles>
   </Childs>
  </Particles>
@@ -1600,111 +1603,7 @@
   </Childs>
  </Particles>
  <Particles Name="Grenade_SCAR.sand">
-  <Params Enabled="false"/>
-  <Childs>
-   <Particles Name="fragments_soil">
-    <Params Count="30" SpawnDelay="0.04" ParticleLifeTime="3,Random=0.525" EmitAngle="13.7,Random=0.96" Texture="textures/sprites/stones/stones_tiled.tif" TextureTiling="TilesX=4,TilesY=2,VariantCount=8" SoftParticle="true" Alpha="ParticleAge=(t=0.83,v=1;t=1,flags=4)" Color="(x=0.533,y=0.47,z=0.376)" DiffuseLighting="0.7615385" DiffuseBacklighting="0.35" Size="0.1,Random=0.713" Stretch="0.01,Random=0.248,ParticleAge=(v=0.682;t=1)" Speed="14.6,Random=0.49505" GravityScale="1.7,Random=0.257" RandomAngles="y=180" RandomRotationRate="y=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.119" DynamicFriction="10" Thickness="0.5" SortOffset="-0.02"/>
-    <Childs>
-     <Particles Name="fragments2">
-      <Params Count="110,Random=0.394958" ParticleLifeTime="3,Random=0.525" EmitAngle="9.5,Random=0.96" Texture="textures/sprites/stones/stones_tiled.tif" TextureTiling="TilesX=4,TilesY=2,VariantCount=8" Alpha="ParticleAge=(t=0.83,v=1;t=1,flags=4)" Color="(x=0.53,y=0.46,z=0.38)" DiffuseLighting="0.97538465" DiffuseBacklighting="0.35" Size="0.04,Random=0.911" Stretch="0.01,Random=0.248,ParticleAge=(v=0.682;t=1)" Speed="14.6,Random=0.49505" GravityScale="2" RandomAngles="y=360" RandomRotationRate="y=333" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.178" DynamicFriction="10" Thickness="0.5"/>
-     </Particles>
-    </Childs>
-   </Particles>
-   <Particles Name="sparks_soil">
-    <Params Count="1" ParticleLifeTime="0.18" EmitAngle="0.2299001,Random=1" BlendType="Additive" Texture="textures/sprites/glow/glow.tif" SoftParticle="true" Alpha="0.604,ParticleAge=(v=1;t=0.25,v=1;t=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="10" Size="25,ParticleAge=(;t=0.333,v=1;t=0.525,v=1;t=1)" Speed="12" SortOffset="-0.07"/>
-    <Childs>
-     <Particles Name="initial_glow39">
-      <Params Count="1" ParticleLifeTime="0.16" EmitAngle="0.2299001,Random=1" BlendType="Additive" Texture="textures/sprites/glow/glow.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=0.824,v=1;t=1,flags=4)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="ParticleAge=(v=0.047;t=0.04,v=1)" Speed="10" SortOffset="-0.08"/>
-     </Particles>
-     <Particles Name="initial_glow43">
-      <Params Count="4" ParticleLifeTime="0.16" EmitAngle="40,Random=0.99" BlendType="Additive" Texture="textures/sprites/fire/explosion_a.tif" SoftParticle="true" Alpha="0.386,ParticleAge=(v=1;t=1)" Color="ParticleAge=(t=0.008,v=(x=1,y=1,z=1);t=0.075,v=(x=0.984,y=0.98,z=0.918))" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="4,Random=0.307,ParticleAge=(;t=0.61,v=1)" Speed="9.9" SortOffset="-0.089999996"/>
-     </Particles>
-     <Particles Name="initial_sparks16">
-      <Params Count="20" ParticleLifeTime="0.2,Random=0.228" EmitAngle="60,Random=0.228" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/fire/explosion_add.tif" SoftParticle="true" Color="ParticleAge=(t=0.004,v=(x=1,y=1,z=1);t=0.475,v=(x=0.984,y=0.816,z=0.667);t=0.99;t=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="10" Size="0.65,Random=0.366" Stretch="0.1" Speed="18.7" SortOffset="-0.04"/>
-     </Particles>
-     <Particles Name="sparks_soil1">
-      <Params Count="12,Random=0.158" ParticleLifeTime="10,Random=0.525" FocusAngle="Random=1" FocusAzimuth="360,Random=1" EmitAngle="28.4,Random=0.96" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/sparks/spark_stretched1.tif" Alpha="ParticleAge=(v=0.725;t=0.1,v=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="0.07,Random=0.663,ParticleAge=(t=0.16,v=1;t=1)" Stretch="0.02,ParticleAge=(t=0.46;t=1,v=0.09)" Speed="49.1,Random=0.49505" AirResistance="4.8,Random=0.525" GravityScale="1,Random=0.277" MaxCollisionEvents="1" SortOffset="-0.06"/>
-      <Childs>
-       <Particles Name="hurricane_vtol2">
-        <Params Count="3" Continuous="true" EmitterLifeTime="0.1" ParticleLifeTime="2,Random=0.525" FocusAngle="Random=1" FocusAzimuth="360,Random=1" FocusGravityDir="true" EmitAngle="85.3,Random=0.624" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/sparks/spark_stretched1.tif" Alpha="ParticleAge=(v=0.725;t=0.1,v=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="0.03,Random=0.663,ParticleAge=(t=0.83,v=1;t=1)" Stretch="0.02,ParticleAge=(t=0.46;t=1,v=0.09)" Speed="5,Random=0.525" GravityScale="1" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.188" SortOffset="-0.06"/>
-       </Particles>
-      </Childs>
-     </Particles>
-     <Particles Name="sparks_soil2">
-      <Params Count="135,Random=0.158" ParticleLifeTime="0.75,Random=0.525" FocusAngle="Random=1" FocusAzimuth="360,Random=1" EmitAngle="64.2,Random=1" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/sparks/spark_stretched1.tif" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="0.06,Random=0.337,ParticleAge=(v=1;t=1)" Stretch="0.01,Random=1,ParticleAge=(v=1;t=0.61)" Speed="88.9,Random=0.564" AirResistance="10" GravityScale="Random=0.277" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" MaxCollisionEvents="1" Elasticity="0.139" DynamicFriction="10" SortOffset="-0.06"/>
-     </Particles>
-     <Particles Name="sparks_soil3">
-      <Params Enabled="false" Count="1" ParticleLifeTime="0.18" EmitAngle="0.2299001,Random=1" BlendType="Additive" Texture="textures/sprites/glow/glow.tif" SoftParticle="true" Alpha="0.604,ParticleAge=(v=1;t=0.25,v=1;t=1)" DiffuseLighting="0" EmissiveLighting="10" Size="25,ParticleAge=(;t=0.333,v=1;t=0.525,v=1;t=1)" Speed="12" SortOffset="-0.14999999"/>
-      <Childs>
-       <Particles Name="initial_glow43">
-        <Params Count="1" ParticleLifeTime="0.28" FocusGravityDir="true" EmitAngle="0.2299001,Random=1" BlendType="Additive" Texture="textures/sprites/glow/glow.tif" SoftParticle="true" Alpha="0.604,ParticleAge=(v=1;t=0.25,v=1;t=1)" DiffuseLighting="0" EmissiveLighting="10" Size="35,ParticleAge=(;t=0.333,v=1;t=0.525,v=1;t=1)" Speed="10.66" SortOffset="-0.14999999"/>
-        <Childs>
-         <Particles Name="initial_glow43">
-          <Params Count="4" ParticleLifeTime="0.25" FocusGravityDir="true" EmitAngle="40,Random=0.99" BlendType="Additive" Texture="textures/sprites/fire/explosion_a.tif" SoftParticle="true" Alpha="0.386,ParticleAge=(v=1;t=1)" Color="(x=0.996,y=0.97,z=0.59)" DiffuseLighting="0" EmissiveLighting="10" Size="7.01,Random=0.307,ParticleAge=(;t=0.61,v=1)" Speed="9.9" SortOffset="-0.14999999"/>
-         </Particles>
-         <Particles Name="initial_glow46">
-          <Params Count="32" ParticleLifeTime="0.8,Random=0.525" PositionOffset="y=0.4" RandomOffset="x=1.2,y=1.2,z=1.2" BlendType="Additive" Texture="textures/sprites/fire/fireball1_tiled4.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" Material="Materials/particle/exposion_normal" SoftParticle="true" Alpha="ParticleAge=(t=0.7,v=1;t=1)" DiffuseLighting="0" EmissiveLighting="10" Size="2.8,Random=0.663,ParticleAge=(v=1;t=0.125,v=0.63)" Speed="9.4,Random=0.317" AirResistance="2.98" RandomAngles="y=180" RandomRotationRate="y=22" SortOffset="-0.02"/>
-          <Childs>
-           <Particles Name="initial_glow65">
-                        <Params Count="1" SpawnDelay="0.2,Random=0.4475138" ParticleLifeTime="4,Random=0.277" PositionOffset="y=0.6" RandomOffset="x=1,y=2,z=1" EmitAngle="83.2" Texture="textures/sprites/smoke/smoke_white_tiled2.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="ParticleAge=(;t=0.04,v=1;t=0.52,v=1;t=1)" Color="(x=0.514,y=0.514,z=0.41)" DiffuseLighting="0.465" Size="2.05,Random=0.149,ParticleAge=(t=0.004,v=0.41;t=1,v=1)" Stretch="0.12" Speed="0.6" InheritVelocity="0.386" AirResistance="0.5" GravityScale="Random=0.594" RandomAngles="x=99,y=180,z=99" RandomRotationRate="x=33,z=33"/>
-           </Particles>
-          </Childs>
-         </Particles>
-        </Childs>
-       </Particles>
-      </Childs>
-     </Particles>
-     <Particles Name="sparks_soil4">
-      <Params Count="2" SpawnDelay="0.08,Random=0.195021" ParticleLifeTime="0.71" PositionOffset="y=0.2" FocusGravityDir="true" Facing="Velocity" BlendType="Additive" Texture="textures/sprites/water/shockwave_grey.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=1)" Color="(x=0.882,y=0.882,z=0.882)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="10" Size="15,Random=0.594,ParticleAge=(v=0.294,flags=32;t=1,v=1)" Speed="0.04,Random=0.6"/>
-     </Particles>
-    </Childs>
-   </Particles>
-   <Particles Name="smokes_soil">
-    <Params Count="10" SpawnDelay="0.09" ParticleLifeTime="3.4,Random=0.426" RandomOffset="x=0.5,z=0.5" EmitAngle="49.5,Random=0.267327" Texture="textures/sprites/smoke/smoke_white_tiled2.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.594,ParticleAge=(;t=0.1,v=1;t=0.475,v=1;t=1)" Color="(x=0.61,y=0.61,z=0.514)" DiffuseLighting="1.1460674" DiffuseBacklighting="0.4215" Size="3,Random=0.594059,ParticleAge=(v=0.34,flags=32;t=0.137,v=0.75,flags=4;t=1,v=1)" Speed="3,Random=0.842" AirResistance="0.6459309" GravityScale="-0.002" RandomAngles="x=360,y=360,z=360" RandomRotationRate="x=22,y=35,z=22"/>
-    <Childs>
-     <Particles Name="delayed_black_smoke">
-      <Params Count="16" Continuous="true" SpawnDelay="0.13" EmitterLifeTime="10" ParticleLifeTime="4,Random=0.19" RandomOffset="x=0.5,z=0.5" EmitAngle="28.85,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.317,EmitterStrength=(t=0.176,v=1;t=0.52,v=1,flags=32;t=1,flags=4),ParticleAge=(;t=0.17,v=1;t=0.475,v=1;t=1)" Color="(x=0.824,y=0.827,z=0.82)" DiffuseLighting="0.673" Size="3.6,Random=0.4382022,ParticleAge=(v=0.57,flags=32;t=1,v=1)" Speed="Random=0.5" AirResistance="0.76" GravityScale="-0.138" RandomRotationRate="y=45" VisibleUnderwater="If_False"/>
-     </Particles>
-     <Particles Name="smokes_soil1">
-      <Params Count="10" SpawnDelay="Random=0.195021" ParticleLifeTime="8,Random=0.287" PositionOffset="y=3" RandomOffset="x=3,y=3,z=3" FocusGravityDir="true" EmitAngle="81" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.574257,ParticleAge=(;t=0.03,v=1;t=0.5,v=1;t=1)" DiffuseLighting="0" EmissiveLighting="3.96" Size="5.25,Random=0.446,ParticleAge=(v=0.48;t=0.063,v=0.706;t=1,v=1)" Speed="3,Random=0.376" AirResistance="0.3" GravityScale="-0.03" RandomAngles="x=1,y=180,z=1" RandomRotationRate="x=22,y=10,z=22" CameraMinDistance="50" SortOffset="-0.01" FillRateCost="8"/>
-     </Particles>
-    </Childs>
-   </Particles>
-   <Particles Name="core_soil">
-    <Params Count="20" SpawnDelay="0.03" ParticleLifeTime="2,Random=0.594" PositionOffset="y=0.5" EmitAngle="4,Random=1" Texture="textures/sprites/dirt/dust1_sand1.tif" SoftParticle="true" Alpha="0.317,ParticleAge=(v=1;t=0.52,v=0.52,flags=4;t=0.776,v=0.047;t=1,flags=4)" Color="(x=0.5,y=0.357,z=0.3),ParticleAge=(v=(x=0.89,y=0.89,z=0.89);t=1,v=(x=1,y=1,z=1))" DiffuseLighting="0.3903941" DiffuseBacklighting="0.188" Size="10,Random=0.3865031,ParticleAge=(v=0.318;t=0.99,v=1)" Stretch="0.1,ParticleAge=(v=1,flags=32;t=0.463,flags=4)" Speed="14,Random=0.446" GravityScale="1.6" RandomAngles="x=21,y=10,z=11" RandomRotationRate="x=11,y=11,z=11"/>
-    <Childs>
-     <Particles Name="dirt_darker0">
-      <Params Count="20" SpawnDelay="0.03" ParticleLifeTime="0.6,Random=0.594" PositionOffset="y=0.5" EmitAngle="4,Random=1" Texture="textures/sprites/dirt/dust1_sand1.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=0.48,v=0.48,flags=4;t=1,flags=4)" Color="(x=0.533,y=0.46,z=0.34),ParticleAge=(v=(x=0.89,y=0.89,z=0.89);t=1,v=(x=1,y=1,z=1))" DiffuseLighting="1.0161195" DiffuseBacklighting="0.1625" Size="3,Random=0.3865031,ParticleAge=(v=0.318;t=0.99,v=1)" Stretch="0.15,ParticleAge=(v=1,flags=32;t=0.463,flags=4)" Speed="14,Random=0.65" GravityScale="1.6" RandomAngles="x=21,y=10,z=11" RandomRotationRate="x=11,y=11,z=11"/>
-     </Particles>
-     <Particles Name="dirt2">
-      <Params Count="10" SpawnDelay="0.03" ParticleLifeTime="2,Random=0.594" RandomOffset="y=1" EmitAngle="60,Random=0.188" Texture="textures/sprites/dirt/sand_explosion3.tif" SoftParticle="true" Alpha="ParticleAge=(t=0.008,v=1,flags=32;t=1,flags=4)" Color="(x=0.486,y=0.467,z=0.447)" DiffuseLighting="1.0666667" DiffuseBacklighting="0.25" Size="3.74,Random=0.386,ParticleAge=(v=0.5,flags=32;t=0.5,v=1)" Speed="6,Random=0.733" AirResistance="0.6" GravityScale="1" RandomAngles="x=21,y=40,z=11" RandomRotationRate="x=11,y=20,z=11" SortOffset="-0.02"/>
-     </Particles>
-     <Particles Name="dirt3">
-      <Params Count="10" SpawnDelay="0.03" ParticleLifeTime="0.5,Random=0.594" EmitAngle="86,Random=1" OrientToVelocity="true" Texture="textures/sprites/dirt/dust1_sand1.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=0.647,v=0.37;t=0.8,v=0.09;t=1)" Color="(x=0.337,y=0.26,z=0.204),ParticleAge=(v=(x=0.89,y=0.89,z=0.89);t=1,v=(x=1,y=1,z=1))" DiffuseLighting="1.0216904" DiffuseBacklighting="0.3315" Size="1.5,Random=0.3865031,ParticleAge=(v=0.48,flags=32;t=1,v=1)" Stretch="0.2,ParticleAge=(v=1,flags=32;t=1,flags=4)" Speed="7,Random=0.248" AirResistance="0.2" GravityScale="0.3" RandomRotationRate="x=11,y=11,z=11" SortOffset="-0.03"/>
-     </Particles>
-     <Particles Name="second_quick_dirt8">
-      <Params Count="20" ParticleLifeTime="1,Random=0.36" EmitAngle="60" Texture="textures/sprites/dirt/dirt_a.tif" Material="materials/particle/blast_fall" SoftParticle="true" Alpha="ParticleAge=(t=0.624,v=1;t=1)" DiffuseLighting="1.25" DiffuseBacklighting="0.2" Size="2.75,Random=0.515,ParticleAge=(v=0.48;t=1,v=1)" Speed="4,Random=0.248" GravityScale="1" RandomAngles="x=21,y=360,z=21" RandomRotationRate="y=10" SortOffset="-0.01"/>
-     </Particles>
-     <Particles Name="core_soil1">
-      <Params Count="85" SpawnDelay="0.03" ParticleLifeTime="1.8,Random=0.594" EmitAngle="17,Random=1" Texture="textures/sprites/dirt/dirt_a.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=0.714,v=1,flags=32;t=1,flags=4)" Color="(x=0.675,y=0.6,z=0.49)" DiffuseLighting="1.1940299" DiffuseBacklighting="0.1625" Size="1.4,Random=0.248,ParticleAge=(v=0.59;t=0.99,v=1)" Stretch="0.1,ParticleAge=(v=1,flags=32;t=0.463,flags=4)" Speed="13,Random=0.614" GravityScale="1.8" RandomAngles="y=359" RandomRotationRate="y=55"/>
-      <Childs>
-       <Particles Name="core_soil2">
-        <Params Count="25" SpawnDelay="0.05" ParticleLifeTime="2,Random=0.594" EmitAngle="8.4,Random=1" Texture="textures/sprites/dirt/dust_smoke2.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=0.714,v=1,flags=32;t=1,flags=4)" Color="(x=0.675,y=0.6,z=0.49)" DiffuseLighting="0.80358213" DiffuseBacklighting="0.1625" Size="1.81,Random=0.3865031,ParticleAge=(v=0.59;t=0.99,v=1)" Stretch="ParticleAge=(v=1,flags=32;t=0.545)" Speed="11.7,Random=0.65" GravityScale="1.35" RandomAngles="y=359" RandomRotationRate="y=55" SortOffset="-0.02"/>
-       </Particles>
-      </Childs>
-     </Particles>
-     <Particles Name="core_soil3">
-      <Params Count="40" SpawnDelay="0.03" ParticleLifeTime="0.7,Random=0.594" EmitAngle="40,Random=0.198" OrientToVelocity="true" Texture="textures/sprites/dirt/dust1_sand1.dds" SoftParticle="true" Alpha="0.455,ParticleAge=(v=1;t=1)" Color="(x=0.847,y=0.847,z=0.847)" DiffuseLighting="0.317" Size="10,Random=0.3865031,ParticleAge=(v=0.318;t=0.99,v=1)" Stretch="0.3,ParticleAge=(v=0.23;t=0.463,v=1)" Speed="11.1,Random=0.65" RandomAngles="x=21,y=10,z=11" RandomRotationRate="x=11,y=11,z=11"/>
-     </Particles>
-    </Childs>
-   </Particles>
-   <Particles Name="wind8">
-    <Params ParticleLifeTime="0.4" EmitAngle="180,Random=1" Facing="Free" BlendType="Additive" DiffuseLighting="0" Size="0" Speed="78.4" RandomAngles="x=12,y=12,z=12" RandomRotationRate="x=12,y=12,z=12"/>
-   </Particles>
-   <Particles Name="light_dummy10">
-    <Params Count="1" ParticleLifeTime="0.3" BlendType="Additive" Texture="textures/sprites/glow/glow.tif" Alpha="0.515,ParticleAge=(t=0.5,v=1;t=1)" DiffuseLighting="0" EmissiveLighting="10" LightSource="Radius=(30,ParticleAge=(;t=0.3,v=1;t=1,v=0.59)),Intensity=(4,ParticleAge=(t=0.616,v=1;t=1))" Size="0.12"/>
-   </Particles>
-  </Childs>
+  <Params />
  </Particles>
  <Particles Name="rocket.tree">
   <Params Enabled="false" Count="51" EmitterLifeTime="0.15" ParticleLifeTime="0.62,Random=0.782178" FocusGravityDir="true" EmitAngle="65.32182,Random=1" Facing="Free" Alpha="ParticleAge=(t=0.5,v=1;t=1)" Size="2.77157,Random=0.3902439,ParticleAge=(v=0.59;t=0.25,v=0.718;t=1,v=1)" Speed="180,Random=0.693069" AirResistance="11.82553" SortOffset="-0.01"/>
@@ -3497,7 +3396,7 @@
     <Params Count="11" Continuous="true" SpawnDelay="0.22" EmitterLifeTime="3" ParticleLifeTime="4,Random=0.19" RandomOffset="x=2.4,z=2.4" FocusGravityDir="true" EmitAngle="28.85,Random=0.448718" Texture="textures/sprites/smoke/smoke_white_tiled2.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.455,EmitterStrength=(;t=0.26,v=1),ParticleAge=(;t=0.17,v=1;t=0.475,v=1;t=1)" Color="(x=0.45,y=0.482,z=0.416)" DiffuseLighting="0.6169492" DiffuseBacklighting="0.2625" Size="10,Random=0.4382022,ParticleAge=(v=0.545;t=1,v=1)" Speed="6,Random=0.5" AirResistance="0.8206551" GravityScale="-0.1" RandomRotationRate="x=21,y=21,z=21" VisibleUnderwater="If_False"/>
    </Particles>
    <Particles Name="wind">
-    <Params Count="20" ParticleLifeTime="0.2" EmitAngle="90.5,Random=1" BlendType="Additive" Texture="textures/sprites/sparks/sparks_a.dds" EmissiveLighting="10" Size="0.2" Speed="100" RandomAngles="x=12,y=12,z=12" RandomRotationRate="x=12,y=12,z=12" ForceGeneration="Wind"/>
+    <Params Count="20" ParticleLifeTime="0.2" EmitAngle="90.5,Random=1" BlendType="Additive" Texture="textures/sprites/sparks/sparks_a.dds" EmissiveLighting="10" Size="0.2" Speed="100" RandomAngles="x=12,y=12,z=12" RandomRotationRate="x=12,y=12,z=12" FillRateCost="0"/>
    </Particles>
    <Particles Name="bouncey_spark_gens">
     <Params Count="13" Continuous="true" SpawnDelay="0.4" EmitterLifeTime="0.4" ParticleLifeTime="0.4" RandomOffset="x=2,z=2" EmitAngle="180,Random=1" BlendType="Additive" Texture="textures/sprites/sparks/sparks_multi_tiled.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="ParticleAge=(t=0.48,v=1;t=1,v=0.39)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="0.18,ParticleAge=(v=1;t=1)" Speed="14" GravityScale="1" Elasticity="0.001" VisibleUnderwater="If_False"/>
@@ -3834,6 +3733,9 @@
       <Params Count="2" SpawnDelay="0.08,Random=0.195021" ParticleLifeTime="0.71" PositionOffset="y=0.2" FocusGravityDir="true" Facing="Velocity" BlendType="Additive" Texture="textures/sprites/water/shockwave_grey.tif" SoftParticle="true" Alpha="ParticleAge=(v=1;t=1)" Color="(x=0.882,y=0.882,z=0.882)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="10" Size="15,Random=0.594,ParticleAge=(v=0.294,flags=32;t=1,v=1)" Speed="0.04,Random=0.6"/>
      </Particles>
     </Childs>
+   </Particles>
+   <Particles Name="audio">
+    <Params StartTrigger="pfxExplosion"/>
    </Particles>
   </Childs>
  </Particles>

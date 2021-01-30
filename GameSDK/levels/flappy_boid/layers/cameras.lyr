@@ -1,33 +1,10 @@
 <ObjectLayer>
- <Layer Name="cameras" FullName="cameras" GUID="74c41923-9170-7207-6c57-a6df5142b8e5" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1602100377">
+ <Layer Name="cameras" FullName="cameras" GUID="74c41923-9170-7207-6c57-a6df5142b8e5" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612036032">
   <LayerObjects>
    <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="89194c9d-30f3-7b63-3c45-e0140f9f9c0e" Name="flappy_cam" Pos="485,520,100" Rotate="-8.7422777e-08,0,-0,-1" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="35505aea-59dd-0eda-f2e8-9740eefda429" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
-     </Component>
-    </Components>
-   </Object>
-   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="8a6421cb-697d-2a8d-3733-6c727d4da49b" Name="cam_debug_front" Pos="489.85089,533.26648,101.87553" Rotate="0.059963908,4.1065107e-10,-7.4371749e-09,0.99820054" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="dde7e6a8-ec5f-2a36-f992-80a3d799ef77" Name="" UserAdded="true">
       <Transform>
        <translation>
         <position>
@@ -70,7 +47,30 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="aa622058-5326-e53c-f920-9056e0c33194" Name="cam_game_over" Pos="461,563.25,31" Rotate="0.70559287,-0.046247002,-0.046247002,0.70559287" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="8a6421cb-697d-2a8d-3733-6c727d4da49b" Name="cam_debug_front" Pos="489.85089,533.26648,101.87553" Rotate="0.059963908,4.1065107e-10,-7.4371749e-09,0.99820054" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="dde7e6a8-ec5f-2a36-f992-80a3d799ef77" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="74c41923-9170-7207-6c57-a6df5142b8e5" Id="aa622058-5326-e53c-f920-9056e0c33194" Name="cam_game_over" Pos="461,511.23413,31" Rotate="0.70559287,-0.046247002,-0.046247002,0.70559287" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="93f1ea59-95ad-2e9f-728c-2d6f568123ef" Name="" UserAdded="true">

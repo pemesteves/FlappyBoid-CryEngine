@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1602163454">
+<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1612035740">
  <Files>
   <File path="flappy_boid/flappy_boid.level"/>
  </Files>
@@ -8,8 +8,8 @@
   <Path>%editor%/objects/gradf.dds</Path>
   <Path>%editor%/objects/helper.mtl</Path>
   <Path>%editor%/objects/helper_illum.mtl</Path>
-  <Path>%editor%/objects/mtlplane.cgf</Path>
-  <Path>%editor%/objects/mtlsphere.cgf</Path>
+  <Path>%editor%/objects/particles.cgf</Path>
+  <Path>%editor%/objects/sound.cgf</Path>
   <Path>%editor%/objects/spawnpointhelper.cgf</Path>
   <Path>%editor%/objects/t.cgf</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
@@ -537,9 +537,47 @@
   <Path>animations/mannequin/adb/playertags.xml</Path>
   <Path>animations/mannequin/adb/selectiontags.xml</Path>
   <Path>animations/mannequin/adb/switchfiremodetarget.xml</Path>
+  <Path>audio/sdlmixer/ace/c_npc.xml</Path>
+  <Path>audio/sdlmixer/ace/c_player.xml</Path>
+  <Path>audio/sdlmixer/ace/contexts/airfield/l_airfield.xml</Path>
+  <Path>audio/sdlmixer/ace/contexts/airfield/l_atl_preloads.xml</Path>
+  <Path>audio/sdlmixer/ace/contexts/vr_demo/l_vr_demo.xml</Path>
+  <Path>audio/sdlmixer/ace/contexts/woodland/l_atl_preloads.xml</Path>
+  <Path>audio/sdlmixer/ace/contexts/woodland/l_woodland.xml</Path>
+  <Path>audio/sdlmixer/ace/default_controls.xml</Path>
+  <Path>audio/sdlmixer/ace/flappy_audio.xml</Path>
+  <Path>audio/sdlmixer/ace/flappyaudio.xml</Path>
+  <Path>audio/sdlmixer/ace/g_atl_environments.xml</Path>
+  <Path>audio/sdlmixer/ace/g_atl_preloads.xml</Path>
+  <Path>audio/sdlmixer/ace/g_events.xml</Path>
+  <Path>audio/sdlmixer/ace/l_global.xml</Path>
+  <Path>audio/sdlmixer/ace/m_global.xml</Path>
+  <Path>audio/sdlmixer/ace/p_brk.xml</Path>
+  <Path>audio/sdlmixer/ace/p_col_mat.xml</Path>
+  <Path>audio/sdlmixer/ace/p_col_obj.xml</Path>
+  <Path>audio/sdlmixer/ace/p_col_veg.xml</Path>
+  <Path>audio/sdlmixer/ace/p_pfx.xml</Path>
+  <Path>audio/sdlmixer/ace/p_pro.xml</Path>
+  <Path>audio/sdlmixer/ace/ui_hud.xml</Path>
+  <Path>audio/sdlmixer/ace/ui_menu.xml</Path>
+  <Path>audio/sdlmixer/ace/v_abrams.xml</Path>
+  <Path>audio/sdlmixer/ace/v_global.xml</Path>
+  <Path>audio/sdlmixer/ace/v_hmmwv.xml</Path>
+  <Path>audio/sdlmixer/ace/v_mh60_blackhawk.xml</Path>
+  <Path>audio/sdlmixer/ace/v_speedboat.xml</Path>
+  <Path>audio/sdlmixer/ace/v_swat_van.xml</Path>
+  <Path>audio/sdlmixer/ace/w_global.xml</Path>
+  <Path>audio/sdlmixer/ace/w_grenade.xml</Path>
+  <Path>audio/sdlmixer/ace/w_hmg.xml</Path>
+  <Path>audio/sdlmixer/ace/w_melee.xml</Path>
+  <Path>audio/sdlmixer/ace/w_pistol.xml</Path>
+  <Path>audio/sdlmixer/ace/w_rifle.xml</Path>
+  <Path>audio/sdlmixer/ace/w_rocketlauncher.xml</Path>
+  <Path>audio/sdlmixer/ace/w_shotgun.xml</Path>
+  <Path>audio/sdlmixer/ace/w_tank_cannon.xml</Path>
+  <Path>audio/sdlmixer/ace/w_tank_machinegun.xml</Path>
   <Path>editor/resourcecache/materials/cloudtiling_diff.dds</Path>
   <Path>engineassets/textures/grey.dds</Path>
-  <Path>entities.xml</Path>
   <Path>libs/actiongraphs/sdk_explosion.xml</Path>
   <Path>libs/config/controller/buttonlayout_alt.xml</Path>
   <Path>libs/config/controller/buttonlayout_altlefty.xml</Path>
@@ -566,6 +604,7 @@
   <Path>libs/particles/breakable_objects.xml</Path>
   <Path>libs/particles/bullet.xml</Path>
   <Path>libs/particles/collisions.xml</Path>
+  <Path>libs/particles/explosions.xml</Path>
   <Path>libs/particles/melee.xml</Path>
   <Path>libs/particles/vehicles.xml</Path>
   <Path>libs/particles/weapon_fx.xml</Path>
@@ -590,47 +629,15 @@
   <Path>materials/decals/rock/rock_sandy.mtl</Path>
   <Path>materials/decals/snow/snow_melt.mtl</Path>
   <Path>materials/decals/wood/wood_planks.mtl</Path>
-  <Path>materials/flappycloudbg.mtl</Path>
   <Path>materials/generic/concrete/concrete_wall_05.mtl</Path>
-  <Path>materials/generic/concrete/courtyard_floor.mtl</Path>
   <Path>materials/generic/concrete/eroded_concrete.mtl</Path>
-  <Path>materials/generic/concrete/floor_stone_tiles_a.mtl</Path>
-  <Path>materials/generic/concrete/plaster_rough_stones.mtl</Path>
   <Path>materials/generic/concrete/plaster_sandstone_a.mtl</Path>
   <Path>materials/generic/concrete/roof_tar_paper_01.mtl</Path>
   <Path>materials/generic/concrete/used_concrete.mtl</Path>
-  <Path>materials/generic/glass/advert_sign_glass.mtl</Path>
-  <Path>materials/generic/glass/broken_glass.mtl</Path>
-  <Path>materials/generic/glass/glass_damaged.mtl</Path>
-  <Path>materials/generic/glass/glass_diffuse.mtl</Path>
-  <Path>materials/generic/glass/glass_dirty.mtl</Path>
-  <Path>materials/generic/glass/glass_fog.mtl</Path>
-  <Path>materials/generic/glass/glass_frosted.mtl</Path>
-  <Path>materials/generic/glass/glass_frosted1.mtl</Path>
-  <Path>materials/generic/glass/glass_frosted1.mtl</Path>
-  <Path>materials/generic/glass/glass_frosted_red.mtl</Path>
-  <Path>materials/generic/glass/glass_frosted_red_and_blue.mtl</Path>
-  <Path>materials/generic/glass/glass_hex.mtl</Path>
-  <Path>materials/generic/glass/glass_shattered.mtl</Path>
-  <Path>materials/generic/glass/glass_squares.mtl</Path>
-  <Path>materials/generic/glass/glass_squares_rough.mtl</Path>
-  <Path>materials/generic/glass/glass_tintcolormap.mtl</Path>
-  <Path>materials/generic/glass/glass_tintmap.mtl</Path>
-  <Path>materials/generic/glass/glass_wet.mtl</Path>
-  <Path>materials/generic/glass/glassblocks.mtl</Path>
-  <Path>materials/generic/glass/rough_glass.mtl</Path>
-  <Path>materials/generic/glass/scratched_glass.mtl</Path>
-  <Path>materials/generic/glass/security_hut_glass.mtl</Path>
-  <Path>materials/generic/glass/window_glass.mtl</Path>
-  <Path>materials/generic/glass/window_streaks_glass.mtl</Path>
   <Path>materials/generic/wood/wall_wood_3.mtl</Path>
   <Path>materials/generic/wood/wood_beams_a_red.mtl</Path>
-  <Path>materials/invisible.mtl</Path>
-  <Path>materials/material_default.mtl</Path>
-  <Path>materials/material_layers_default.mtl</Path>
-  <Path>materials/material_terrain_default.mtl</Path>
   <Path>materials/moving_sky_bg.mtl</Path>
-  <Path>materials/moving_sky_bg.mtl</Path>
+  <Path>materials/particle/blast_fall.mtl</Path>
   <Path>materials/particle/exposion_normal.mtl</Path>
   <Path>materials/particle/refraction.mtl</Path>
   <Path>materials/particle/spec_water.mtl</Path>
@@ -666,7 +673,6 @@
   <Path>objects/natural/trees/thin_leave_tree/forest_ground_branches_1_h_lod1.cgf</Path>
   <Path>objects/props/flappy_boid/background_box.cgf</Path>
   <Path>objects/props/flappy_boid/pipe.cgf</Path>
-  <Path>objects/props/flappy_boid/star.cgf</Path>
   <Path>objects/props/flappy_boid/star.cgf</Path>
   <Path>objects/props/misc/3dtext/a.cgf</Path>
   <Path>objects/props/misc/3dtext/e.cgf</Path>
@@ -712,19 +718,24 @@
   <Path>scripts/ai/tps/sharedqueries.lua</Path>
   <Path>scripts/entities/ai/tagpoint.lua</Path>
   <Path>scripts/entities/others/spawnpoint.lua</Path>
+  <Path>scripts/entities/particle/particleeffect.lua</Path>
   <Path>scripts/entities/physics/basicentity.lua</Path>
   <Path>scripts/entities/physics/rigidbodyex.lua</Path>
+  <Path>scripts/entities/sound/audioareaambience.lua</Path>
   <Path>scripts/entities/triggers/proximitytrigger.lua</Path>
   <Path>scripts/physics.lua</Path>
   <Path>textures/defaults/default_mat_warning.dds</Path>
   <Path>textures/defaults/white.dds</Path>
   <Path>textures/sprites/blood/blood_anim_a.dds</Path>
   <Path>textures/sprites/blood/blood_tiled_a.dds</Path>
-  <Path>textures/sprites/dirt/dirt_a.dds</Path>
   <Path>textures/sprites/dirt/dirt_b.dds</Path>
   <Path>textures/sprites/dirt/dirt_c.dds</Path>
+  <Path>textures/sprites/dirt/dust1_sand1.dds</Path>
+  <Path>textures/sprites/dirt/dust_smoke2.dds</Path>
+  <Path>textures/sprites/dirt/sand_explosion3.dds</Path>
   <Path>textures/sprites/fire/explosion_a.dds</Path>
   <Path>textures/sprites/fire/explosion_add.dds</Path>
+  <Path>textures/sprites/fire/explosion_b.dds</Path>
   <Path>textures/sprites/fire/fireball_anim_b.dds</Path>
   <Path>textures/sprites/glass/glass_tiled.dds</Path>
   <Path>textures/sprites/glow/31.dds</Path>
@@ -744,6 +755,7 @@
   <Path>textures/sprites/smoke/smoke_tiled_b.dds</Path>
   <Path>textures/sprites/smoke/smoke_tiled_c.dds</Path>
   <Path>textures/sprites/smoke/smoke_trail_a.dds</Path>
+  <Path>textures/sprites/smoke/smoke_white_tiled2.dds</Path>
   <Path>textures/sprites/smoke/smoke_white_tiled2_whispy.dds</Path>
   <Path>textures/sprites/smoke/spore_a.dds</Path>
   <Path>textures/sprites/smoke/spore_white.dds</Path>
@@ -755,6 +767,7 @@
   <Path>textures/sprites/sparks/spark_stretched1.dds</Path>
   <Path>textures/sprites/sparks/spark_tiled_a.dds</Path>
   <Path>textures/sprites/sparks/spark_tiled_b.dds</Path>
+  <Path>textures/sprites/sparks/sparks_multi_tiled.dds</Path>
   <Path>textures/sprites/stones/stones_tiled.dds</Path>
   <Path>textures/sprites/stones/stones_tiled_a.dds</Path>
   <Path>textures/sprites/water/heli_wake.dds</Path>

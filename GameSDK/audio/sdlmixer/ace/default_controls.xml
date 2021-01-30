@@ -1,4 +1,4 @@
-<AudioSystemData name="default_controls" version="3">
+<AudioSystemData name="default_controls" version="5">
  <Triggers>
   <Trigger name="get_focus"/>
   <Trigger name="lose_focus"/>
@@ -7,10 +7,6 @@
   <Trigger name="pause_all"/>
   <Trigger name="resume_all"/>
  </Triggers>
- <Parameters>
-  <Parameter name="absolute_velocity"/>
-  <Parameter name="relative_velocity"/>
- </Parameters>
  <EditorData>
   <Library />
   <Folders />

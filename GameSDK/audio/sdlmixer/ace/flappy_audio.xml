@@ -1,0 +1,31 @@
+<AudioSystemData name="flappy_audio" version="5" triggers="7">
+ <ImplData events="7"/>
+ <Triggers>
+  <Trigger name="ocean1">
+   <Event name="ocean.ogg" type="start" volume="-14" enable_dist_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="85" loop_count="0"/>
+  </Trigger>
+  <Trigger name="game_end">
+   <Event name="ocean.ogg" type="stop"/>
+  </Trigger>
+  <Trigger name="pipe_collision1">
+   <Event name="pipeCollisionWithSquawk.ogg" type="start" volume="-15" loop_count="1"/>
+  </Trigger>
+  <Trigger name="fall_and_splash">
+   <Event name="fall_and_splash.ogg" type="start" volume="-14" enable_dist_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" loop_count="1"/>
+  </Trigger>
+  <Trigger name="camera_sinking">
+   <Event name="sinking.ogg" type="start" volume="-14" loop_count="1"/>
+  </Trigger>
+  <Trigger name="squawk">
+   <Event name="squawk_medium.ogg" type="start" volume="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxExplosion">
+   <Event name="explosionGrenade.ogg" type="start" volume="-3" loop_count="1"/>
+  </Trigger>
+ </Triggers>
+ <EditorData>
+  <Library />
+  <Folders />
+  <Controls />
+ </EditorData>
+</AudioSystemData>

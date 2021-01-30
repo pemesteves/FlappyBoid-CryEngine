@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="pipes" FullName="pipes" GUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1602163407">
+ <Layer Name="pipes" FullName="pipes" GUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612038122">
   <LayerObjects>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="19acb9ee-4753-0a39-0324-9c2d43b6d4e6" Name="pipe1_top-4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,8" Rotate="1.0430811e-07,0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/concrete/roof_tar_paper_01" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
@@ -88,10 +88,10 @@
       <Node Id="9" Class="Logic:Any" pos="31698,9006.2412,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="30654,8464.7334,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="30654,8670.6387,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
-       <NodeSize Width="8262" Height="2310.2051"/>
+       <NodeSize Width="8262" Height="2104.3008"/>
       </Node>
       <Node Id="51" Class="Mission:GameToken" pos="34812,10014.242,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -117,10 +117,10 @@
       <Node Id="58" Class="Math:Add" pos="33030,9510.2412,0">
        <Inputs A="0" B="0"/>
       </Node>
-      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="31590,9022.7314,0">
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="31590,9228.6348,0">
        <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
-       <NodeSize Width="3482.3755" Height="798.20508"/>
+       <NodeSize Width="1890" Height="592.30078"/>
       </Node>
       <Node Id="62" Class="Vec3:FromVec3" pos="37134,9474.2412,0">
        <Inputs vec3="0,0,0"/>
@@ -215,10 +215,57 @@
       <Node Id="123" Class="Logic:Any" pos="39330,9206.7422,0">
        <Inputs />
       </Node>
-      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="39330,8684.6143,0">
+      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="39330,8890.5176,0">
        <Inputs TextSize="1" Color="0.371238,0.760525,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1937" Height="736"/>
-       <NodeSize Width="3555.0928" Height="976.20508"/>
+       <NodeSize Width="1937" Height="770.30078"/>
+      </Node>
+      <Node Id="125" Class="entity:BasicEntity" pos="38466,8802,0" EntityGUID="575bf70b-523d-4167-5e84-1a235203b754">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="128" Class="Math:Random" pos="39294,8280,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="129" Class="Logic:DeMultiplexer" pos="39726,8280,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="130" Class="String:SetString" pos="39996,8028,0">
+       <Inputs In="explosions.flashbang.explode"/>
+      </Node>
+      <Node Id="131" Class="Logic:Any" pos="40536,8244,0">
+       <Inputs />
+      </Node>
+      <Node Id="132" Class="String:SetString" pos="39996,8136,0">
+       <Inputs In="explosions.Grenade_SCAR.mud"/>
+      </Node>
+      <Node Id="133" Class="String:SetString" pos="39996,8226,0">
+       <Inputs In="explosions.Grenade_SCAR.metal.smoke_high_lingering"/>
+      </Node>
+      <Node Id="134" Class="String:SetString" pos="39996,8316,0">
+       <Inputs In="explosions.Grenade_SCAR.snow"/>
+      </Node>
+      <Node Id="135" Class="String:SetString" pos="39996,8406,0">
+       <Inputs In="explosions.tank30.explosion"/>
+      </Node>
+      <Node Id="136" Class="String:SetString" pos="39996,8496,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="137" Class="String:SetString" pos="39996,8586,0">
+       <Inputs In="explosions.explosive_bullet.default"/>
+      </Node>
+      <Node Id="138" Class="String:SetString" pos="39996,8676,0">
+       <Inputs In="explosions.explosive_bullet.human"/>
+      </Node>
+      <Node Id="139" Class="Logic:Any" pos="39150,8280,0">
+       <Inputs />
+      </Node>
+      <Node Id="140" Name="randomize_star_explosion_effect_on_each_game_loop" Class="_commentbox" pos="39132,7954.5747,0">
+       <Inputs TextSize="1" Color="0.752942,0.40724,0.879623" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2052" Height="810"/>
+       <NodeSize Width="2052" Height="844.30078"/>
+      </Node>
+      <Node Id="142" Class="Entity:PropertySet" pos="40752,8208,0" EntityGUID="0d31781e-7ab7-84fe-7fc3-d2c5f742c6f0">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
       </Node>
      </Nodes>
      <Edges>
@@ -228,6 +275,8 @@
       <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
       <Edge nodeIn="123" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="6" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
       <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
@@ -268,6 +317,7 @@
       <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
       <Edge nodeIn="123" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
       <Edge nodeIn="102" nodeOut="100" portIn="Index" portOut="outRounded" enabled="1"/>
       <Edge nodeIn="106" nodeOut="102" portIn="Set" portOut="Port0" enabled="1"/>
       <Edge nodeIn="115" nodeOut="102" portIn="Set" portOut="Port1" enabled="1"/>
@@ -290,6 +340,26 @@
       <Edge nodeIn="108" nodeOut="120" portIn="in7" portOut="Out" enabled="1"/>
       <Edge nodeIn="108" nodeOut="121" portIn="in8" portOut="Out" enabled="1"/>
       <Edge nodeIn="100" nodeOut="123" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="128" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="129" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="129" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="129" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="129" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="129" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="129" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="129" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="138" nodeOut="129" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="130" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="132" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="133" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="134" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="135" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="136" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="137" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="138" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="128" nodeOut="139" portIn="generate" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -339,10 +409,10 @@
       <Node Id="9" Class="Logic:Any" pos="15696,-204.24902,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="14652,-562.82007,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="14652,-539.91058,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
-       <NodeSize Width="8262" Height="2127.2678"/>
+       <NodeSize Width="8262" Height="2104.3572"/>
       </Node>
       <Node Id="51" Class="Mission:GameToken" pos="18810,803.75122,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -368,10 +438,10 @@
       <Node Id="58" Class="Math:Add" pos="17028,299.75098,0">
        <Inputs A="0" B="0"/>
       </Node>
-      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="15588,-4.8181534,0">
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="15588,18.092804,0">
        <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
-       <NodeSize Width="1890" Height="615.26782"/>
+       <NodeSize Width="1890" Height="592.35712"/>
       </Node>
       <Node Id="62" Class="Vec3:FromVec3" pos="21132,263.75098,0">
        <Inputs vec3="0,0,0"/>
@@ -466,10 +536,57 @@
       <Node Id="123" Class="Logic:Any" pos="23328,-3.7487793,0">
        <Inputs />
       </Node>
-      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="23328,-342.93646,0">
+      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="23328,-320.02557,0">
        <Inputs TextSize="1" Color="0.371238,0.760525,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1937" Height="736"/>
-       <NodeSize Width="1937" Height="793.26782"/>
+       <NodeSize Width="1937" Height="770.35712"/>
+      </Node>
+      <Node Id="125" Class="entity:BasicEntity" pos="22500,-432,0" EntityGUID="538c0178-565f-0394-9dd6-be7917041d3f">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="128" Class="Math:Random" pos="23778,-1044.0547,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="129" Class="Logic:DeMultiplexer" pos="24210,-1044.0547,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="130" Class="String:SetString" pos="24480,-1296.0547,0">
+       <Inputs In="explosions.flashbang.explode"/>
+      </Node>
+      <Node Id="131" Class="Logic:Any" pos="25020,-1080.0547,0">
+       <Inputs />
+      </Node>
+      <Node Id="132" Class="String:SetString" pos="24480,-1188.0547,0">
+       <Inputs In="explosions.Grenade_SCAR.mud"/>
+      </Node>
+      <Node Id="133" Class="String:SetString" pos="24480,-1098.0547,0">
+       <Inputs In="explosions.Grenade_SCAR.metal.smoke_high_lingering"/>
+      </Node>
+      <Node Id="134" Class="String:SetString" pos="24480,-1008.0547,0">
+       <Inputs In="explosions.Grenade_SCAR.snow"/>
+      </Node>
+      <Node Id="135" Class="String:SetString" pos="24480,-918.05469,0">
+       <Inputs In="explosions.tank30.explosion"/>
+      </Node>
+      <Node Id="136" Class="String:SetString" pos="24480,-828.05469,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="137" Class="String:SetString" pos="24480,-738.05469,0">
+       <Inputs In="explosions.explosive_bullet.default"/>
+      </Node>
+      <Node Id="138" Class="String:SetString" pos="24480,-648.05469,0">
+       <Inputs In="explosions.explosive_bullet.human"/>
+      </Node>
+      <Node Id="139" Class="Logic:Any" pos="23634,-1044.0547,0">
+       <Inputs />
+      </Node>
+      <Node Id="140" Name="randomize_star_explosion_effect_on_each_game_loop" Class="_commentbox" pos="23616,-1363.0459,0">
+       <Inputs TextSize="1" Color="0.752942,0.40724,0.879623" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2052" Height="810"/>
+       <NodeSize Width="2052" Height="844.35712"/>
+      </Node>
+      <Node Id="142" Class="Entity:PropertySet" pos="25236,-1116.0547,0" EntityGUID="8356c96b-ee33-faa5-2dfd-2c8780b9d2eb">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
       </Node>
      </Nodes>
      <Edges>
@@ -479,6 +596,8 @@
       <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
       <Edge nodeIn="123" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="6" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
       <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
@@ -519,6 +638,7 @@
       <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
       <Edge nodeIn="123" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
       <Edge nodeIn="102" nodeOut="100" portIn="Index" portOut="outRounded" enabled="1"/>
       <Edge nodeIn="106" nodeOut="102" portIn="Set" portOut="Port0" enabled="1"/>
       <Edge nodeIn="115" nodeOut="102" portIn="Set" portOut="Port1" enabled="1"/>
@@ -541,6 +661,26 @@
       <Edge nodeIn="108" nodeOut="120" portIn="in7" portOut="Out" enabled="1"/>
       <Edge nodeIn="108" nodeOut="121" portIn="in8" portOut="Out" enabled="1"/>
       <Edge nodeIn="100" nodeOut="123" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="128" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="129" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="129" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="129" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="129" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="129" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="129" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="129" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="138" nodeOut="129" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="130" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="132" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="133" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="134" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="135" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="136" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="137" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="138" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="128" nodeOut="139" portIn="generate" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -611,10 +751,10 @@
       <Node Id="9" Class="Logic:Any" pos="16218,3158.238,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="15174,2799.7161,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="15174,2822.5151,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
-       <NodeSize Width="8262" Height="2127.2195"/>
+       <NodeSize Width="8262" Height="2104.4204"/>
       </Node>
       <Node Id="51" Class="Mission:GameToken" pos="19332,4166.2383,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -640,10 +780,10 @@
       <Node Id="58" Class="Math:Add" pos="17550,3662.238,0">
        <Inputs A="0" B="0"/>
       </Node>
-      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="16110,3357.7175,0">
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="16110,3380.5166,0">
        <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
-       <NodeSize Width="1890" Height="615.21936"/>
+       <NodeSize Width="1890" Height="592.42041"/>
       </Node>
       <Node Id="62" Class="Vec3:FromVec3" pos="21654,3626.238,0">
        <Inputs vec3="0,0,0"/>
@@ -738,10 +878,57 @@
       <Node Id="123" Class="Logic:Any" pos="23850,3358.7383,0">
        <Inputs />
       </Node>
-      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="23850,3019.5994,0">
+      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="23850,3042.3984,0">
        <Inputs TextSize="1" Color="0.371238,0.760525,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1937" Height="736"/>
-       <NodeSize Width="1937" Height="793.21936"/>
+       <NodeSize Width="1937" Height="770.42041"/>
+      </Node>
+      <Node Id="125" Class="entity:BasicEntity" pos="23004,2952,0" EntityGUID="86edbc4c-bfb2-acc1-b9b4-d40b9fd5824c">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="128" Class="Math:Random" pos="23940,2430,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="129" Class="Logic:DeMultiplexer" pos="24372,2430,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="130" Class="String:SetString" pos="24642,2178,0">
+       <Inputs In="explosions.flashbang.explode"/>
+      </Node>
+      <Node Id="131" Class="Logic:Any" pos="25182,2394,0">
+       <Inputs />
+      </Node>
+      <Node Id="132" Class="String:SetString" pos="24642,2286,0">
+       <Inputs In="explosions.Grenade_SCAR.mud"/>
+      </Node>
+      <Node Id="133" Class="String:SetString" pos="24642,2376,0">
+       <Inputs In="explosions.Grenade_SCAR.metal.smoke_high_lingering"/>
+      </Node>
+      <Node Id="134" Class="String:SetString" pos="24642,2466,0">
+       <Inputs In="explosions.Grenade_SCAR.snow"/>
+      </Node>
+      <Node Id="135" Class="String:SetString" pos="24642,2556,0">
+       <Inputs In="explosions.tank30.explosion"/>
+      </Node>
+      <Node Id="136" Class="String:SetString" pos="24642,2646,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="137" Class="String:SetString" pos="24642,2736,0">
+       <Inputs In="explosions.explosive_bullet.default"/>
+      </Node>
+      <Node Id="138" Class="String:SetString" pos="24642,2826,0">
+       <Inputs In="explosions.explosive_bullet.human"/>
+      </Node>
+      <Node Id="139" Class="Logic:Any" pos="23796,2430,0">
+       <Inputs />
+      </Node>
+      <Node Id="140" Name="randomize_star_explosion_effect_on_each_game_loop" Class="_commentbox" pos="23778,2104.3535,0">
+       <Inputs TextSize="1" Color="0.752942,0.40724,0.879623" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2052" Height="810"/>
+       <NodeSize Width="2052" Height="844.42041"/>
+      </Node>
+      <Node Id="142" Class="Entity:PropertySet" pos="25398,2358,0" EntityGUID="e3769844-a613-f3b5-b3e9-0cc794066537">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
       </Node>
      </Nodes>
      <Edges>
@@ -751,6 +938,8 @@
       <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
       <Edge nodeIn="123" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="6" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
       <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
@@ -791,6 +980,7 @@
       <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
       <Edge nodeIn="123" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
       <Edge nodeIn="102" nodeOut="100" portIn="Index" portOut="outRounded" enabled="1"/>
       <Edge nodeIn="106" nodeOut="102" portIn="Set" portOut="Port0" enabled="1"/>
       <Edge nodeIn="115" nodeOut="102" portIn="Set" portOut="Port1" enabled="1"/>
@@ -813,6 +1003,26 @@
       <Edge nodeIn="108" nodeOut="120" portIn="in7" portOut="Out" enabled="1"/>
       <Edge nodeIn="108" nodeOut="121" portIn="in8" portOut="Out" enabled="1"/>
       <Edge nodeIn="100" nodeOut="123" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="128" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="129" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="129" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="129" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="129" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="129" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="129" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="129" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="138" nodeOut="129" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="130" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="132" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="133" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="134" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="135" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="136" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="137" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="138" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="128" nodeOut="139" portIn="generate" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -883,10 +1093,10 @@
       <Node Id="9" Class="Logic:Any" pos="39834,14100.747,0" InHideMask="1023" OutHideMask="1">
        <Inputs />
       </Node>
-      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="38790,13742.109,0">
+      <Node Id="10" Name="pipe_movement_loop" Class="_commentbox" pos="38790,13765.147,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="8262" Height="2070"/>
-       <NodeSize Width="8262" Height="2127.3325"/>
+       <NodeSize Width="8262" Height="2104.3008"/>
       </Node>
       <Node Id="51" Class="Mission:GameToken" pos="42948,15108.747,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -912,10 +1122,10 @@
       <Node Id="58" Class="Math:Add" pos="41166,14604.747,0">
        <Inputs A="0" B="0"/>
       </Node>
-      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="39726,14300.11,0">
+      <Node Id="60" Name="randomize_end_position_for_pipe_movement" Class="_commentbox" pos="39726,14323.146,0">
        <Inputs TextSize="1" Color="0.0865005,0.584079,0.0722718" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1890" Height="558"/>
-       <NodeSize Width="1890" Height="615.3324"/>
+       <NodeSize Width="1890" Height="592.30078"/>
       </Node>
       <Node Id="62" Class="Vec3:FromVec3" pos="45270,14568.747,0">
        <Inputs vec3="0,0,0"/>
@@ -1010,10 +1220,57 @@
       <Node Id="123" Class="Logic:Any" pos="47466,14301.247,0">
        <Inputs />
       </Node>
-      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="47466,13961.992,0">
+      <Node Id="124" Name="randomize_pipe_material_on_each_game_loop" Class="_commentbox" pos="47466,13985.026,0">
        <Inputs TextSize="1" Color="0.371238,0.760525,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1937" Height="736"/>
-       <NodeSize Width="1937" Height="793.3324"/>
+       <NodeSize Width="1937" Height="770.30078"/>
+      </Node>
+      <Node Id="125" Class="entity:BasicEntity" pos="46584,13878,0" EntityGUID="a2b52175-b5ef-5032-f62e-c39cff2e3742">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="128" Class="Math:Random" pos="47628,13140,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="129" Class="Logic:DeMultiplexer" pos="48060,13140,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="130" Class="String:SetString" pos="48330,12888,0">
+       <Inputs In="explosions.flashbang.explode"/>
+      </Node>
+      <Node Id="131" Class="Logic:Any" pos="48870,13104,0">
+       <Inputs />
+      </Node>
+      <Node Id="132" Class="String:SetString" pos="48330,12996,0">
+       <Inputs In="explosions.Grenade_SCAR.mud"/>
+      </Node>
+      <Node Id="133" Class="String:SetString" pos="48330,13086,0">
+       <Inputs In="explosions.Grenade_SCAR.metal.smoke_high_lingering"/>
+      </Node>
+      <Node Id="134" Class="String:SetString" pos="48330,13176,0">
+       <Inputs In="explosions.Grenade_SCAR.snow"/>
+      </Node>
+      <Node Id="135" Class="String:SetString" pos="48330,13266,0">
+       <Inputs In="explosions.tank30.explosion"/>
+      </Node>
+      <Node Id="136" Class="String:SetString" pos="48330,13356,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="137" Class="String:SetString" pos="48330,13446,0">
+       <Inputs In="explosions.explosive_bullet.default"/>
+      </Node>
+      <Node Id="138" Class="String:SetString" pos="48330,13536,0">
+       <Inputs In="explosions.explosive_bullet.human"/>
+      </Node>
+      <Node Id="139" Class="Logic:Any" pos="47484,13140,0">
+       <Inputs />
+      </Node>
+      <Node Id="140" Name="randomize_star_explosion_effect_on_each_game_loop" Class="_commentbox" pos="47466,12807.765,0">
+       <Inputs TextSize="1" Color="0.752942,0.40724,0.879623" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2052" Height="810"/>
+       <NodeSize Width="2052" Height="844.30078"/>
+      </Node>
+      <Node Id="142" Class="Entity:PropertySet" pos="49086,13068,0" EntityGUID="87dbc924-ff84-e077-57a7-cf220a8d26f5">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
       </Node>
      </Nodes>
      <Edges>
@@ -1023,6 +1280,8 @@
       <Edge nodeIn="53" nodeOut="4" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="9" nodeOut="6" portIn="in2" portOut="Done" enabled="1"/>
       <Edge nodeIn="123" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="6" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="6" portIn="in1" portOut="Done" enabled="1"/>
       <Edge nodeIn="62" nodeOut="7" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="56" nodeOut="9" portIn="generate" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="51" portIn="Stop" portOut="Equal True" enabled="1"/>
@@ -1063,6 +1322,7 @@
       <Edge nodeIn="91" nodeOut="84" portIn="A" portOut="out" enabled="1"/>
       <Edge nodeIn="2" nodeOut="91" portIn="Speed" portOut="out" enabled="1"/>
       <Edge nodeIn="123" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="92" portIn="in2" portOut="output" enabled="1"/>
       <Edge nodeIn="102" nodeOut="100" portIn="Index" portOut="outRounded" enabled="1"/>
       <Edge nodeIn="106" nodeOut="102" portIn="Set" portOut="Port0" enabled="1"/>
       <Edge nodeIn="115" nodeOut="102" portIn="Set" portOut="Port1" enabled="1"/>
@@ -1085,6 +1345,26 @@
       <Edge nodeIn="108" nodeOut="120" portIn="in7" portOut="Out" enabled="1"/>
       <Edge nodeIn="108" nodeOut="121" portIn="in8" portOut="Out" enabled="1"/>
       <Edge nodeIn="100" nodeOut="123" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="128" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="129" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="129" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="129" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="129" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="129" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="129" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="129" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="138" nodeOut="129" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="130" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="131" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="132" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="133" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="134" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="135" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="136" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="137" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="138" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="128" nodeOut="139" portIn="generate" portOut="out" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -1125,6 +1405,11 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="0d31781e-7ab7-84fe-7fc3-d2c5f742c6f0" Name="ScoreEffect1" LinkedTo="e6d39543-f6b4-b281-7147-c3b7b2cb3c51" Pos="0,0,4" Rotate="0.70710677,0.70710677,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="explosions.flashbang.explode">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="explosions.flashbang.explode" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
    <Object Type="Entity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="a2b52175-b5ef-5032-f62e-c39cff2e3742" Name="scoreStar4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Rotate="0.70710683,0,0,0.70710683" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="BasicEntity" HasEntity="1">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/star.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -1135,6 +1420,21 @@
        <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
       </CollisionFiltering>
      </Physics>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="8356c96b-ee33-faa5-2dfd-2c8780b9d2eb" Name="ScoreEffect2" LinkedTo="ca9dce9b-cdd0-876d-cd19-0b72cb66c0ec" Pos="0,0,4" Rotate="0.70710677,0.70710677,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="explosions.flashbang.explode">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="explosions.flashbang.explode" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="e3769844-a613-f3b5-b3e9-0cc794066537" Name="ScoreEffect3" LinkedTo="1380206a-b502-3d51-7ae3-5dce2ff007cc" Pos="0,0,4" Rotate="0.70710677,0.70710677,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="explosions.flashbang.explode">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="explosions.flashbang.explode" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="98f79dd9-ec38-4136-fde8-9025c4dc0aad" Id="87dbc924-ff84-e077-57a7-cf220a8d26f5" Name="ScoreEffect4" LinkedTo="2e4d28ff-067d-b7bd-40fd-430caf54d8f6" Pos="0,0,4" Rotate="0.70710677,0.70710677,1.9783166e-14,-5.3383155e-15" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="explosions.flashbang.explode">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="explosions.flashbang.explode" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
     </Properties>
    </Object>
   </LayerObjects>

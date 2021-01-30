@@ -1,9 +1,9 @@
 <Level WaterColor="16711680" SandboxVersion="5.6.7.94">
- <View ViewerPos="461,563.25,31" ViewerAngles="-0.1308997,1.4901161e-08,1.5707965"/>
+ <View ViewerPos="485,520,99.980209" ViewerAngles="0,-0,3.1415925"/>
  <Fog Fog="" Terrain="" EnvState="" VolFogShadows="" VolumetricCloud="" Ocean="" OceanAnimation="" DynTexSource=""/>
  <Missions Current="Mission0">
   <Mission Name="Mission0" Description="" PlayerEquipPack="" Script="" MissionTime="12:34">
-   <ObjectLayers LayerVersion="2" Current="Main" CurrentGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed"/>
+   <ObjectLayers LayerVersion="2" Current="audio" CurrentGUID="0ff96ee3-ce3d-f300-4356-37b775b84ff5"/>
    <Objects />
    <Lighting SunRotation="240" SunHeight="80" Algorithm="3" Lighting="1" Shadows="1" ShadowIntensity="100" ILQuality="1" HemiSamplQuality="5" Longitude="90" DawnTime="355" DawnDuration="10" DuskTime="365" DuskDuration="10" SunVector="-0.51961529,-0.29999986,-0.79999995"/>
    <Weapons>
@@ -18,6 +18,7 @@
  </EntityPrototypesLibs>
  <ParticleLibs>
   <LevelLibrary Name="Level" SandboxVersion="5.6.7.94"/>
+  <Library Name="explosions"/>
  </ParticleLibs>
  <FlareLibs>
   <LevelLibrary Name="Level"/>

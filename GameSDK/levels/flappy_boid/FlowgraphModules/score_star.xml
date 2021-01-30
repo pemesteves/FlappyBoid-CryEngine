@@ -1,0 +1,27 @@
+<Graph isModule="1" moduleName="score_star" Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="entStar" Type="3" Input="1"/>
+  <Port Name="entParticleEffect" Type="3" Input="1"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_score_star" pos="80,10,0"/>
+  <Node Id="2" Class="Module:End_score_star" pos="1278,54,0">
+   <Inputs />
+  </Node>
+  <Node Id="111" Class="entity:ParticleEffect" pos="612,180,0">
+   <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+  </Node>
+  <Node Id="115" Class="entity:BasicEntity" pos="612,-288,0">
+   <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Cancel" portOut="Cancel" enabled="1"/>
+  <Edge nodeIn="111" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="111" nodeOut="1" portIn="Spawn" portOut="Start" enabled="1"/>
+  <Edge nodeIn="111" nodeOut="1" portIn="entityId" portOut="entParticleEffect" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="1" portIn="Hide" portOut="Start" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="1" portIn="entityId" portOut="entStar" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

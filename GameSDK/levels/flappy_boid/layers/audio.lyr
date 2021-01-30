@@ -1,0 +1,33 @@
+<ObjectLayer>
+ <Layer Name="audio" FullName="audio" GUID="0ff96ee3-ce3d-f300-4356-37b775b84ff5" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612036631">
+  <LayerObjects>
+   <Object Type="AudioAreaAmbience" Layer="audio" LayerGUID="0ff96ee3-ce3d-f300-4356-37b775b84ff5" Id="2baa4e60-329b-3f37-162c-c36f99c4a1b2" Name="aaa_ocean" Pos="466.862,511.24451,35.162277" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="" fEnvironmentDistance="5" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="ocean1" audioRTPCRtpc="" fRtpcDistance="85" audioTriggerStopTrigger="game_end" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AreaBox" Layer="audio" LayerGUID="0ff96ee3-ce3d-f300-4356-37b775b84ff5" Id="4148ed3c-6525-639d-3b0c-4ee7123ea453" Name="ab_ocean" Pos="466.862,511.24451,28.471533" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" InnerFadeDistance="0" AreaId="-1" FadeInZone="0" Width="30" Length="30" Height="1" GroupId="0" Priority="0" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" HasEntity="1" BoxMin="-15,-15,0" BoxMax="15,15,1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="dea36623-c1d9-67bf-a69f-36410a649b19">
+      <Area Id="-1" Group="0" Proximity="0" Priority="0" InnerFadeDistance="0" BoxMin="-15,-15,0" BoxMax="15,15,1">
+       <SoundData>
+        <Side1 ObstructSound="0"/>
+        <Side2 ObstructSound="0"/>
+        <Side3 ObstructSound="0"/>
+        <Side4 ObstructSound="0"/>
+        <Side5 ObstructSound="0"/>
+        <Side6 ObstructSound="0"/>
+       </SoundData>
+       <Entities>
+        <Entity GUID="2baa4e60-329b-3f37-162c-c36f99c4a1b2"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Entities>
+     <Entity Id="2baa4e60-329b-3f37-162c-c36f99c4a1b2"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
