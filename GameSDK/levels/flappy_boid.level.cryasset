@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1612276711">
+<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1612276917">
  <Files>
   <File path="flappy_boid/flappy_boid.level"/>
  </Files>
@@ -773,10 +773,13 @@
   <Path>textures/sprites/fire/explosion_a.dds</Path>
   <Path>textures/sprites/fire/explosion_add.dds</Path>
   <Path>textures/sprites/fire/explosion_b.dds</Path>
+  <Path>textures/sprites/fire/fire_tiled_a.dds</Path>
   <Path>textures/sprites/fire/fireball_anim_b.dds</Path>
+  <Path>textures/sprites/fire/large_animated1.dds</Path>
   <Path>textures/sprites/fire/number9_together1.dds</Path>
   <Path>textures/sprites/glass/glass_tiled.dds</Path>
   <Path>textures/sprites/glow/31.dds</Path>
+  <Path>textures/sprites/glow/flare_a.dds</Path>
   <Path>textures/sprites/glow/glow.dds</Path>
   <Path>textures/sprites/glow/glow_a.dds</Path>
   <Path>textures/sprites/leaves/leaf_tiled_a.dds</Path>
