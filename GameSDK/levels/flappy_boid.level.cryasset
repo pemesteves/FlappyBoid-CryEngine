@@ -1,13 +1,15 @@
-<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1612035740">
+<AssetMetadata version="0" type="Level" guid="1577137c-526f-1ac9-24af-44c451748c0b" source="" timestamp="1612275772">
  <Files>
   <File path="flappy_boid/flappy_boid.level"/>
  </Files>
  <Dependencies>
   <Path usageCount="1">%ENGINE%/EngineAssets/Shading/default.env</Path>
-  <Path>%editor%/materials/crydesigner_selection.mtl</Path>
+  <Path>%editor%/materials/shaderlist.xml</Path>
+  <Path>%editor%/materials/stripes.dds</Path>
   <Path>%editor%/objects/gradf.dds</Path>
-  <Path>%editor%/objects/helper.mtl</Path>
   <Path>%editor%/objects/helper_illum.mtl</Path>
+  <Path>%editor%/objects/mtlobjects.mtl</Path>
+  <Path>%editor%/objects/mtlplane.cgf</Path>
   <Path>%editor%/objects/particles.cgf</Path>
   <Path>%editor%/objects/sound.cgf</Path>
   <Path>%editor%/objects/spawnpointhelper.cgf</Path>
@@ -25,9 +27,8 @@
   <Path>%engine%/engineassets/materials/material_terrain_default.mtl</Path>
   <Path>%engine%/engineassets/materials/water/ocean_default.mtl</Path>
   <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
+  <Path>%engine%/engineassets/objects/primitive_sphere.cgf</Path>
   <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
-  <Path>%engine%/engineassets/texturemsg/defaultsolids.mtl</Path>
-  <Path>%engine%/engineassets/texturemsg/orange_for_designer.dds</Path>
   <Path>%engine%/engineassets/textures/grey.dds</Path>
   <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
   <Path>animations/human/male/additive/additive_breathing_heavy_01.caf</Path>
@@ -537,47 +538,9 @@
   <Path>animations/mannequin/adb/playertags.xml</Path>
   <Path>animations/mannequin/adb/selectiontags.xml</Path>
   <Path>animations/mannequin/adb/switchfiremodetarget.xml</Path>
-  <Path>audio/sdlmixer/ace/c_npc.xml</Path>
-  <Path>audio/sdlmixer/ace/c_player.xml</Path>
-  <Path>audio/sdlmixer/ace/contexts/airfield/l_airfield.xml</Path>
-  <Path>audio/sdlmixer/ace/contexts/airfield/l_atl_preloads.xml</Path>
-  <Path>audio/sdlmixer/ace/contexts/vr_demo/l_vr_demo.xml</Path>
-  <Path>audio/sdlmixer/ace/contexts/woodland/l_atl_preloads.xml</Path>
-  <Path>audio/sdlmixer/ace/contexts/woodland/l_woodland.xml</Path>
-  <Path>audio/sdlmixer/ace/default_controls.xml</Path>
-  <Path>audio/sdlmixer/ace/flappy_audio.xml</Path>
-  <Path>audio/sdlmixer/ace/flappyaudio.xml</Path>
-  <Path>audio/sdlmixer/ace/g_atl_environments.xml</Path>
-  <Path>audio/sdlmixer/ace/g_atl_preloads.xml</Path>
-  <Path>audio/sdlmixer/ace/g_events.xml</Path>
-  <Path>audio/sdlmixer/ace/l_global.xml</Path>
-  <Path>audio/sdlmixer/ace/m_global.xml</Path>
-  <Path>audio/sdlmixer/ace/p_brk.xml</Path>
-  <Path>audio/sdlmixer/ace/p_col_mat.xml</Path>
-  <Path>audio/sdlmixer/ace/p_col_obj.xml</Path>
-  <Path>audio/sdlmixer/ace/p_col_veg.xml</Path>
-  <Path>audio/sdlmixer/ace/p_pfx.xml</Path>
-  <Path>audio/sdlmixer/ace/p_pro.xml</Path>
-  <Path>audio/sdlmixer/ace/ui_hud.xml</Path>
-  <Path>audio/sdlmixer/ace/ui_menu.xml</Path>
-  <Path>audio/sdlmixer/ace/v_abrams.xml</Path>
-  <Path>audio/sdlmixer/ace/v_global.xml</Path>
-  <Path>audio/sdlmixer/ace/v_hmmwv.xml</Path>
-  <Path>audio/sdlmixer/ace/v_mh60_blackhawk.xml</Path>
-  <Path>audio/sdlmixer/ace/v_speedboat.xml</Path>
-  <Path>audio/sdlmixer/ace/v_swat_van.xml</Path>
-  <Path>audio/sdlmixer/ace/w_global.xml</Path>
-  <Path>audio/sdlmixer/ace/w_grenade.xml</Path>
-  <Path>audio/sdlmixer/ace/w_hmg.xml</Path>
-  <Path>audio/sdlmixer/ace/w_melee.xml</Path>
-  <Path>audio/sdlmixer/ace/w_pistol.xml</Path>
-  <Path>audio/sdlmixer/ace/w_rifle.xml</Path>
-  <Path>audio/sdlmixer/ace/w_rocketlauncher.xml</Path>
-  <Path>audio/sdlmixer/ace/w_shotgun.xml</Path>
-  <Path>audio/sdlmixer/ace/w_tank_cannon.xml</Path>
-  <Path>audio/sdlmixer/ace/w_tank_machinegun.xml</Path>
   <Path>editor/resourcecache/materials/cloudtiling_diff.dds</Path>
   <Path>engineassets/textures/grey.dds</Path>
+  <Path>entities.xml</Path>
   <Path>libs/actiongraphs/sdk_explosion.xml</Path>
   <Path>libs/config/controller/buttonlayout_alt.xml</Path>
   <Path>libs/config/controller/buttonlayout_altlefty.xml</Path>
@@ -601,6 +564,7 @@
   <Path>libs/materialeffects/flowgraphs/player_damage.xml</Path>
   <Path>libs/materialeffects/flowgraphs/player_death.xml</Path>
   <Path>libs/materialeffects/flowgraphs/water_bullet_hit.xml</Path>
+  <Path>libs/materialeffects/surfacetypes.xml</Path>
   <Path>libs/particles/breakable_objects.xml</Path>
   <Path>libs/particles/bullet.xml</Path>
   <Path>libs/particles/collisions.xml</Path>
@@ -629,19 +593,90 @@
   <Path>materials/decals/rock/rock_sandy.mtl</Path>
   <Path>materials/decals/snow/snow_melt.mtl</Path>
   <Path>materials/decals/wood/wood_planks.mtl</Path>
+  <Path>materials/flappycloudbg.mtl</Path>
   <Path>materials/generic/concrete/concrete_wall_05.mtl</Path>
+  <Path>materials/generic/concrete/courtyard_floor.mtl</Path>
   <Path>materials/generic/concrete/eroded_concrete.mtl</Path>
+  <Path>materials/generic/concrete/floor_stone_tiles_a.mtl</Path>
+  <Path>materials/generic/concrete/plaster_rough_stones.mtl</Path>
   <Path>materials/generic/concrete/plaster_sandstone_a.mtl</Path>
   <Path>materials/generic/concrete/roof_tar_paper_01.mtl</Path>
   <Path>materials/generic/concrete/used_concrete.mtl</Path>
+  <Path>materials/generic/wood/barrel_wood.mtl</Path>
+  <Path>materials/generic/wood/burned_wood_a.mtl</Path>
+  <Path>materials/generic/wood/floor_wood_4.mtl</Path>
+  <Path>materials/generic/wood/pine_timber.mtl</Path>
+  <Path>materials/generic/wood/plywood_dark.mtl</Path>
   <Path>materials/generic/wood/wall_wood_3.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_a.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_a_blue.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_a_red+surface.mtl</Path>
   <Path>materials/generic/wood/wood_beams_a_red.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_b.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_burnt.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_c.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_thin_a.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_tiled_raft.mtl</Path>
+  <Path>materials/generic/wood/wood_bleached_a.mtl</Path>
+  <Path>materials/generic/wood/wood_dirt_b.mtl</Path>
+  <Path>materials/generic/wood/wood_fine_a.mtl</Path>
+  <Path>materials/generic/wood/wood_fine_a_blend.mtl</Path>
+  <Path>materials/generic/wood/wood_fine_a_blend_planks.mtl</Path>
+  <Path>materials/generic/wood/wood_fine_a_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_fine_b.mtl</Path>
+  <Path>materials/generic/wood/wood_fine_b_rotten.mtl</Path>
+  <Path>materials/generic/wood/wood_flat_a.mtl</Path>
+  <Path>materials/generic/wood/wood_floor_a.mtl</Path>
+  <Path>materials/generic/wood/wood_light_coastal.mtl</Path>
+  <Path>materials/generic/wood/wood_painted_red.mtl</Path>
+  <Path>materials/generic/wood/wood_painted_red_damage.mtl</Path>
+  <Path>materials/generic/wood/wood_painted_red_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_a.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_a_blue.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_a_blue_damage.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_a_blue_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_b.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_b_red.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_b_red_damage.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_b_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_c.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_c_damage.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_c_damage_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_c_light.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_large_c_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_planks_square_e.mtl</Path>
+  <Path>materials/generic/wood/wood_rough_a.mtl</Path>
+  <Path>materials/generic/wood/wood_rough_b.mtl</Path>
+  <Path>materials/generic/wood/wood_rough_b_wet+surface.mtl</Path>
+  <Path>materials/generic/wood/wood_rough_b_wet.mtl</Path>
+  <Path>materials/generic/wood/wood_rough_coastal.mtl</Path>
+  <Path>materials/generic/wood/wood_scots_pine_a.mtl</Path>
+  <Path>materials/generic/wood/wood_scots_pine_a_stripped.mtl</Path>
+  <Path>materials/generic/wood/wood_sheets.mtl</Path>
+  <Path>materials/generic/wood/wood_sheets_mossy.mtl</Path>
+  <Path>materials/generic/wood/wood_sheets_ruff.mtl</Path>
+  <Path>materials/generic/wood/wood_trunk_oak_tree_a.mtl</Path>
+  <Path>materials/generic/wood/wood_trunk_oak_tree_b.mtl</Path>
+  <Path>materials/generic/wood/wooden_planks_set_a.mtl</Path>
+  <Path>materials/generic/wood/wooden_planks_set_b.mtl</Path>
+  <Path>materials/generic/wood/wooden_planks_set_c.mtl</Path>
+  <Path>materials/invisible.mtl</Path>
+  <Path>materials/material_default.mtl</Path>
+  <Path>materials/material_layers_default.mtl</Path>
+  <Path>materials/material_terrain_default.mtl</Path>
   <Path>materials/moving_sky_bg.mtl</Path>
   <Path>materials/particle/blast_fall.mtl</Path>
   <Path>materials/particle/exposion_normal.mtl</Path>
   <Path>materials/particle/refraction.mtl</Path>
+  <Path>materials/particle/spark_sheet1.mtl</Path>
   <Path>materials/particle/spec_water.mtl</Path>
   <Path>materials/particle/water_deformation_a.mtl</Path>
+  <Path>objects/characters/flappyplayer/flappy_fly_loop.caf</Path>
+  <Path>objects/characters/flappyplayer/flappy_idle.caf</Path>
+  <Path>objects/characters/flappyplayer/flappyplayer.cdf</Path>
+  <Path>objects/characters/flappyplayer/flappyplayer.skin</Path>
+  <Path>objects/characters/flappyplayer/flappyskel.chr</Path>
+  <Path>objects/characters/flappyplayer/lowpolybirdmat.mtl</Path>
   <Path>objects/characters/human/generic/skeleton_male_generic.mtl</Path>
   <Path>objects/characters/human/sdk_player/head_a.mtl</Path>
   <Path>objects/characters/human/sdk_player/sdk_player.cdf</Path>
@@ -720,6 +755,7 @@
   <Path>scripts/entities/others/spawnpoint.lua</Path>
   <Path>scripts/entities/particle/particleeffect.lua</Path>
   <Path>scripts/entities/physics/basicentity.lua</Path>
+  <Path>scripts/entities/physics/particlephysics.lua</Path>
   <Path>scripts/entities/physics/rigidbodyex.lua</Path>
   <Path>scripts/entities/sound/audioareaambience.lua</Path>
   <Path>scripts/entities/triggers/proximitytrigger.lua</Path>
@@ -731,12 +767,14 @@
   <Path>textures/sprites/dirt/dirt_b.dds</Path>
   <Path>textures/sprites/dirt/dirt_c.dds</Path>
   <Path>textures/sprites/dirt/dust1_sand1.dds</Path>
+  <Path>textures/sprites/dirt/dust6.dds</Path>
   <Path>textures/sprites/dirt/dust_smoke2.dds</Path>
   <Path>textures/sprites/dirt/sand_explosion3.dds</Path>
   <Path>textures/sprites/fire/explosion_a.dds</Path>
   <Path>textures/sprites/fire/explosion_add.dds</Path>
   <Path>textures/sprites/fire/explosion_b.dds</Path>
   <Path>textures/sprites/fire/fireball_anim_b.dds</Path>
+  <Path>textures/sprites/fire/number9_together1.dds</Path>
   <Path>textures/sprites/glass/glass_tiled.dds</Path>
   <Path>textures/sprites/glow/31.dds</Path>
   <Path>textures/sprites/glow/glow.dds</Path>
@@ -760,6 +798,9 @@
   <Path>textures/sprites/smoke/spore_a.dds</Path>
   <Path>textures/sprites/smoke/spore_white.dds</Path>
   <Path>textures/sprites/snow/blast_fall_ice.dds</Path>
+  <Path>textures/sprites/snow/blast_ice.dds</Path>
+  <Path>textures/sprites/snow/snow02.dds</Path>
+  <Path>textures/sprites/snow/snow_dust.dds</Path>
   <Path>textures/sprites/snow/snow_sheet_a.dds</Path>
   <Path>textures/sprites/sparks/spark_a.dds</Path>
   <Path>textures/sprites/sparks/spark_mono_a.dds</Path>
