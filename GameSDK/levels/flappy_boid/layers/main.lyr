@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612276854">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612277418">
   <LayerObjects>
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="fb7acea6-b78a-24fb-d939-802a852ddd48" Name="AI_start" Pos="455,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
@@ -398,11 +398,6 @@
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="f212038b-8aa6-93ea-4914-58d04b9866ed" Name="AI_end" Pos="515,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
    </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="07c807b0-22f8-eee8-0556-40fcfe8387de" Name="deathTriggerBottom" Pos="500,500,89" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
-    <Properties bActivateWithUseButton="0" DimX="10" DimY="5" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="flappy_boid" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
-     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
-    </Properties>
-   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Name="flappy_boid" Pos="500,500,100.0718" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/invisible" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
@@ -424,6 +419,11 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="07c807b0-22f8-eee8-0556-40fcfe8387de" Name="deathTriggerBottom" Pos="500,500,89" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="10" DimY="5" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="flappy_boid" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="ecb3d852-af27-a5df-a0d3-3986bc61d890" Name="SpawnPoint_player" Pos="500,500,32" Rotate="1,0,0,-6.7599801e-11" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="SpawnPoint" HasEntity="1">
     <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
    </Object>
@@ -438,7 +438,7 @@
      <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="acdaf65f-5742-bd7c-c187-e0e6f1b40541" Name="flappy_mesh_component" LinkedTo="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Rotate="0.70710671,0,0,0.70710683" Scale="2.0000002,2.0000002,2.0000002" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticlePhysics" HasEntity="1">
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="acdaf65f-5742-bd7c-c187-e0e6f1b40541" Name="flappy_mesh_component" LinkedTo="0e9e88a4-cf49-4716-8236-7291ee1ac8bd" Pos="0,0,0.85000002" Rotate="0.70710671,0,0,0.70710683" Scale="2.0000002,2.0000002,2.0000002" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticlePhysics" HasEntity="1">
     <Properties object_Model="objects/characters/flappyPlayer/flappyplayer.cdf">
      <Particle accel_lift="0" accel_thrust="0" air_resistance="0" collider_to_ignore="0" constant_orientation="0" mass="-1" material="" min_bounce_vel="1.5" no_path_alignment="0" no_roll="0" no_spin="1" pierceability="15" radius="1" single_contact="1" thickness="1" water_resistance="0.5">
       <gravity x="0" y="0" z="-9.81"/>

@@ -1846,7 +1846,7 @@
       <Params Count="6" ParticleLifeTime="0.22,Random=0.228" FocusGravityDir="true" EmitAngle="60,Random=0.228" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/fire/explosion_add.tif" SoftParticle="true" Color="ParticleAge=(t=0.004,v=(x=1,y=1,z=1);t=0.475,v=(x=0.984,y=0.816,z=0.667);t=0.99;t=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="10" Size="0.94,Random=0.366" Stretch="0.1" Speed="33.3" SortOffset="-0.04" ConfigMin="Medium"/>
      </Particles>
      <Particles Name="audio">
-      <Params ParticleLifeTime="1" StartTrigger="pfxGrenadeAir"/>
+      <Params ParticleLifeTime="1" StartTrigger="pfxExplosion"/>
      </Particles>
     </Childs>
    </Particles>
@@ -2374,6 +2374,9 @@
    </Particles>
    <Particles Name="explosion3">
     <Params Count="12" EmitterLifeTime="0.15" ParticleLifeTime="0.11" EmitAngle="65.32182,Random=1" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/fire/explosion_add.tif" Alpha="ParticleAge=(t=0.5,v=1;t=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="40" Size="1.52,Random=0.079" Speed="44.4,Random=0.129" SortOffset="-0.01"/>
+   </Particles>
+   <Particles Name="audio">
+    <Params StartTrigger="pfxExplosion"/>
    </Particles>
   </Childs>
  </Particles>
@@ -3587,6 +3590,9 @@
    <Particles Name="mush_smoke1">
     <Params Count="31" ParticleLifeTime="0.25" EmitAngle="180,Random=1" Texture="textures/sprites/smoke/smoke_white_tiled2.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.1,ParticleAge=(;t=0.08,v=1;t=1)" DiffuseLighting="0.48605573" DiffuseBacklighting="0.247" Size="2,ParticleAge=(v=0.706;t=1,v=1)" Speed="1" RotationRate="y=31"/>
    </Particles>
+   <Particles Name="audio">
+    <Params StartTrigger="pfxExplosion"/>
+   </Particles>
   </Childs>
  </Particles>
  <Particles Name="explosive_bullet.default">
@@ -3622,6 +3628,9 @@
    </Particles>
    <Particles Name="animated">
     <Params Count="1" ParticleLifeTime="0.37" EmitAngle="88.4,Random=1" BlendType="Additive" Texture="textures/sprites/fire/number9_together1.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" SoftParticle="true" Alpha="ParticleAge=(t=0.85,v=1;t=1)" DiffuseLighting="0" DiffuseBacklighting="0.5" EmissiveLighting="30" Size="2.05" Stretch="0.29" Speed="1.2" RandomAngles="y=359" RandomRotationRate="y=12" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="audio">
+    <Params StartTrigger="pfxExplosion"/>
    </Particles>
   </Childs>
  </Particles>
