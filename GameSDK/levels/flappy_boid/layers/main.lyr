@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612275613">
+ <Layer Name="Main" FullName="Main" GUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1612276711">
   <LayerObjects>
    <Object Type="TagPoint" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="fb7acea6-b78a-24fb-d939-802a852ddd48" Name="AI_start" Pos="455,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
     <Properties />
@@ -11,21 +11,21 @@
       <Node Id="2" Class="Game:Start" pos="-792,522,0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="3" Class="Actor:LocalPlayer" pos="-90,-378,0">
+      <Node Id="3" Class="Actor:LocalPlayer" pos="-522,-396,0">
        <Inputs />
       </Node>
-      <Node Id="7" Class="Input:ActionMaps:ActionListener" pos="144,-378,0">
+      <Node Id="7" Class="Input:ActionMaps:ActionListener" pos="-288,-396,0" EntityGUID="acdaf65f-5742-bd7c-c187-e0e6f1b40541">
        <Inputs entityId="0" actionMapActions_Action="player:jump"/>
       </Node>
-      <Node Id="8" Class="Physics:ActionImpulse" pos="522,-360,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
+      <Node Id="8" Class="Physics:ActionImpulse" pos="306,-378,0" EntityGUID="0e9e88a4-cf49-4716-8236-7291ee1ac8bd">
        <Inputs entityId="0" impulse="0,0,80" angImpulse="0,0,0" Point="0,0,0" partIndex="0" CoordSys="1"/>
       </Node>
-      <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="162,-396,0"/>
-      <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="522,-378,0"/>
-      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-306,-451.51166,0">
+      <Node Id="9" Name="Listen_for_the_jump_action" Class="_comment" pos="-270,-414,0"/>
+      <Node Id="11" Name="Push_flappy_boid_UP" Class="_comment" pos="306,-396,0"/>
+      <Node Id="12" Name="make_flappy_jump" Class="_commentbox" pos="-738,-486.06238,0">
        <Inputs TextSize="1" Color="0.533277,0.508881,0.171441" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-       <ResizeBorder X="0" Y="0" Width="1062" Height="396"/>
-       <NodeSize Width="1062" Height="430.38757"/>
+       <ResizeBorder X="0" Y="0" Width="1494" Height="414"/>
+       <NodeSize Width="1494" Height="459.90283"/>
       </Node>
       <Node Id="14" Class="entity:SpawnPoint" pos="126,144,0" EntityGUID="ecb3d852-af27-a5df-a0d3-3986bc61d890">
        <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
@@ -48,10 +48,10 @@
       <Node Id="23" Class="Camera:View" pos="126,666,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
       </Node>
-      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="-576,45.651428,0">
+      <Node Id="24" Name="initial_setup" Class="_commentbox" pos="-576,34.136501,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="2034" Height="1242"/>
-       <NodeSize Width="2034" Height="1276.3876"/>
+       <NodeSize Width="2034" Height="1287.9028"/>
       </Node>
       <Node Id="25" Class="Movement:MoveEntityTo" pos="1638,-396,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.4" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
@@ -62,10 +62,10 @@
       <Node Id="28" Class="Vec3:AddVec3" pos="1188,-414,0">
        <Inputs A="0,0,0" B="-15,20,0"/>
       </Node>
-      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-556.49255,0">
+      <Node Id="29" Name="camera_follows_player" Class="_commentbox" pos="864,-568.00769,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1062" Height="468"/>
-       <NodeSize Width="1062" Height="502.38757"/>
+       <NodeSize Width="1062" Height="513.90283"/>
       </Node>
       <Node Id="30" Class="Game:Start" pos="2034,234,0">
        <Inputs InGame="1" InEditor="1"/>
@@ -97,10 +97,10 @@
       <Node Id="44" Class="entity:ProximityTrigger" pos="2052,1674,0" EntityGUID="40d67ded-c1bc-93a1-0f1c-7488021d5d0b">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="45" Name="scoring" Class="_commentbox" pos="1980,124.08087,0">
+      <Node Id="45" Name="scoring" Class="_commentbox" pos="1980,112.56593,0">
        <Inputs TextSize="1" Color="0.278894,0.904661,0.234551" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="2394" Height="1818"/>
-       <NodeSize Width="2394" Height="1852.3876"/>
+       <NodeSize Width="2394" Height="1863.9028"/>
       </Node>
       <Node Id="46" Class="String:Concat" pos="3834,342,0">
        <Inputs String1="Score: " String2=""/>
@@ -117,7 +117,7 @@
       <Node Id="50" Class="Mission:GameTokenSet" pos="1008,1440,0">
        <Inputs gametoken_Token="Level.boolIsDead" Value="true"/>
       </Node>
-      <Node Id="51" Class="Mission:GameToken" pos="-288,-216,0">
+      <Node Id="51" Class="Mission:GameToken" pos="-720,-234,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
       </Node>
       <Node Id="52" Class="Mission:GameToken" pos="972,-198,0">
@@ -129,10 +129,10 @@
       <Node Id="54" Name="has_the_player_collided_with_a_pipe?" Class="_comment" pos="972,-216,0"/>
       <Node Id="55" Name="keep_moving_camera_as" Class="_comment" pos="1386,-324,0"/>
       <Node Id="56" Name="_long_as_the_player_is_alive" Class="_comment" pos="1386,-306,0"/>
-      <Node Id="57" Name="detect_collision" Class="_commentbox" pos="-90,1381.0111,0">
+      <Node Id="57" Name="detect_collision" Class="_commentbox" pos="-90,1369.4957,0">
        <Inputs TextSize="1" Color="0.520996,0.274677,0.0144438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1962" Height="576"/>
-       <NodeSize Width="1962" Height="610.38757"/>
+       <NodeSize Width="1962" Height="621.90283"/>
       </Node>
       <Node Id="58" Class="Mission:GameToken" pos="2124,-666,0">
        <Inputs gametoken_Token="Level.boolIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
@@ -143,10 +143,10 @@
       <Node Id="60" Class="Time:Delay" pos="2556,-648,0">
        <Inputs delay="1" resetOnInput="0"/>
       </Node>
-      <Node Id="61" Name="Game_Over" Class="_commentbox" pos="2088,-932.7356,0">
+      <Node Id="61" Name="Game_Over" Class="_commentbox" pos="2088,-944.25085,0">
        <Inputs TextSize="1" Color="0.799103,0.184475,0.234551" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="2286" Height="846"/>
-       <NodeSize Width="2286" Height="880.38757"/>
+       <NodeSize Width="2286" Height="891.90283"/>
       </Node>
       <Node Id="62" Class="Debug:ConsoleVariable" pos="432,594,0">
        <Inputs CVar="e_terrain" Value="0"/>
@@ -196,10 +196,10 @@
       <Node Id="86" Class="Logic:Any" pos="4878,-252,0">
        <Inputs />
       </Node>
-      <Node Id="87" Name="keep_player_inside_boundaries" Class="_commentbox" pos="4500,-390.8887,0">
+      <Node Id="87" Name="keep_player_inside_boundaries" Class="_commentbox" pos="4500,-402.40393,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="900" Height="486"/>
-       <NodeSize Width="900" Height="520.38757"/>
+       <NodeSize Width="900" Height="531.90283"/>
       </Node>
       <Node Id="89" Class="Entity:PropertySet" pos="2844,-360,0" EntityGUID="a9f4756c-afc2-73ce-9982-8189d3e2ef2d">
        <Inputs entityId="0" entityProperties_Property="Properties:Physics:bResting" Value="false" perArchetype="1"/>
@@ -231,10 +231,10 @@
       <Node Id="106" Class="Movement:RotateEntity" pos="36,2322,0" EntityGUID="86edbc4c-bfb2-acc1-b9b4-d40b9fd5824c">
        <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
       </Node>
-      <Node Id="107" Name="keep_score_stars_spinning" Class="_commentbox" pos="18,2017.6129,0">
+      <Node Id="107" Name="keep_score_stars_spinning" Class="_commentbox" pos="18,2006.0975,0">
        <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="304" Height="511"/>
-       <NodeSize Width="304" Height="545.38757"/>
+       <NodeSize Width="396.12518" Height="556.90283"/>
       </Node>
       <Node Id="113" Class="entity:ParticleEffect" pos="-180,738,0" EntityGUID="0d31781e-7ab7-84fe-7fc3-d2c5f742c6f0">
        <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
@@ -296,8 +296,19 @@
       <Node Id="139" Class="Audio:Trigger" pos="3816,-252,0" EntityGUID="aa622058-5326-e53c-f920-9056e0c33194">
        <Inputs entityId="0" audioTrigger_PlayTrigger="camera_sinking" audioTrigger_StopTrigger=""/>
       </Node>
-      <Node Id="140" Class="Audio:Trigger" pos="486,-162,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
+      <Node Id="140" Class="Audio:Trigger" pos="306,-180,0" EntityGUID="89194c9d-30f3-7b63-3c45-e0140f9f9c0e">
        <Inputs entityId="0" audioTrigger_PlayTrigger="squawk" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="141" Class="Animations:PlayAnimation" pos="18,-864,0" EntityGUID="acdaf65f-5742-bd7c-c187-e0e6f1b40541">
+       <Inputs entityId="0" anim_Animation="flappy_fly_loop" BlendInTime="0.2" Layer="0" Loop="0" StayOnLastFrame="0" ForceUpdate="1" PauseAnimGraph="0" ControlMovement="0" AlmostDonePercentage="0.85" PlaybackSpeedMultiplier="1"/>
+      </Node>
+      <Node Id="142" Class="Animations:PlayAnimation" pos="450,-864,0" EntityGUID="acdaf65f-5742-bd7c-c187-e0e6f1b40541">
+       <Inputs entityId="0" anim_Animation="flappy_idle" BlendInTime="0.2" Layer="0" Loop="0" StayOnLastFrame="0" ForceUpdate="1" PauseAnimGraph="0" ControlMovement="0" AlmostDonePercentage="0.85" PlaybackSpeedMultiplier="1"/>
+      </Node>
+      <Node Id="143" Name="handle_bird_animations" Class="_commentbox" pos="0,-927.90283,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="842" Height="335"/>
+       <NodeSize Width="842" Height="380.90283"/>
       </Node>
      </Nodes>
      <Edges>
@@ -312,6 +323,7 @@
       <Edge nodeIn="15" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
       <Edge nodeIn="8" nodeOut="7" portIn="activate" portOut="Pressed" enabled="1"/>
       <Edge nodeIn="140" nodeOut="7" portIn="Play" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="7" portIn="Start" portOut="Pressed" enabled="1"/>
       <Edge nodeIn="15" nodeOut="14" portIn="Activate" portOut="Spawn" enabled="1"/>
       <Edge nodeIn="16" nodeOut="14" portIn="Enable" portOut="Spawn" enabled="1"/>
       <Edge nodeIn="17" nodeOut="14" portIn="Set" portOut="Spawn" enabled="1"/>
@@ -378,6 +390,7 @@
       <Edge nodeIn="130" nodeOut="136" portIn="Play" portOut="true" enabled="1"/>
       <Edge nodeIn="138" nodeOut="136" portIn="in" portOut="true" enabled="1"/>
       <Edge nodeIn="137" nodeOut="138" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="141" portIn="Start" portOut="Done" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -425,7 +438,7 @@
      <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="acdaf65f-5742-bd7c-c187-e0e6f1b40541" Name="flappy_mesh_component" Pos="500,500,100.0718" Rotate="1,0,0,0" Scale="2.0000002,2.0000002,2.0000002" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticlePhysics" HasEntity="1">
+   <Object Type="Entity" Layer="Main" LayerGUID="9c7bfafe-d96c-cf13-bd55-c41f17b70aed" Id="acdaf65f-5742-bd7c-c187-e0e6f1b40541" Name="flappy_mesh_component" Pos="500,500,100.0718" Rotate="0.70710683,0,0,0.70710683" Scale="2.0000002,2.0000002,2.0000002" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticlePhysics" HasEntity="1">
     <Properties object_Model="objects/characters/flappyPlayer/flappyplayer.cdf">
      <Particle accel_lift="0" accel_thrust="0" air_resistance="0" collider_to_ignore="0" constant_orientation="0" mass="-1" material="" min_bounce_vel="1.5" no_path_alignment="0" no_roll="0" no_spin="1" pierceability="15" radius="1" single_contact="1" thickness="1" water_resistance="0.5">
       <gravity x="0" y="0" z="-9.81"/>
